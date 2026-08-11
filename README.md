@@ -6,6 +6,34 @@
 |---|---|---|
 | [`trellis-commit-zh`](skills/trellis-commit-zh/) | 安装、升级、验证或安全卸载 Trellis 中文提交消息增强 | Platform-Specific Skill |
 
+## Skill 基本操作
+
+**列出仓库中的全部 Skills：**
+
+```powershell
+npx skills add Jun2030/skills --list
+```
+
+**安装指定 Skill：**
+
+```powershell
+# 方法一 <=> 方法二
+npx skills add Jun2030/skills --skill trellis-commit-zh -g
+# 方法二 <=> 方法一
+npx skills add Jun2030/skills@trellis-commit-zh -g
+```
+
+**安装全部 Skills：**
+
+```powershell
+npx skills add Jun2030/skills --skill '*'
+```
+
+**更新指定 Skill：**
+```powershell
+npx skills@latest update trellis-commit-zh -g -y
+```
+
 ## `trellis-commit-zh`
 
 为已初始化的 Trellis 仓库管理中文提交消息规范增强的完整生命周期。Codex 会识别仓库状态，只提供当前可执行的安装、升级、重新验证或卸载操作，并在能够证明安全时恢复首次安装前的实际状态。
