@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.history/
+.venv/
+.agents/
+.codegraph/
+.code-review-graph/
+# Trellis
+.trellis/workspace/
+.trellis/sessions/
+.trellis/cache/
+.trellis/artifacts/
+.trellis/local-config.json
+.gitattributes
+.claude/
+.codex/
+.cursor/
+.scratch/
+.opencode
+.artifacts/

@@ -1,0 +1,40 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install verified Trellis CLI
+        run: npm install --global @mindfoldhq/trellis@0.6.13
+
+      - name: Validate repository layout
+        run: python scripts/validate_repository.py
+
+      - name: Run Trellis policy tests
+        working-directory: skills/trellis-commit-policy
+        run: python -m unittest tests.test_trellis_policy -v
+
+      - name: Verify skills CLI discovery
+        run: npx --yes skills@1.5.22 add . --list
