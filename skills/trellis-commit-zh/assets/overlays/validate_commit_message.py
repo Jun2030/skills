@@ -13,11 +13,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("message", nargs="?", help="message text; stdin when omitted")
     args = parser.parse_args()
-    message = (
-        args.message
-        if args.message is not None
-        else sys.stdin.read().rstrip("\r\n")
-    )
+    message = args.message if args.message is not None else sys.stdin.read().rstrip("\r\n")
     try:
         validate_commit_message(message)
     except ValueError as exc:

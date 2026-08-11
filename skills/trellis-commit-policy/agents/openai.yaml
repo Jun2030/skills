@@ -1,4 +1,0 @@
-interface:
-  display_name: "Trellis 提交策略"
-  short_description: "统一 Trellis 提交消息规范，审计并安全接入现有和新项目"
-  default_prompt: "使用 $trellis-commit-policy 自动检查当前项目是否已有 Trellis，并完成提交消息策略接入和验证，不要让我手工执行脚本。"

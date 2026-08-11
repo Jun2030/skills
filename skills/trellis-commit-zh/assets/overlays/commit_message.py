@@ -6,9 +6,7 @@ from __future__ import annotations
 import re
 
 
-TYPES = (
-    "feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert"
-)
+TYPES = "feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert"
 HEADER_RE = re.compile(
     rf"^(?:{TYPES})\((?P<scope>[a-z][a-z0-9-]*)\): (?P<description>.+)$"
 )

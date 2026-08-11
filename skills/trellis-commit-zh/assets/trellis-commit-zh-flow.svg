@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1900" viewBox="0 0 1400 1900" role="img" aria-labelledby="title desc">
+  <title id="title">trellis-commit-zh Skill 运行流程</title>
+  <desc id="desc">展示 Skill 触发、Trellis 检测、状态识别，以及安装、升级和卸载提交规范增强的完整流程。</desc>
+  <style>
+    text { font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0; }
+    .title { fill: #111827; font-size: 30px; font-weight: 700; }
+    .subtitle { fill: #4b5563; font-size: 15px; }
+    .section-title { fill: #374151; font-size: 14px; font-weight: 700; }
+    .node-title { fill: #111827; font-size: 16px; font-weight: 700; }
+    .node-sub { fill: #4b5563; font-size: 12px; }
+    .edge-label { fill: #374151; font-size: 12px; font-weight: 700; }
+    .result-title { font-size: 15px; font-weight: 700; }
+    .legend { fill: #4b5563; font-size: 12px; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9333ea"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="1900" fill="#ffffff"/>
+  <text class="title" x="700" y="54" text-anchor="middle">trellis-commit-zh Skill 运行流程</text>
+  <text class="subtitle" x="700" y="84" text-anchor="middle">常驻管理 Skill：安装、升级或卸载当前仓库的 Trellis 中文提交规范增强</text>
+
+  <rect x="80" y="112" width="1240" height="68" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+  <text class="node-sub" x="105" y="140">首次安装 Skill 在本流程外完成：npx skills add Jun2030/skills@trellis-commit-zh -g</text>
+  <text class="node-sub" x="105" y="162">运行中不暂存、不提交、不推送；Trellis 仅检查命令可执行，不限制或比较版本。</text>
+
+  <rect x="360" y="215" width="680" height="910" rx="8" fill="#eff6ff" fill-opacity="0.45" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="7,5"/>
+  <text class="section-title" x="382" y="243">公共前置检查</text>
+
+  <rect x="40" y="1170" width="400" height="640" rx="8" fill="#f0fdf4" fill-opacity="0.55" stroke="#86efac" stroke-width="1.5" stroke-dasharray="7,5"/>
+  <text class="section-title" x="62" y="1198">安装增强</text>
+  <rect x="500" y="1170" width="400" height="640" rx="8" fill="#faf5ff" fill-opacity="0.55" stroke="#d8b4fe" stroke-width="1.5" stroke-dasharray="7,5"/>
+  <text class="section-title" x="522" y="1198">升级 Skill 与增强</text>
+  <rect x="960" y="1170" width="400" height="640" rx="8" fill="#fff7ed" fill-opacity="0.6" stroke="#fdba74" stroke-width="1.5" stroke-dasharray="7,5"/>
+  <text class="section-title" x="982" y="1198">卸载增强</text>
+
+  <!-- Public control-flow edges -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path data-graph-role="edge" data-source="invoke" data-target="cli" d="M700 335 L700 375" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="cli" data-target="cli-stop" d="M540 435 L330 435" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <path data-graph-role="edge" data-source="cli" data-target="repo" d="M700 495 L700 535" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="repo" data-target="repo-stop" d="M540 595 L330 595" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <path data-graph-role="edge" data-source="repo" data-target="guard" d="M700 655 L700 695" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="guard" data-target="guard-stop" d="M860 755 L1070 755" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <path data-graph-role="edge" data-source="guard" data-target="state" d="M700 815 L700 850" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="state" data-target="menu" d="M700 920 L700 955" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="menu" data-target="choice" d="M700 1045 L700 1065" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="choice" data-target="install-baseline" d="M530 1105 L240 1105 L240 1235" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="choice" data-target="upgrade-skill" d="M700 1175 L700 1235" stroke="#9333ea" stroke-width="2" marker-end="url(#arrow-purple)"/>
+    <path data-graph-role="edge" data-source="choice" data-target="uninstall-check" d="M870 1105 L1160 1105 L1160 1235" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+    <!-- Install branch -->
+    <path data-graph-role="edge" data-source="install-baseline" data-target="install-apply" d="M240 1305 L240 1340" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="install-apply" data-target="install-verify" d="M240 1410 L240 1445" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="install-verify" data-target="install-result" d="M240 1535 L240 1580" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+    <!-- Upgrade branch -->
+    <path data-graph-role="edge" data-source="upgrade-skill" data-target="upgrade-ok" d="M700 1305 L700 1340" stroke="#9333ea" stroke-width="2" marker-end="url(#arrow-purple)"/>
+    <path data-graph-role="edge" data-source="upgrade-ok" data-target="upgrade-fail" d="M580 1400 L520 1400 L520 1490" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <path data-graph-role="edge" data-source="upgrade-ok" data-target="upgrade-apply" d="M700 1460 L700 1490" stroke="#9333ea" stroke-width="2" marker-end="url(#arrow-purple)"/>
+    <path data-graph-role="edge" data-source="upgrade-apply" data-target="upgrade-verify" d="M700 1560 L700 1595" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="upgrade-verify" data-target="upgrade-result" d="M700 1665 L700 1700" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+    <!-- Uninstall branch -->
+    <path data-graph-role="edge" data-source="uninstall-check" data-target="uninstall-conflict" d="M1160 1305 L1160 1340" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="uninstall-conflict" data-target="uninstall-stop" d="M1280 1400 L1330 1400 L1330 1490" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <path data-graph-role="edge" data-source="uninstall-conflict" data-target="uninstall-restore" d="M1160 1460 L1160 1490" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="uninstall-restore" data-target="uninstall-verify" d="M1160 1560 L1160 1595" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path data-graph-role="edge" data-source="uninstall-verify" data-target="uninstall-result" d="M1160 1665 L1160 1700" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  </g>
+
+  <!-- Edge labels -->
+  <g>
+    <text class="edge-label" x="420" y="425" text-anchor="middle">不可执行</text>
+    <text class="edge-label" x="716" y="520">可执行</text>
+    <text class="edge-label" x="420" y="585" text-anchor="middle">缺失 / 不完整</text>
+    <text class="edge-label" x="716" y="680">结构可用</text>
+    <text class="edge-label" x="970" y="745" text-anchor="middle">检测到异常</text>
+    <text class="edge-label" x="716" y="838">状态正常</text>
+    <text class="edge-label" x="382" y="1095" text-anchor="middle">安装</text>
+    <text class="edge-label" x="716" y="1197">升级</text>
+    <text class="edge-label" x="1018" y="1095" text-anchor="middle">卸载</text>
+    <text class="edge-label" x="540" y="1390" text-anchor="end">失败</text>
+    <text class="edge-label" x="716" y="1478">成功 / 已最新</text>
+    <text class="edge-label" x="1300" y="1390">有冲突</text>
+    <text class="edge-label" x="1176" y="1478">无冲突</text>
+  </g>
+
+  <!-- Public nodes -->
+  <g id="invoke" data-graph-role="node">
+    <rect x="520" y="265" width="360" height="70" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="294" text-anchor="middle">触发 Skill</text>
+    <text class="node-sub" x="700" y="317" text-anchor="middle">$trellis-commit-zh [安装 | 升级 | 卸载]</text>
+  </g>
+
+  <g id="cli" data-graph-role="node">
+    <polygon points="700,375 860,435 700,495 540,435" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="430" text-anchor="middle">Trellis 命令可执行？</text>
+    <text class="node-sub" x="700" y="451" text-anchor="middle">不比较版本</text>
+  </g>
+  <g id="cli-stop" data-graph-role="node">
+    <rect x="60" y="395" width="270" height="80" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+    <text class="result-title" x="195" y="426" text-anchor="middle" fill="#b91c1c">停止：请先安装 Trellis</text>
+    <text class="node-sub" x="195" y="451" text-anchor="middle">中文提示，不自动安装</text>
+  </g>
+
+  <g id="repo" data-graph-role="node">
+    <polygon points="700,535 860,595 700,655 540,595" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="590" text-anchor="middle">当前仓库 .trellis 可用？</text>
+    <text class="node-sub" x="700" y="611" text-anchor="middle">存在且所需结构完整</text>
+  </g>
+  <g id="repo-stop" data-graph-role="node">
+    <rect x="60" y="555" width="270" height="80" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+    <text class="result-title" x="195" y="586" text-anchor="middle" fill="#b91c1c">停止：请初始化或修复</text>
+    <text class="node-sub" x="195" y="611" text-anchor="middle">不修改不完整的 Trellis</text>
+  </g>
+
+  <g id="guard" data-graph-role="node">
+    <polygon points="700,695 860,755 700,815 540,755" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="748" text-anchor="middle">状态安全可管理？</text>
+    <text class="node-sub" x="700" y="770" text-anchor="middle">无状态增强痕迹、损坏状态或缺失基线</text>
+  </g>
+  <g id="guard-stop" data-graph-role="node">
+    <rect x="1070" y="715" width="270" height="80" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+    <text class="result-title" x="1205" y="746" text-anchor="middle" fill="#b91c1c">失败关闭</text>
+    <text class="node-sub" x="1205" y="770" text-anchor="middle">列出问题，不猜测、不修复</text>
+  </g>
+
+  <g id="state" data-graph-role="node">
+    <rect x="520" y="850" width="360" height="70" rx="8" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="879" text-anchor="middle">识别增强状态</text>
+    <text class="node-sub" x="700" y="902" text-anchor="middle">未安装 / 旧版 / 最新版</text>
+  </g>
+  <g id="menu" data-graph-role="node">
+    <rect x="480" y="955" width="440" height="90" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="987" text-anchor="middle">显示中文状态与可执行操作</text>
+    <text class="node-sub" x="700" y="1012" text-anchor="middle">未安装：安装｜旧版：升级 / 卸载</text>
+    <text class="node-sub" x="700" y="1031" text-anchor="middle">最新版：提示已最新 / 重新验证 / 卸载</text>
+  </g>
+  <g id="choice" data-graph-role="node">
+    <polygon points="700,1065 870,1105 700,1175 530,1105" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="1110" text-anchor="middle">用户选择操作</text>
+    <text class="node-sub" x="700" y="1132" text-anchor="middle">明确参数时跳过菜单</text>
+  </g>
+
+  <!-- Install nodes -->
+  <g id="install-baseline" data-graph-role="node">
+    <rect x="90" y="1235" width="300" height="70" rx="8" fill="#dcfce7" stroke="#4ade80" stroke-width="1.5"/>
+    <text class="node-title" x="240" y="1264" text-anchor="middle">保存唯一原始基线</text>
+    <text class="node-sub" x="240" y="1287" text-anchor="middle">后续升级不得覆盖</text>
+  </g>
+  <g id="install-apply" data-graph-role="node">
+    <rect x="90" y="1340" width="300" height="70" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+    <text class="node-title" x="240" y="1369" text-anchor="middle">应用现有增强规则</text>
+    <text class="node-sub" x="240" y="1392" text-anchor="middle">原子写入，失败自动回滚</text>
+  </g>
+  <g id="install-verify" data-graph-role="node">
+    <rect x="90" y="1445" width="300" height="90" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+    <text class="node-title" x="240" y="1474" text-anchor="middle">完整验证</text>
+    <text class="node-sub" x="240" y="1497" text-anchor="middle">二次应用幂等、状态审计</text>
+    <text class="node-sub" x="240" y="1517" text-anchor="middle">提交消息校验测试</text>
+  </g>
+  <g id="install-result" data-graph-role="node">
+    <rect x="90" y="1580" width="300" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text class="result-title" x="240" y="1612" text-anchor="middle" fill="#15803d">安装成功</text>
+    <text class="node-sub" x="240" y="1637" text-anchor="middle">中文报告策略版本 1.0.0</text>
+  </g>
+
+  <!-- Upgrade nodes -->
+  <g id="upgrade-skill" data-graph-role="node">
+    <rect x="550" y="1235" width="300" height="70" rx="8" fill="#ede9fe" stroke="#c084fc" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="1264" text-anchor="middle">更新用户级 Skill</text>
+    <text class="node-sub" x="700" y="1287" text-anchor="middle">npx skills update ... -g -y</text>
+  </g>
+  <g id="upgrade-ok" data-graph-role="node">
+    <polygon points="700,1340 820,1400 700,1460 580,1400" fill="#faf5ff" stroke="#c084fc" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="1395" text-anchor="middle">更新成功？</text>
+    <text class="node-sub" x="700" y="1417" text-anchor="middle">含“已经是最新”</text>
+  </g>
+  <g id="upgrade-fail" data-graph-role="node">
+    <rect x="510" y="1490" width="170" height="70" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+    <text class="result-title" x="595" y="1518" text-anchor="middle" fill="#b91c1c">升级失败</text>
+    <text class="node-sub" x="595" y="1542" text-anchor="middle">仓库保持不变</text>
+  </g>
+  <g id="upgrade-apply" data-graph-role="node">
+    <rect x="700" y="1490" width="170" height="70" rx="8" fill="#ffffff" stroke="#c084fc" stroke-width="1.5"/>
+    <text class="node-title" x="785" y="1518" text-anchor="middle">升级仓库策略</text>
+    <text class="node-sub" x="785" y="1542" text-anchor="middle">使用更新后脚本</text>
+  </g>
+  <g id="upgrade-verify" data-graph-role="node">
+    <rect x="550" y="1595" width="300" height="70" rx="8" fill="#ffffff" stroke="#c084fc" stroke-width="1.5"/>
+    <text class="node-title" x="700" y="1624" text-anchor="middle">审计并运行校验测试</text>
+    <text class="node-sub" x="700" y="1647" text-anchor="middle">保留首次安装前基线</text>
+  </g>
+  <g id="upgrade-result" data-graph-role="node">
+    <rect x="550" y="1700" width="300" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text class="result-title" x="700" y="1732" text-anchor="middle" fill="#15803d">升级完成</text>
+    <text class="node-sub" x="700" y="1757" text-anchor="middle">中文提示更新结果与策略状态</text>
+  </g>
+
+  <!-- Uninstall nodes -->
+  <g id="uninstall-check" data-graph-role="node">
+    <rect x="1010" y="1235" width="300" height="70" rx="8" fill="#ffedd5" stroke="#fb923c" stroke-width="1.5"/>
+    <text class="node-title" x="1160" y="1264" text-anchor="middle">核对状态、基线与哈希</text>
+    <text class="node-sub" x="1160" y="1287" text-anchor="middle">证明所有文件都可安全恢复</text>
+  </g>
+  <g id="uninstall-conflict" data-graph-role="node">
+    <polygon points="1160,1340 1280,1400 1160,1460 1040,1400" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+    <text class="node-title" x="1160" y="1395" text-anchor="middle">存在人工修改？</text>
+    <text class="node-sub" x="1160" y="1417" text-anchor="middle">或基线 / 状态不完整</text>
+  </g>
+  <g id="uninstall-stop" data-graph-role="node">
+    <rect x="1190" y="1490" width="140" height="70" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+    <text class="result-title" x="1260" y="1518" text-anchor="middle" fill="#b91c1c">停止卸载</text>
+    <text class="node-sub" x="1260" y="1542" text-anchor="middle">列出冲突</text>
+  </g>
+  <g id="uninstall-restore" data-graph-role="node">
+    <rect x="990" y="1490" width="180" height="70" rx="8" fill="#ffffff" stroke="#fdba74" stroke-width="1.5"/>
+    <text class="node-title" x="1080" y="1518" text-anchor="middle">恢复原始基线</text>
+    <text class="node-sub" x="1080" y="1542" text-anchor="middle">删除增强创建文件</text>
+  </g>
+  <g id="uninstall-verify" data-graph-role="node">
+    <rect x="1010" y="1595" width="300" height="70" rx="8" fill="#ffffff" stroke="#fdba74" stroke-width="1.5"/>
+    <text class="node-title" x="1160" y="1624" text-anchor="middle">验证恢复结果</text>
+    <text class="node-sub" x="1160" y="1647" text-anchor="middle">移除增强状态，不删除 Skill</text>
+  </g>
+  <g id="uninstall-result" data-graph-role="node">
+    <rect x="1010" y="1700" width="300" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text class="result-title" x="1160" y="1732" text-anchor="middle" fill="#15803d">卸载成功</text>
+    <text class="node-sub" x="1160" y="1757" text-anchor="middle">Trellis 恢复至增强前状态</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(330 1840)">
+    <line x1="0" y1="8" x2="34" y2="8" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <text class="legend" x="44" y="12">正常控制流</text>
+    <line x1="180" y1="8" x2="214" y2="8" stroke="#9333ea" stroke-width="2" marker-end="url(#arrow-purple)"/>
+    <text class="legend" x="224" y="12">Skill 更新流</text>
+    <line x1="370" y1="8" x2="404" y2="8" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+    <text class="legend" x="414" y="12">验证成功</text>
+    <line x1="540" y1="8" x2="574" y2="8" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <text class="legend" x="584" y="12">失败关闭</text>
+  </g>
+</svg>
