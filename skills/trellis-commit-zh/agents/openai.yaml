@@ -1,6 +1,6 @@
 interface:
-  display_name: "Trellis 中文提交规范"
-  short_description: "自动安装、升级或卸载 Trellis 中文提交规范增强"
+  display_name: "Trellis-commit-zh"
+  short_description: "Trellis 中文提交规范增强"
   default_prompt: "使用 $trellis-commit-zh 检查当前仓库，并显示可执行的安装、升级或卸载操作。"
 
 policy:
