@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 
-POLICY_VERSION = "1.0.0"
+POLICY_VERSION = "1.1.0"
 STATE_SCHEMA = 1
 ROOT = Path(__file__).resolve().parent.parent
 OVERLAYS = ROOT / "assets" / "overlays"
@@ -31,104 +31,48 @@ NEW_FILES = {
     ".trellis/spec/guides/commit-message.md": ROOT / "references" / "commit-message.md",
 }
 
-WORKFLOW_OLD = """4. **Draft a commit plan**. Group AI-edited files into logical commits (1 commit per coherent change unit, not 1 commit per file). Each entry: `<commit message>` + file list. List unrecognized files separately at the bottom.
+WORKFLOW_SECTION = """#### 3.4 Commit changes `[required · once]`
 
-5. **Present the plan once, ask for one-shot confirmation**. Format:
+**Spec-sync preamble**: before drafting commits, ask: did this task fix a bug or surface non-obvious knowledge that should land in `.trellis/spec/` so future-you (or future-AI) doesn't repeat the mistake? If yes, return to Phase 3.3 first — spec writes belong in the same task's commit, not as a forgotten follow-up.
+
+The AI drives one policy-compliant commit for this task's code changes so `/finish-work` can run cleanly afterwards. The work commit lands first; bookkeeping commits for archive and journal follow without interleaving.
+
+**Step-by-step**:
+
+1. **Inspect dirty state**:
+   ```bash
+   git status --porcelain
    ```
-   Proposed commits (in order):
-     1. <message>
-        - <file>
-        - <file>
-     2. <message>
-        - <file>
+   Snapshot every dirty path. If the working tree is clean, skip to 3.5.
 
-   Unrecognized dirty files (NOT in any commit — confirm include/exclude):
-     - <file>
-     - <file>
+2. **Load the required policy** from `.trellis/spec/guides/commit-message.md`. Recent history does not override this policy.
 
-   Reply 'ok' / '行' to execute. Reply with edits, or '我自己来' / 'manual' to abort.
-   ```
+3. **Classify dirty files into two groups**:
+   - **AI-edited this session** — files you wrote/edited via Edit/Write/Bash tool calls in this session. You know what changed and why.
+   - **Unrecognized** — dirty files you did NOT touch this session (could be the user's manual edits, leftover WIP from a previous session, or unrelated work). Do NOT silently include these.
 
-6. **On confirmation**: run `git add <files>` + `git commit -m "<msg>"` for each batch in order. Do not amend. Do not push.
-
-7. **On rejection** (user replies "不行" / "我自己来" / "manual" / any pushback on the plan): stop. Do not attempt a second plan. The user will commit by hand; you skip ahead to 3.5 once they confirm.
-"""
-
-WORKFLOW_NEW = """4. **Review the actual diff** and choose one Conventional Commits type and one required English scope that describe the task's primary change. Keep unrecognized files out of the commit.
+4. **Review the actual diff** and choose one Conventional Commits type and one required English scope that describe the task's primary change. Keep unrecognized files out of the commit.
 
 5. **Resolve unrecognized files first**. If any exist, ask whether to include or exclude them before generating a message. Do not generate candidate messages in that prompt.
 
 6. **Generate exactly one complete commit message** from the recognized diff. Output only the message text: one `<type>(<scope>): <中文描述>` header; for a complex diff, add one blank line and Chinese `- ` body items. Do not add explanations, code fences, labels, placeholders, candidate lists, or a second Conventional Commits header. Wait for one-shot confirmation.
 
 7. **On confirmation**: stage only the confirmed files and commit with the exact validated message. Do not amend or push. On rejection or manual mode, stop and skip to 3.5 after the user confirms their manual commit is complete.
+
+**Rules**:
+- No `git commit --amend` anywhere — three-stage three-commit flow (work commit → archive commit → journal commit).
+- Never push to remote in this step.
+- If the user wants different message wording but accepts the file grouping, edit the message and re-confirm once — but if they reject the grouping, exit to manual mode.
+- Validate the final message with `.trellis/scripts/validate_commit_message.py` before committing.
+- Generate one message for the task; do not create separate headers for files or change items.
 """
 
-EDITS = (
-    (
-        ".trellis/workflow.md",
-        "The AI drives a batched commit of this task's code changes so `/finish-work` can run cleanly afterwards. Goal: produce work commits FIRST, then bookkeeping (archive + journal) commits land after — never interleaved.",
-        "The AI drives one policy-compliant commit for this task's code changes so `/finish-work` can run cleanly afterwards. The work commit lands first; bookkeeping commits for archive and journal follow without interleaving.",
-    ),
-    (
-        ".trellis/config.yaml",
-        'session_commit_message: "chore: record journal"',
-        'session_commit_message: "chore(trellis): 记录会话日志"',
-    ),
-    (
-        ".trellis/spec/guides/index.md",
-        (
-            "- [Testing](../testing/index.md): trusted test style and verification commands.",
-            "| [Cross-Layer Thinking Guide](./cross-layer-thinking-guide.md) | Think through data flow across layers | Features spanning multiple layers |",
-        ),
-        (
-            "- [Testing](../testing/index.md): trusted test style and verification commands.\n"
-            "- [Commit message policy](commit-message.md): required output and validation rules for Trellis commits.",
-            "| [Cross-Layer Thinking Guide](./cross-layer-thinking-guide.md) | Think through data flow across layers | Features spanning multiple layers |\n"
-            "| [Commit Message Policy](./commit-message.md) | Enforce Trellis commit output and validation | Before generating or committing changes |",
-        ),
-    ),
-    (
-        ".trellis/scripts/add_session.py",
-        "from common.types import TaskInfo\nfrom common.config import (",
-        "from common.types import TaskInfo\nfrom common.commit_message import validate_commit_message\nfrom common.config import (",
-    ),
-    (
-        ".trellis/scripts/add_session.py",
-        "    commit_msg = get_session_commit_message(repo_root)\n    # Resolve the current task",
-        "    commit_msg = get_session_commit_message(repo_root)\n"
-        "    validate_commit_message(commit_msg)\n"
-        "    # Resolve the current task",
-    ),
-    (
-        ".trellis/scripts/common/task_store.py",
-        "from .git import branch_exists_locally, resolve_default_branch, run_git",
-        "from .commit_message import validate_commit_message\n"
-        "from .git import branch_exists_locally, resolve_default_branch, run_git",
-    ),
-    (
-        ".trellis/scripts/common/task_store.py",
-        '    commit_msg = f"chore(task): archive {task_name}"\n'
-        '    rc, _, err = run_git(["commit", "-m", commit_msg], cwd=repo_root)',
-        '    commit_msg = f"chore(task): 归档任务 {task_name}"\n'
-        "    validate_commit_message(commit_msg)\n"
-        '    rc, _, err = run_git(["commit", "-m", commit_msg], cwd=repo_root)',
-    ),
-    (
-        ".trellis/workflow.md",
-        "2. **Learn commit style** from recent history (so drafted messages blend in):\n"
-        "   ```bash\n"
-        "   git log --oneline -5\n"
-        "   ```\n"
-        "   Note the prefix convention (`feat:` / `fix:` / `chore:` / `docs:` ...), language (中文/English), and length style.",
-        "2. **Load the required policy** from `.trellis/spec/guides/commit-message.md`. Recent history does not override this policy.",
-    ),
-    (".trellis/workflow.md", WORKFLOW_OLD, WORKFLOW_NEW),
-    (
-        ".trellis/workflow.md",
-        "- The batched plan is one prompt; do not prompt per commit.",
-        "- Validate the final message with `.trellis/scripts/validate_commit_message.py` before committing.\n"
-        "- Generate one message for the task; do not create separate headers for files or change items.",
-    ),
+TRANSFORMED_FILES = (
+    ".trellis/workflow.md",
+    ".trellis/config.yaml",
+    ".trellis/spec/guides/index.md",
+    ".trellis/scripts/add_session.py",
+    ".trellis/scripts/common/task_store.py",
 )
 
 
@@ -186,38 +130,143 @@ def _require_repo(repo: Path, check_trellis: bool = True) -> Path:
     return repo
 
 
-def _variants(value: str | tuple[str, ...]) -> tuple[str, ...]:
-    return (value,) if isinstance(value, str) else value
-
-
-def _apply_edit(
+def _replace_once(
     content: str,
-    old: str | tuple[str, ...],
-    new: str | tuple[str, ...],
+    pattern: str,
+    replacement: str,
     relative: str,
+    *,
+    flags: int = 0,
+    already: str | None = None,
 ) -> str:
-    old_variants = _variants(old)
-    new_variants = _variants(new)
-    if len(old_variants) != len(new_variants):
-        raise PolicyError(f"策略变体配置无效：{relative}")
-    if any(value in content for value in new_variants):
+    if already and re.search(already, content, flags):
         return content
-    matches = [
-        (before, after)
-        for before, after in zip(old_variants, new_variants)
-        if content.count(before) == 1
-    ]
-    if len(matches) != 1:
+    updated, count = re.subn(pattern, replacement, content, count=1, flags=flags)
+    if count != 1:
         raise PolicyError(f"Trellis 文件结构不兼容，无法定位唯一修改点：{relative}")
-    before, after = matches[0]
-    return content.replace(before, after, 1)
+    return updated
+
+
+def _insert_before(content: str, marker: str, insert: str, relative: str) -> str:
+    if insert.strip() in content:
+        return content
+    if marker not in content:
+        raise PolicyError(f"Trellis 文件结构不兼容，无法定位唯一修改点：{relative}")
+    return content.replace(marker, insert + marker, 1)
+
+
+def _ensure_after_assignment(content: str, assignment: str, relative: str) -> str:
+    if "validate_commit_message(commit_msg)" in content:
+        return content
+    pattern = rf"(?m)^(?P<indent>\s*){re.escape(assignment)}\n"
+
+    def add_validation(match: re.Match[str]) -> str:
+        indent = match.group("indent")
+        return f"{match.group(0)}{indent}validate_commit_message(commit_msg)\n"
+
+    updated, count = re.subn(pattern, add_validation, content, count=1)
+    if count != 1:
+        raise PolicyError(f"Trellis 文件结构不兼容，无法定位唯一修改点：{relative}")
+    return updated
+
+
+def _transform_config(content: str, relative: str) -> str:
+    return _replace_once(
+        content,
+        r"(?m)^session_commit_message:\s*[\"'][^\"']*record journal[^\"']*[\"']\s*$",
+        'session_commit_message: "chore(trellis): 记录会话日志"',
+        relative,
+        already=r"(?m)^session_commit_message:\s*[\"'][^\"']*记录会话日志[^\"']*[\"']\s*$",
+    )
+
+
+def _transform_index(content: str, relative: str) -> str:
+    if (
+        "- [Commit message policy](commit-message.md)" not in content
+        and re.search(r"(?m)^- \[Testing\]\([^)]+\):[^\n]*$", content)
+    ):
+        content = _replace_once(
+            content,
+            r"(?m)^- \[Testing\]\([^)]+\):[^\n]*$",
+            r"\g<0>\n- [Commit message policy](commit-message.md): required output and validation rules for Trellis commits.",
+            relative,
+        )
+    if (
+        "| [Commit Message Policy](./commit-message.md) |" not in content
+        and re.search(r"(?m)^\| \[Cross-Layer Thinking Guide\]\([^)]+\) \|[^\n]*$", content)
+    ):
+        content = _replace_once(
+            content,
+            r"(?m)^\| \[Cross-Layer Thinking Guide\]\([^)]+\) \|[^\n]*$",
+            r"\g<0>\n| [Commit Message Policy](./commit-message.md) | Enforce Trellis commit output and validation | Before generating or committing changes |",
+            relative,
+        )
+    return content
+
+
+def _transform_add_session(content: str, relative: str) -> str:
+    content = _insert_before(
+        content,
+        "from common.config import (",
+        "from common.commit_message import validate_commit_message\n",
+        relative,
+    )
+    return _ensure_after_assignment(
+        content, "commit_msg = get_session_commit_message(repo_root)", relative
+    )
+
+
+def _transform_task_store(content: str, relative: str) -> str:
+    content = _insert_before(
+        content,
+        "from .git import branch_exists_locally, resolve_default_branch, run_git",
+        "from .commit_message import validate_commit_message\n",
+        relative,
+    )
+    content = _replace_once(
+        content,
+        r"(?m)^(?P<indent>\s*)commit_msg = f[\"']chore\(task\): archive \{task_name\}[\"']\s*$",
+        '\\g<indent>commit_msg = f"chore(task): 归档任务 {task_name}"',
+        relative,
+        already=r"(?m)^\s*commit_msg = f[\"']chore\(task\): 归档任务 \{task_name\}[\"']\s*$",
+    )
+    return _ensure_after_assignment(
+        content, 'commit_msg = f"chore(task): 归档任务 {task_name}"', relative
+    )
+
+
+def _transform_workflow(content: str, relative: str) -> str:
+    return _replace_once(
+        content,
+        r"(?ms)^#### 3\.4 Commit changes.*?(?=^#### 3\.5 )",
+        WORKFLOW_SECTION + "\n\n",
+        relative,
+        already=r"`<type>\(<scope>\): <中文描述>`",
+    )
+
+
+TRANSFORMS = {
+    ".trellis/workflow.md": _transform_workflow,
+    ".trellis/config.yaml": _transform_config,
+    ".trellis/spec/guides/index.md": _transform_index,
+    ".trellis/scripts/add_session.py": _transform_add_session,
+    ".trellis/scripts/common/task_store.py": _transform_task_store,
+}
+
+
+def _transform(relative: str, content: str) -> str:
+    return TRANSFORMS[relative](content, relative)
+
+
+def _has_transform_trace(relative: str, content: str) -> bool:
+    return _transform(relative, content) == content
 
 
 def _unmanaged_traces(repo: Path) -> list[str]:
     traces = [relative for relative in NEW_FILES if (repo / relative).exists()]
-    for relative, _, new in EDITS:
+    for relative in TRANSFORMED_FILES:
         path = repo / relative
-        if path.is_file() and any(value in _read(path) for value in _variants(new)):
+        if path.is_file() and _has_transform_trace(relative, _read(path)):
             traces.append(relative)
     return sorted(set(traces))
 
@@ -246,7 +295,7 @@ def _load_state(repo: Path, missing_ok: bool = False) -> dict[str, Any] | None:
         raise PolicyError("策略状态未完成或版本不受支持，不能自动修复")
     managed = state["managed_hashes"]
     originals = state["original_hashes"]
-    allowed_paths = {relative for relative, _, _ in EDITS} | set(NEW_FILES)
+    allowed_paths = set(TRANSFORMED_FILES) | set(NEW_FILES)
     if (
         not isinstance(managed, dict)
         or not managed
@@ -288,12 +337,12 @@ def _require_clean_state(repo: Path, state: dict[str, Any]) -> None:
 
 def build_expected(repo: Path, state: dict[str, Any] | None = None) -> dict[str, str]:
     expected: dict[str, str] = {}
-    for relative, old, new in EDITS:
+    for relative in TRANSFORMED_FILES:
         path = repo / relative
         if not path.is_file():
             raise PolicyError(f"Trellis 受管文件缺失：{relative}")
         content = expected.get(relative, _read(path))
-        expected[relative] = _apply_edit(content, old, new, relative)
+        expected[relative] = _transform(relative, content)
 
     for relative, source in NEW_FILES.items():
         wanted = _read(source)
@@ -354,14 +403,15 @@ def status(repo: Path, as_json: bool = False, check_trellis: bool = True) -> int
             "actions": ["install"],
         }
     else:
-        _require_clean_state(repo, state)
         current = state["policy_version"] == POLICY_VERSION
+        changed = _changes(repo, build_expected(repo, state))
+        effective_current = current and not changed
         info = {
-            "status": "current" if current else "outdated",
+            "status": "current" if effective_current else "outdated",
             "policy_version": POLICY_VERSION,
             "installed_policy_version": state["policy_version"],
             "actions": ["check-upgrade", "audit", "uninstall"]
-            if current
+            if effective_current
             else ["upgrade", "uninstall"],
         }
     if as_json:
@@ -380,11 +430,9 @@ def install(repo: Path, check_trellis: bool = True) -> int:
     repo = _require_repo(repo, check_trellis)
     state = _load_state(repo, missing_ok=True)
     if state is not None:
-        _require_clean_state(repo, state)
         if state["policy_version"] != POLICY_VERSION:
             raise PolicyError("仓库已安装旧版增强，请选择升级")
-        print(f"[完成] 已安装策略 {POLICY_VERSION}，无需重复写入")
-        return audit(repo, check_trellis=False)
+        return upgrade(repo, check_trellis=False)
 
     expected = build_expected(repo)
     paths = set(expected)
@@ -427,7 +475,6 @@ def audit(repo: Path, check_trellis: bool = True) -> int:
     repo = _require_repo(repo, check_trellis)
     state = _load_state(repo)
     assert state is not None
-    _require_clean_state(repo, state)
     if state["policy_version"] != POLICY_VERSION:
         raise PolicyError(
             f"策略版本需要升级：已安装 {state['policy_version']}，当前 {POLICY_VERSION}"
@@ -445,9 +492,7 @@ def upgrade(repo: Path, check_trellis: bool = True) -> int:
     repo = _require_repo(repo, check_trellis)
     state = _load_state(repo)
     assert state is not None
-    _require_clean_state(repo, state)
     expected = build_expected(repo, state)
-    # ponytail: 固定受管路径可保证首次基线可恢复；扩大范围时添加显式迁移。
     if set(expected) != set(state["managed_hashes"]):
         raise PolicyError("新版本改变了受管文件范围，需要显式迁移，不能自动升级")
     changed = _changes(repo, expected)

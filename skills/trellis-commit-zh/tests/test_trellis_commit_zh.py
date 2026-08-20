@@ -27,35 +27,71 @@ SPEC.loader.exec_module(policy)
 
 class PolicyTests(unittest.TestCase):
     def make_repo(self, root: Path) -> Path:
-        anchors: dict[str, list[str]] = {}
-        for relative, old, _ in policy.EDITS:
-            if isinstance(old, tuple):
-                old = old[0]
-            anchors.setdefault(relative, []).append(old)
-        for relative, values in anchors.items():
+        files = {
+            ".trellis/config.yaml": (
+                "# Commit message used when auto-committing journal/index changes\n"
+                'session_commit_message: "chore: record journal"\n'
+            ),
+            ".trellis/spec/guides/index.md": (
+                "- [Testing](../testing/index.md): trusted test style and verification commands.\n\n"
+                "| Guide | Purpose | When |\n"
+                "| --- | --- | --- |\n"
+                "| [Cross-Layer Thinking Guide](./cross-layer-thinking-guide.md) | Think through data flow across layers | Features spanning multiple layers |\n"
+            ),
+            ".trellis/scripts/add_session.py": (
+                "from common.types import TaskInfo\n"
+                "from common.config import (\n"
+                "    get_session_auto_commit,\n"
+                "    get_session_commit_message,\n"
+                ")\n\n"
+                "def _auto_commit_workspace(repo_root):\n"
+                "    commit_msg = get_session_commit_message(repo_root)\n"
+                "    return commit_msg\n"
+            ),
+            ".trellis/scripts/common/task_store.py": (
+                "from .git import branch_exists_locally, resolve_default_branch, run_git\n\n"
+                "def _auto_commit_archive(task_name, repo_root):\n"
+                "    commit_msg = f\"chore(task): archive {task_name}\"\n"
+                "    rc, _, err = run_git([\"commit\", \"-m\", commit_msg], cwd=repo_root)\n"
+                "    return rc, err\n"
+            ),
+            ".trellis/workflow.md": (
+                "#### 3.4 Commit changes `[required · once]`\n\n"
+                "**Spec-sync preamble**: before drafting commits, ask whether specs need updates.\n\n"
+                "The AI drives a batched commit of this task's code changes so `/finish-work` can run cleanly afterwards. Goal: produce work commits FIRST, then bookkeeping (archive + journal) commits land after — never interleaved.\n\n"
+                "**Step-by-step**:\n\n"
+                "1. **Inspect dirty state**:\n"
+                "   ```bash\n"
+                "   git status --porcelain\n"
+                "   ```\n"
+                "   Snapshot every dirty path. If the working tree is clean, skip to 3.5.\n\n"
+                "2. **Learn commit style** from recent history (so drafted messages blend in):\n"
+                "   ```bash\n"
+                "   git log --oneline -5\n"
+                "   ```\n"
+                "   Note the prefix convention (`feat:` / `fix:` / `chore:` / `docs:` ...), language (中文/English), and length style.\n\n"
+                "3. **Classify dirty files into two groups**:\n"
+                "   - **AI-edited this session** — files you wrote/edited via Edit/Write/Bash tool calls in this session. You know what changed and why.\n"
+                "   - **Unrecognized** — dirty files you did NOT touch this session.\n\n"
+                "4. **Draft a commit plan**. Group AI-edited files into logical commits.\n\n"
+                "5. **Present the plan once, ask for one-shot confirmation**.\n\n"
+                "6. **On confirmation**: run `git add <files>` + `git commit -m \"<msg>\"` for each batch in order. Do not amend. Do not push.\n\n"
+                "7. **On rejection**: stop.\n\n"
+                "**Rules**:\n"
+                "- No `git commit --amend` anywhere — three-stage three-commit flow (work commits → archive commit → journal commit).\n"
+                "- Never push to remote in this step.\n"
+                "- The batched plan is one prompt; do not prompt per commit.\n\n"
+                "#### 3.5 Wrap-up reminder\n"
+            ),
+        }
+        for relative, content in files.items():
             path = root / relative
             path.parent.mkdir(parents=True, exist_ok=True)
-            if relative.endswith("add_session.py"):
-                content = (
-                    values[0]
-                    + "\n    get_session_commit_message,\n)\n\ndef example():\n"
-                    + values[1]
-                    + "\n    pass\n"
-                )
-            elif relative.endswith("task_store.py"):
-                content = (
-                    values[0]
-                    + "\n\ndef example(task_name, run_git, repo_root):\n"
-                    + values[1]
-                    + "\n"
-                )
-            else:
-                content = "\n".join(values) + "\n"
             path.write_text(content, encoding="utf-8", newline="\n")
         return root
 
     def existing_managed(self, repo: Path) -> dict[str, bytes]:
-        paths = {relative for relative, _, _ in policy.EDITS}
+        paths = set(policy.TRANSFORMED_FILES)
         return {relative: (repo / relative).read_bytes() for relative in paths}
 
     def test_install_is_idempotent_and_uninstall_restores_baseline(self) -> None:
@@ -66,7 +102,7 @@ class PolicyTests(unittest.TestCase):
             self.assertEqual(policy.install(repo, check_trellis=False), 0)
             self.assertEqual(policy.install(repo, check_trellis=False), 0)
             state = json.loads((repo / policy.STATE_FILE).read_text(encoding="utf-8"))
-            self.assertEqual(state["policy_version"], "1.0.0")
+            self.assertEqual(state["policy_version"], policy.POLICY_VERSION)
             self.assertNotIn("trellis_version", state)
 
             out = io.StringIO()
@@ -99,6 +135,31 @@ class PolicyTests(unittest.TestCase):
             upgraded = json.loads(state_path.read_text(encoding="utf-8"))
             self.assertEqual(upgraded["policy_version"], policy.POLICY_VERSION)
             self.assertEqual(upgraded["original_hashes"], baseline_hashes)
+
+    def test_upgrade_reapplies_after_trellis_updates_managed_files(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = self.make_repo(Path(directory))
+            policy.install(repo, check_trellis=False)
+            repo = self.make_repo(repo)
+
+            out = io.StringIO()
+            with redirect_stdout(out):
+                self.assertEqual(policy.status(repo, True, check_trellis=False), 0)
+            self.assertEqual(json.loads(out.getvalue())["status"], "outdated")
+
+            self.assertEqual(policy.upgrade(repo, check_trellis=False), 0)
+            self.assertIn(
+                'session_commit_message: "chore(trellis): 记录会话日志"',
+                (repo / ".trellis/config.yaml").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                'commit_msg = f"chore(task): 归档任务 {task_name}"',
+                (repo / ".trellis/scripts/common/task_store.py").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "`<type>(<scope>): <中文描述>`",
+                (repo / ".trellis/workflow.md").read_text(encoding="utf-8"),
+            )
 
     def test_conflict_stops_uninstall(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

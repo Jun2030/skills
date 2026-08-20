@@ -26,7 +26,7 @@ description: 在 Codex 中显式管理当前仓库的 Trellis 中文提交规范
 1. 运行 `npx skills list -g`，确认用户级安装中存在 `trellis-commit-zh`。若不存在，报告当前为开发或非用户级副本，停止在线升级。
 2. 运行 `npx skills update trellis-commit-zh -g -y`并保留输出。
 3. 更新失败时用中文报告失败，不修改仓库策略。
-4. 更新成功后，从更新后的 Skill 目录重新解析 `scripts/trellis_commit_zh.py`，运行 `upgrade` 和 `audit`。
+4. 更新成功后，从更新后的 Skill 目录重新解析 `scripts/trellis_commit_zh.py`，运行 `upgrade` 和 `audit`。`upgrade` 会基于当前 Trellis 文件重新应用中文提交消息增强；Trellis 自身更新覆盖过受管文件时，不因旧写入哈希不同而停止。
 5. 根据 `skills update` 的实际输出，用中文区分“已经是最新版本”和“Skill 更新成功”。
 
 ## 卸载
@@ -40,6 +40,7 @@ description: 在 Codex 中显式管理当前仓库的 Trellis 中文提交规范
 ## 边界
 
 - 只通过 `trellis --version` 的退出状态确认 Trellis 可执行，不解析或限制版本。
+- 不绑定 Trellis 固定版本或固定文件哈希；以当前文件中的稳定提交消息语义锚点生成中文增强。
 - 保留现有工作树；不暂存、不提交、不推送，也不自动安装 Trellis。
 - 使用 [references/commit-message.md](references/commit-message.md) 作为提交消息规则的唯一说明。
 - 所有操作结果和用户提示使用简体中文。
