@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simple HTML Report"
+  short_description: "同款技能汇报风格 HTML"
+  default_prompt: "使用 $simple-html-report 把这份材料做成 story-estimator 同款风格的 PC HTML 汇报。"

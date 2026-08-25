@@ -4,6 +4,7 @@
 
 | Skill | 用途 | 类型 |
 |---|---|---|
+| [`simple-html-report`](skills/simple-html-report/) | 生成 story-estimator 同款主题风格的 PC 静态 HTML 汇报 | Portable Skill |
 | [`trellis-commit-zh`](skills/trellis-commit-zh/) | 安装、升级、验证或安全卸载 Trellis 中文提交消息增强 | Platform-Specific Skill |
 
 ## Skill 基本操作
@@ -32,6 +33,22 @@ npx skills add Jun2030/skills --skill '*'
 **更新指定 Skill：**
 ```powershell
 npx skills@latest update trellis-commit-zh -g -y
+```
+
+## `simple-html-report`
+
+把材料整理成与 `story-estimator-20260529.html` 同系的 PC 静态 HTML 汇报：全屏 deck、蓝青绿琥珀配色、企业云盘工作台气质、卡片式 UI、进度条、键盘翻页和克制动画。
+
+安装：
+
+```powershell
+npx skills add Jun2030/skills@simple-html-report -g
+```
+
+调用：
+
+```text
+$simple-html-report
 ```
 
 ## `trellis-commit-zh`
