@@ -1,0 +1,17 @@
+[
+  {
+    "id": "happy-path-briefing",
+    "prompt": "$simple-html-report 用一个自定义主题生成 6-8 页 PC HTML 汇报，主题是“AI 项目风险巡检工作台”，要求能直接打开浏览，风格贴近 story-estimator 报告。",
+    "expected": "生成单文件 HTML；包含封面、问题、工作机制、场景、操作、机制图和总结；保持蓝/青/绿/橙企业云工作台风格；无 CDN；通过 1536x790 和 1920x990 检查。"
+  },
+  {
+    "id": "complex-flow-diagram",
+    "prompt": "$simple-html-report 把“需求输入、AI 证据抽取、人工确认、风险分层、上线闸口、灰度发布、复盘沉淀”做成一页机制链路清楚的 HTML 汇报，不要流程卡片重叠。",
+    "expected": "机制页使用显式网格或泳道；5-9 个主要节点；连接线不穿过文字；决策分支清楚；浏览器检查 flow-node overlap 为 0。"
+  },
+  {
+    "id": "typography-stress",
+    "prompt": "$simple-html-report 生成一份中文汇报，封面标题和最后总结句都比较长。标题不要巨大换行，最后页总结不要变成逐词断行，翻页按钮图标要居中。",
+    "expected": "封面标题比例克制；无强制中文 H1 换行；takeaway 使用自然文本流和 1-3 行可读排版；内联强调不制造断点；翻页按钮用居中的 inline SVG。"
+  }
+]

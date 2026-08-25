@@ -42,6 +42,18 @@ Prefer 6-8 slides. Keep the same rhythm as the source report; rename content to 
 
 Skip a slide only when the source material truly lacks that content. Do not add visible slides about audience, viewport, design spec, implementation plan, or "how this HTML was made".
 
+## Execution Workflow
+
+Follow this order for every report:
+
+1. Extract the brief into `topic`, `audience`, `source facts`, `must-show mechanisms`, and `unknowns`. Output is a private slide outline, not visible report copy.
+2. Choose 6-8 slides from the Required Slide Patterns. Output is a one-line purpose for each slide and the content each slide must prove.
+3. Draft all visible copy before writing HTML. Keep every heading, card body, metric, and quote within the Design Quality Gate.
+4. Build one standalone HTML file with inline CSS, inline SVG, and vanilla JS. Reuse the Style DNA tokens instead of inventing a new theme.
+5. Browser-check the file at `1536x790` and `1920x990`. Inspect every slide, not only the cover.
+6. Fix layout failures in the HTML, then rerun the same browser checks until overflow, broken navigation, and flow-node overlap are gone.
+7. Final response must include the output file path, the validation commands run, and any verification that could not be completed.
+
 ## Design Quality Gate
 
 Use these as hard checks before finalizing a report:
@@ -59,6 +71,18 @@ Use these as hard checks before finalizing a report:
 - Use a consistent radius, shadow, border, and label system across the deck. Do not mix pill-heavy controls with square cards unless the role difference is clear.
 - Every slide should have one visual job. If two slides use the same 4-card grid rhythm back-to-back, vary one of them with a timeline, split board, mechanism diagram, or summary stack.
 - Run a copy self-audit: remove AI-ish filler verbs, fake-perfect numbers, decorative status dots, em dashes, and meta labels that do not help the report topic.
+
+## Failure Recovery
+
+| Trigger | First fix | If still failing |
+|---|---|---|
+| Cover title wraps awkwardly or dominates the page | Reduce H1 scale and remove forced `<br>` | Shorten the title or move detail into subtitle/lede |
+| Quote/takeaway text breaks word-by-word | Use normal block text flow, remove decorative spaces around inline emphasis, reduce type scale | Split the message into one quote plus summary cards |
+| Navigation or step icons look off-center | Replace text glyphs with inline SVG in a fixed `viewBox` and center with `place-items: center` | Tune the SVG viewBox or path, then recheck screenshots |
+| Flow cards overlap or connectors cross text | Switch to explicit CSS grid or lanes with reserved connector paths | Reduce node count by grouping into phases |
+| Any slide overflows at `1536x790` or `1920x990` | Reduce copy, tighten card padding, or change the layout rhythm | Split the slide into two slides rather than shrinking everything |
+| Browser automation is unavailable | Do a manual visual pass in a browser and report that automated checks were not run | Do not claim layout verification passed |
+| User asks to publish or place the report outside the current workspace | Stop and confirm target directory/environment | Proceed only after the target is explicit |
 
 ## Animation Contract
 
@@ -101,6 +125,13 @@ Include:
 - Direct-open compatibility and static-hosting compatibility.
 
 When working in `D:\JunRepos\share`, place reports under `projects/` using repo naming rules, then run `npm run generate` and the smallest relevant check. Do not use `--initialize-times` without explicit confirmation.
+
+## STOP Checkpoints
+
+- 🔴 STOP before adding external assets, CDN scripts, remote fonts, chart libraries, or icon libraries. Continue only if the user explicitly approves that dependency/source.
+- 🔴 STOP before changing the target from PC-only `1536x790`/`1920x990` to mobile or responsive delivery. That is a different artifact contract.
+- 🔴 STOP before publishing, copying into a share site, deploying, or modifying a manifest. Confirm the target path and environment first.
+- 🔴 STOP if source facts are too thin to support the requested report. Ask for source material or label mock content clearly in the private workflow; do not invent fake project evidence.
 
 ## Verification
 
