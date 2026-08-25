@@ -17,9 +17,12 @@ Use these concrete defaults unless the user explicitly overrides them:
 - Palette: `#053b82`, `#064caa`, `#0a64d8`, `#1377ef`, `#0ea5c6`, `#178f73`, `#dc7a11`, `#c8443d`, ink `#0c1424/#22314a/#5d6d85`, paper `#fbfcff/#f1f6fc/#e9f2ff`.
 - Shadows/radius: soft blue shadow `0 24px 70px rgba(26,63,112,.15)`, smaller shadow `0 14px 40px rgba(26,63,112,.10)`, card radius around `22px`.
 - Typography: system sans with Chinese fonts; very heavy headings; letter spacing `0` for real headings; compact uppercase kicker labels are allowed.
+- Cover title: it does not have to be huge and does not have to wrap. Treat the cover as an enterprise briefing deck, not a poster. Prefer a single-line or compact two-line technical title that balances with the subtitle, lede, quote, and floating metric panel. For Chinese titles, start around `clamp(46px, 4.8vw, 82px)`; only exceed ~96px for very short English/product-name titles that still fit the page rhythm. Never force `<br>` in a Chinese H1 just to mimic the source English split.
 - Topline: left brand label with vertical gradient mark, right blue page pill like `01 / 08`.
 - Cards: translucent white, thin blue border, soft shadow, 4px gradient stripe at top.
-- Hero: oversized title with blue emphasized word, subtitle, lede, amber quote block, and a floating-card metric cluster.
+- Hero: prominent but proportionate title with one blue emphasis segment, subtitle, lede, amber quote block, and a floating-card metric cluster.
+- Icon alignment: do not rely on text glyphs such as `→`, `✓`, `‹`, `›`, or single emoji as centered icons inside circles/cards/navigation buttons. Use inline SVG icons with a fixed `viewBox`, centered via `display: grid; place-items: center`, and verify the visual center at both `1536x790` and `1920x990`. If a text glyph is unavoidable, tune it with explicit `line-height: 1`, block sizing, and a small transform after screenshot inspection.
+- Flow diagrams: prefer an explicit grid or lane layout with non-overlapping cards and short connectors. Keep main nodes evenly spaced, reserve a separate decision lane, and avoid large free-floating absolute-position clusters unless the topic specifically needs them.
 - Diagram slide: white flow board with grid, SVG paths, small labeled nodes, green/blue AI/system badges and amber human-gate badges.
 
 The report should feel like a technical skill briefing inside an enterprise cloud workspace. It should not become a marketing landing page, magazine article, beige consulting memo, dark dashboard, or generic Tailwind card page.
@@ -35,9 +38,27 @@ Prefer 6-8 slides. Keep the same rhythm as the source report; rename content to 
 5. Usage or operation: timeline on the left, command/code panel on the right.
 6. Optional enhancement/depth: two large tool/risk/integration cards.
 7. Mechanism: custom SVG process/decision diagram, not a generic flowchart.
-8. Takeaway: large amber quote block plus three summary cards.
+8. Takeaway: proportionate amber takeaway block plus three summary cards.
 
 Skip a slide only when the source material truly lacks that content. Do not add visible slides about audience, viewport, design spec, implementation plan, or "how this HTML was made".
+
+## Design Quality Gate
+
+Use these as hard checks before finalizing a report:
+
+- Treat this as an enterprise briefing deck, not a marketing landing page. Borrow only the useful parts of general frontend taste rules: hierarchy, density, rhythm, contrast, and visual restraint.
+- Headings must read naturally before they look dramatic. Avoid formulaic prefixes on every slide such as "它解决什么问题：", "它怎么工作：", or repeated "一句话..."; use concise domain headings when possible.
+- Keep visible copy tight: cover subtitle around one line, cover lede about 40-70 Chinese characters, slide ledes about 20-45 Chinese characters, card body text 1-2 short lines, quote/takeaway blocks usually 1-3 readable lines. Never make long Chinese takeaway text huge just to fill the card, and never force line breaks unless the phrase reads naturally.
+- Takeaway slides should feel like a closing briefing, not a poster. If the sentence is long, reduce type scale or split it into emphasis spans/cards; do not create awkward word-by-word wrapping.
+- For Chinese inline emphasis, do not add decorative spaces around `<em>`/`strong` spans. Those spaces become bad line-break points and can orphan punctuation.
+- Do not use `display: flex` or `display: grid` directly on quote text that contains inline `<em>`/`strong`; it can turn text runs into separate flex/grid items and break Chinese sentences. Use normal block text flow with padding/line-height for vertical rhythm.
+- Use at most one slide-level kicker. Card badges, tags, and layer chips must carry real categorization; do not add badges just to decorate. Scenario cards usually need at most 2-3 tags each.
+- Metric panels and bars must either map to real values or be abstract enough to avoid fake precision. Do not add unlabeled dashboard-style progress tracks as decorative filler.
+- Keep mechanism diagrams legible: usually 5-9 main nodes, no overlapping cards, no connector lines running through node text, and no more than one decision split. If the process is larger, group nodes into lanes or phases instead of adding more cards.
+- Prefer CSS classes over inline `style` attributes so the visual system stays reusable and auditable.
+- Use a consistent radius, shadow, border, and label system across the deck. Do not mix pill-heavy controls with square cards unless the role difference is clear.
+- Every slide should have one visual job. If two slides use the same 4-card grid rhythm back-to-back, vary one of them with a timeline, split board, mechanism diagram, or summary stack.
+- Run a copy self-audit: remove AI-ish filler verbs, fake-perfect numbers, decorative status dots, em dashes, and meta labels that do not help the report topic.
 
 ## Animation Contract
 
@@ -86,8 +107,11 @@ When working in `D:\JunRepos\share`, place reports under `projects/` using repo 
 Before final response, check:
 
 - The artifact has no external CDN URL.
-- The first screen is actual report content.
-- The output visually targets `1536x790` and `1920x990`.
+- The first screen is actual report content and the cover title is proportionate to the right-side metric panel.
+- The output visually targets `1536x790` and `1920x990`; check every slide at both viewports, not just the cover.
 - Visible text contains no production/meta requirements.
 - The mechanism diagram is topic-specific.
 - Animation has a readable static fallback.
+- Browser-check keyboard navigation, notes toggle, progress update, and hash deep links.
+- Check visual centering of navigation/button icons, especially chevrons.
+- Run a mechanical layout audit for overflow and obvious card/card intersections. Flow diagrams must have zero overlapping node cards at both target viewports.
