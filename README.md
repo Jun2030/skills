@@ -5,6 +5,7 @@
 | Skill | 用途 | 类型 |
 |---|---|---|
 | [`simple-html-report`](skills/simple-html-report/) | 生成 story-estimator 同款主题风格的 PC 静态 HTML 汇报 | Portable Skill |
+| [`task-closeout`](skills/task-closeout/) | 复查刚完成的工作，修正遗漏并验证收尾状态 | Portable Skill |
 | [`trellis-commit-zh`](skills/trellis-commit-zh/) | 安装、升级、验证或安全卸载 Trellis 中文提交消息增强 | Platform-Specific Skill |
 
 ## Skill 基本操作
@@ -49,6 +50,22 @@ npx skills add Jun2030/skills@simple-html-report -g
 
 ```text
 $simple-html-report
+```
+
+## `task-closeout`
+
+显式复查当前会话刚完成的工作：核对原始要求与实际变更，处理授权范围内的遗漏，执行相关验证，并报告剩余风险和待确认事项。
+
+安装：
+
+```powershell
+npx skills add Jun2030/skills@task-closeout -g
+```
+
+调用：
+
+```text
+$task-closeout
 ```
 
 ## `trellis-commit-zh`
