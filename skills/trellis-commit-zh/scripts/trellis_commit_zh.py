@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 
-POLICY_VERSION = "1.1.0"
+POLICY_VERSION = "1.2.0"
 STATE_SCHEMA = 1
 ROOT = Path(__file__).resolve().parent.parent
 OVERLAYS = ROOT / "assets" / "overlays"
@@ -147,12 +147,13 @@ def _replace_once(
     return updated
 
 
-def _insert_before(content: str, marker: str, insert: str, relative: str) -> str:
-    if insert.strip() in content:
+def _ensure_python_import(content: str, import_line: str, relative: str) -> str:
+    if re.search(rf"(?m)^{re.escape(import_line)}\s*$", content):
         return content
-    if marker not in content:
-        raise PolicyError(f"Trellis 文件结构不兼容，无法定位唯一修改点：{relative}")
-    return content.replace(marker, insert + marker, 1)
+    marker = re.search(r"(?m)^from (?:common\.|\.)", content)
+    if not marker:
+        raise PolicyError(f"Trellis 文件结构不兼容，无法定位 Python 导入区：{relative}")
+    return content[: marker.start()] + import_line + "\n" + content[marker.start() :]
 
 
 def _ensure_after_assignment(content: str, assignment: str, relative: str) -> str:
@@ -173,7 +174,7 @@ def _ensure_after_assignment(content: str, assignment: str, relative: str) -> st
 def _transform_config(content: str, relative: str) -> str:
     return _replace_once(
         content,
-        r"(?m)^session_commit_message:\s*[\"'][^\"']*record journal[^\"']*[\"']\s*$",
+        r"(?m)^session_commit_message:\s*[\"'][^\"']*[\"']\s*$",
         'session_commit_message: "chore(trellis): 记录会话日志"',
         relative,
         already=r"(?m)^session_commit_message:\s*[\"'][^\"']*记录会话日志[^\"']*[\"']\s*$",
@@ -205,11 +206,8 @@ def _transform_index(content: str, relative: str) -> str:
 
 
 def _transform_add_session(content: str, relative: str) -> str:
-    content = _insert_before(
-        content,
-        "from common.config import (",
-        "from common.commit_message import validate_commit_message\n",
-        relative,
+    content = _ensure_python_import(
+        content, "from common.commit_message import validate_commit_message", relative
     )
     return _ensure_after_assignment(
         content, "commit_msg = get_session_commit_message(repo_root)", relative
@@ -217,19 +215,15 @@ def _transform_add_session(content: str, relative: str) -> str:
 
 
 def _transform_task_store(content: str, relative: str) -> str:
-    content = _insert_before(
-        content,
-        "from .git import branch_exists_locally, resolve_default_branch, run_git",
-        "from .commit_message import validate_commit_message\n",
-        relative,
+    content = _ensure_python_import(
+        content, "from .commit_message import validate_commit_message", relative
     )
-    content = _replace_once(
-        content,
-        r"(?m)^(?P<indent>\s*)commit_msg = f[\"']chore\(task\): archive \{task_name\}[\"']\s*$",
-        '\\g<indent>commit_msg = f"chore(task): 归档任务 {task_name}"',
-        relative,
-        already=r"(?m)^\s*commit_msg = f[\"']chore\(task\): 归档任务 \{task_name\}[\"']\s*$",
-    )
+    english = "chore(task): archive {task_name}"
+    chinese = "chore(task): 归档任务 {task_name}"
+    if english in content:
+        content = content.replace(english, chinese)
+    elif chinese not in content:
+        raise PolicyError(f"Trellis 文件结构不兼容，无法定位任务归档提交消息：{relative}")
     return _ensure_after_assignment(
         content, 'commit_msg = f"chore(task): 归档任务 {task_name}"', relative
     )

@@ -49,10 +49,16 @@ class PolicyTests(unittest.TestCase):
                 "    return commit_msg\n"
             ),
             ".trellis/scripts/common/task_store.py": (
-                "from .git import branch_exists_locally, resolve_default_branch, run_git\n\n"
+                "from .config import get_session_auto_commit\n"
+                "from .git import (\n"
+                "    branch_exists_locally,\n"
+                "    resolve_default_branch,\n"
+                "    run_git,\n"
+                ")\n\n"
                 "def _auto_commit_archive(task_name, repo_root):\n"
                 "    commit_msg = f\"chore(task): archive {task_name}\"\n"
                 "    rc, _, err = run_git([\"commit\", \"-m\", commit_msg], cwd=repo_root)\n"
+                "    print(f'git commit -m \"chore(task): archive {task_name}\"')\n"
                 "    return rc, err\n"
             ),
             ".trellis/workflow.md": (
@@ -154,6 +160,10 @@ class PolicyTests(unittest.TestCase):
             )
             self.assertIn(
                 'commit_msg = f"chore(task): 归档任务 {task_name}"',
+                (repo / ".trellis/scripts/common/task_store.py").read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                "chore(task): archive",
                 (repo / ".trellis/scripts/common/task_store.py").read_text(encoding="utf-8"),
             )
             self.assertIn(

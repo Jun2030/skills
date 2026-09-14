@@ -1,7 +1,7 @@
 interface:
   display_name: "Trellis-commit-zh"
-  short_description: "Trellis 中文提交规范增强"
-  default_prompt: "使用 $trellis-commit-zh 检查当前仓库，并显示可执行的安装、升级或卸载操作。"
+  short_description: "提交标准化中文 Conventional Commit"
+  default_prompt: "使用 $trellis-commit-zh 将当前任务的改动提交为标准化中文 Conventional Commit。"
 
 policy:
   allow_implicit_invocation: false

@@ -6,7 +6,7 @@
 |---|---|---|
 | [`simple-html-report`](skills/simple-html-report/) | 生成 story-estimator 同款主题风格的 PC 静态 HTML 汇报 | Portable Skill |
 | [`task-closeout`](skills/task-closeout/) | 复查刚完成的工作，修正遗漏并验证收尾状态 | Portable Skill |
-| [`trellis-commit-zh`](skills/trellis-commit-zh/) | 安装、升级、验证或安全卸载 Trellis 中文提交消息增强 | Platform-Specific Skill |
+| [`trellis-commit-zh`](skills/trellis-commit-zh/) | 提交标准化中文 Conventional Commit，并维护 Trellis 仓库增强 | Platform-Specific Skill |
 
 ## Skill 基本操作
 
@@ -70,7 +70,7 @@ $task-closeout
 
 ## `trellis-commit-zh`
 
-为已初始化的 Trellis 仓库管理中文提交消息规范增强的完整生命周期。Codex 会识别仓库状态，只提供当前可执行的安装、升级、重新验证或卸载操作，并在能够证明安全时恢复首次安装前的实际状态。
+默认将当前任务的明确改动提交为标准化中文 Conventional Commit，直接使用 Skill 自带规范和校验器，不受 Trellis 升级或仓库增强状态影响。显式要求时也可安装、升级、审计或安全卸载仓库增强。
 
 安装：
 
@@ -83,8 +83,6 @@ npx skills add Jun2030/skills@trellis-commit-zh -g
 ```text
 $trellis-commit-zh
 ```
-
-![trellis-commit-zh 运行流程](skills/trellis-commit-zh/assets/trellis-commit-zh-flow.svg)
 
 ## 仓库约定
 

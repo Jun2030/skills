@@ -6,7 +6,10 @@ from __future__ import annotations
 import argparse
 import sys
 
-from common.commit_message import validate_commit_message
+try:
+    from common.commit_message import validate_commit_message
+except ModuleNotFoundError:
+    from commit_message import validate_commit_message
 
 
 def main() -> int:
