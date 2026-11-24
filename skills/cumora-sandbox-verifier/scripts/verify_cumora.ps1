@@ -116,12 +116,15 @@ if ($startMatch) {
     try { [DateTimeOffset]::Parse(([string]$_.Line).Substring(0, 24)) -ge $startTime } catch { $false }
   } | Select-Object -Last 1)
 }
-$badLog = Select-String -Path $logFiles -Pattern '(?i)401\s+invalid or revoked device token|engine snapshot report failed|workspace.*mismatch' | Where-Object {
-  if (-not $startMatch) { return $false }
-  try { [DateTimeOffset]::Parse(([string]$_.Line).Substring(0, 24)) -ge $startTime } catch { $false }
-} | Select-Object -Last 1
+$badLog = $null
+if ($logFiles.Count -gt 0) {
+  $badLog = Select-String -Path $logFiles -Pattern '(?i)401\s+invalid or revoked device token|engine snapshot report failed|workspace.*mismatch' | Where-Object {
+    if (-not $startMatch) { return $false }
+    try { [DateTimeOffset]::Parse(([string]$_.Line).Substring(0, 24)) -ge $startTime } catch { $false }
+  } | Select-Object -Last 1
+}
 $logOk = $startOk -and $connectedOk -and (-not $badLog)
-$logDetails = if ($logOk) { 'current computer startup is present and control-stream is connected; engine list is informational unless RequiredEngines was supplied' } else { @($startOk, $connectedOk, [bool]$badLog) -join ', ' }
+$logDetails = if ($logOk) { 'current computer startup is present and control-stream is connected (server connectivity evidence); engine list is informational unless RequiredEngines was supplied' } else { @($startOk, $connectedOk, [bool]$badLog) -join ', ' }
 $checks += New-Check 'daemon-log' $logOk $logDetails
 
 $hostsPath = Join-Path $env:WINDIR 'System32\drivers\etc\hosts'
@@ -130,17 +133,10 @@ try { Get-Content -LiteralPath $hostsPath -TotalCount 1 -ErrorAction Stop | Out-
 $hostReadDetails = if ($hostReadOk) { 'read probe passed in verifier process; this is not by itself proof of daemon-mediated access' } else { 'hosts file read probe failed' }
 $checks += New-Check 'host-file-read' $hostReadOk $hostReadDetails
 
-$networkOk = $false
-try {
-  if ($computer.serverUrl) {
-    $response = Invoke-WebRequest -Uri ([string]$computer.serverUrl) -Method Head -UseBasicParsing -TimeoutSec 8 -ErrorAction Stop
-    $networkOk = ($response.StatusCode -ge 200 -and $response.StatusCode -lt 500)
-  }
-} catch {
-  $networkOk = $false
-}
-$networkDetails = if ($networkOk) { 'server URL reachable from verifier process' } else { 'server URL probe failed' }
-$checks += New-Check 'network' $networkOk $networkDetails
+# Server connectivity is evidenced by the current startup's
+# "control-stream connected" line in $logOk above. Do not add a verifier-side
+# HTTP probe here: HEAD/GET against serverUrl can be blocked by auth, 405,
+# proxies or TLS settings and would produce false negatives for a healthy daemon.
 
 $verified = (($checks | Where-Object { -not $_.ok }).Count -eq 0)
 $result = [pscustomobject]@{

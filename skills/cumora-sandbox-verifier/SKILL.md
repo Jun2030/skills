@@ -1,6 +1,6 @@
 ---
 name: cumora-sandbox-verifier
-description: Windows Cumora 本地 agent 发现、沙盒诊断、修复和验收。用户提到 Cumora 沙盒、BYOA、daemon-supervisor、CUMORA_BYOA_ALLOW_UNSANDBOXED、切换 workplace 后能力变化或本地文件/网络访问时使用。先发现 daemon PATH 中实际存在的 agent CLI；agent 是否安装只作信息，除非用户明确指定必需引擎，否则不把 Claude、Codex、OpenCode 或其他工具当成固定前置条件。只有用户明确授权放宽本地引擎沙盒后才修改 supervisor 或创建 shim，并在重启后验证 supervisor、daemon、workspace、日志以及本地文件/网络探针。只有全部沙盒检查通过才输出 VERIFIED，否则输出 NOT VERIFIED。不要打印 device token、API key、环境凭证或完整环境变量。
+description: Windows Cumora 本地 agent 发现、沙盒诊断、修复和验收。用户提到 Cumora 沙盒、BYOA、daemon-supervisor、CUMORA_BYOA_ALLOW_UNSANDBOXED、切换 workplace 后能力变化或本地文件/网络访问时使用。先发现 daemon PATH 中实际存在的 agent CLI；agent 是否安装只作信息，除非用户明确指定必需引擎，否则不把 Claude、Codex、OpenCode 或其他工具当成固定前置条件。只有用户明确授权放宽本地引擎沙盒后才修改 supervisor 或创建 shim，并在重启后验证 supervisor、daemon、workspace、日志与本地文件读取探针，以 daemon 控制流连接日志确认 server 连通。只有全部沙盒检查通过才输出 VERIFIED，否则输出 NOT VERIFIED。不要打印 device token、API key、环境凭证或完整环境变量。
 compatibility: Windows PowerShell 5.1+; Cumora desktop/daemon 0.18.x or compatible; requires local access to %USERPROFILE%\\.cumora
 ---
 
@@ -24,9 +24,9 @@ compatibility: Windows PowerShell 5.1+; Cumora desktop/daemon 0.18.x or compatib
    - 自动发现实际存在的 agent CLI；只有 `-RequiredEngines` 指定的工具才是必需项；没有安装 OpenCode 不得被当作沙盒失败；
    - supervisor 明确包含 `CUMORA_BYOA_ALLOW_UNSANDBOXED=1`；
    - `running.json` 的 daemon PID 仍存活，且没有无法解释的重复 Cumora daemon；
-   - `computer.json` 有当前 `computerId` 和 `serverUrl`；最新相关日志包含当前 computer 的 `starting ... (engines: claude, codex, opencode)` 与 `control-stream connected`；
+   - `computer.json` 有当前 `computerId` 和 `serverUrl`；最新相关日志包含当前 computer 的 `starting ... (engines: claude, codex, opencode)` 与 `control-stream connected`；`control-stream connected` 就是 server 连通性证据，不另设验证进程的 HTTP 网络探针；
    - 最近日志没有 `401 invalid or revoked device token`、`engine snapshot report failed` 等阻断错误；
-   - 主机文件读取探针和 server 网络探针通过。文件探针证明验证进程能访问主机文件；若要证明 Cumora agent 本身也能访问，必须让 Cumora agent 实际读取一个临时标记文件并把结果作为额外证据。凭证值本身不读取，只报告“继承路径已配置，凭证值未读取”。
+   - 主机文件读取探针通过。文件探针证明验证进程能访问主机文件；若要证明 Cumora agent 本身也能访问，必须让 Cumora agent 实际读取一个临时标记文件并把结果作为额外证据。不要对 `serverUrl` 做验证进程侧的 HEAD/GET 探针：认证要求、405、代理或 TLS 设置都会让它误报，而它测的也不是 daemon/agent。凭证值本身不读取，只报告“继承路径已配置，凭证值未读取”。
 6. 工作区或 server 发生变化时，清除旧结论，按当前 `computer.json`、`running.json` 和最新日志重新验收。
 
 ## 执行流程
@@ -59,7 +59,7 @@ VERIFIED
 引擎发现：<实际检测到的 CLI；可能为空>
 沙盒：CUMORA_BYOA_ALLOW_UNSANDBOXED=1 已由 supervisor 生效
 daemon：当前 PID 存活，workspace/server 与最新启动日志一致
-能力探针：主机文件读取通过；网络可达；凭证继承路径已配置（未读取凭证值）
+能力探针：主机文件读取通过；daemon 控制流已连接（server 连通证据）；凭证继承路径已配置（未读取凭证值）
 ```
 
 失败格式：

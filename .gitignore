@@ -17,5 +17,6 @@ __pycache__/
 .cursor/
 .scratch/
 .opencode
+.workbuddy/
 .artifacts/
 artifacts/

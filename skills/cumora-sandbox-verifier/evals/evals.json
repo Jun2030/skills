@@ -25,11 +25,12 @@
     {
       "id": 3,
       "prompt": "我明确授权 Cumora 为本地 Claude Code、Codex、OpenCode 启用 unsandboxed BYOA，并要求验证它们都能在当前 workspace 工作。",
-      "expected_output": "备份并幂等修改 daemon-supervisor.ps1，必要时创建 OpenCode shim，重启当前 daemon，检查三引擎版本、supervisor 开关、workspace/server、日志、主机文件读取和网络；全部通过才报告 VERIFIED。",
+      "expected_output": "备份并幂等修改 daemon-supervisor.ps1，必要时创建 OpenCode shim，重启当前 daemon，检查三引擎版本、supervisor 开关、workspace/server、日志（含 control-stream connected 作为 server 连通证据）和主机文件读取；不依赖验证进程对 serverUrl 的 HTTP 探针；全部通过才报告 VERIFIED。",
       "expectations": [
         "明确记录安全设置已由用户授权",
         "修复动作可逆且不删除 .cumora 数据",
         "重启后重新检测而不是复用旧结果",
+        "以 daemon 控制流连接日志作为 server 连通证据，不增加验证进程侧的 HTTP 网络探针",
         "失败时输出 NOT VERIFIED 和具体阻塞项"
       ]
     }
