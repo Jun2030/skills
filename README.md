@@ -4,6 +4,7 @@
 
 | Skill | 用途 | 类型 |
 |---|---|---|
+| [`cumora-sandbox-verifier`](skills/cumora-sandbox-verifier/) | 发现本地 agent CLI，诊断、修复并验收 Windows Cumora 沙盒与主机能力 | Platform-Specific Skill |
 | [`simple-html-report`](skills/simple-html-report/) | 生成 story-estimator 同款主题风格的 PC 静态 HTML 汇报 | Portable Skill |
 | [`task-closeout`](skills/task-closeout/) | 复查刚完成的工作，修正遗漏并验证收尾状态 | Portable Skill |
 | [`trellis-commit-zh`](skills/trellis-commit-zh/) | 提交标准化中文 Conventional Commit，并维护 Trellis 仓库增强 | Platform-Specific Skill |
@@ -34,6 +35,22 @@ npx skills add Jun2030/skills --skill '*'
 **更新指定 Skill：**
 ```powershell
 npx skills@latest update trellis-commit-zh -g -y
+```
+
+## `cumora-sandbox-verifier`
+
+面向 Windows Cumora 本地 agent 的发现、沙盒诊断、修复与验收闭环。默认只读诊断；只有在用户明确授权后才备份并幂等修改 `daemon-supervisor.ps1`、按需创建 OpenCode CLI shim、重启 daemon，并以 `scripts/verify_cumora.ps1` 的 `verified=true` 作为唯一成功依据，输出 `VERIFIED` 或 `NOT VERIFIED`。不会把未安装 Claude/Codex/OpenCode 误判为沙盒故障，也不会读取或输出设备令牌和凭证值。
+
+安装：
+
+```powershell
+npx skills add Jun2030/skills@cumora-sandbox-verifier -g
+```
+
+调用：
+
+```text
+$cumora-sandbox-verifier
 ```
 
 ## `simple-html-report`
