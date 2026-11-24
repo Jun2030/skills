@@ -39,7 +39,7 @@ npx skills@latest update trellis-commit-zh -g -y
 
 ## `cumora-sandbox-verifier`
 
-面向 Windows Cumora 本地 agent 的发现、沙盒诊断、修复与验收闭环。默认只读诊断；只有在用户明确授权后才备份并幂等修改 `daemon-supervisor.ps1`、按需创建 OpenCode CLI shim、重启 daemon，并以 `scripts/verify_cumora.ps1` 的 `verified=true` 作为唯一成功依据，输出 `VERIFIED` 或 `NOT VERIFIED`。不会把未安装 Claude/Codex/OpenCode 误判为沙盒故障，也不会读取或输出设备令牌和凭证值。
+面向 Windows Cumora 本地 agent 的发现、沙盒诊断、修复与验收闭环。默认只读诊断；只有在用户明确授权后才备份并幂等修改 `daemon-supervisor.ps1`、按需创建 OpenCode CLI shim、重启 daemon，并以 `scripts/verify_cumora.ps1` 的 `verified=true` 作为唯一成功依据，输出 `VERIFIED` 或 `NOT VERIFIED`。若用户进一步要求“任意 agent 读取本机所有目录并显示所有本地 agent CLI”，可显式接受高风险后运行 `scripts/enable_full_host_access.ps1 -IUnderstandHighRisk`，幂等移除 daemon 生成给 agent 的 persona/常驻提示词隐私边界，并用 `-FullHostAccess` 验收。不会把未安装 Claude/Codex/OpenCode 误判为沙盒故障，也不会读取或输出设备令牌和凭证值。
 
 安装：
 

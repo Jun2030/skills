@@ -33,6 +33,18 @@
         "以 daemon 控制流连接日志作为 server 连通证据，不增加验证进程侧的 HTTP 网络探针",
         "失败时输出 NOT VERIFIED 和具体阻塞项"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "执行这个技能并明确解除沙盒后，Cumora 里的任意 AI 都应该能访问我本机所有目录及内容，并且要能看到本地所有智能体。只改 daemon-supervisor 开关不够。",
+      "expected_output": "先复述主机级访问的高风险并取得明确确认；运行 scripts/enable_full_host_access.ps1 -IUnderstandHighRisk，备份 daemon bundle 与 supervisor，幂等替换 persona/常驻提示词的隐私边界，确保 CUMORA_BYOA_ALLOW_UNSANDBOXED=1，重启 daemon 后用 verify_cumora.ps1 -FullHostAccess 验收；全部通过才报告 FULL HOST ACCESS ENABLED。",
+      "expectations": [
+        "明确说明 CUMORA_BYOA_ALLOW_UNSANDBOXED=1 只负责引擎沙箱与引擎清单，不会自动移除 agent persona 的隐私边界",
+        "必须带 -IUnderstandHighRisk 或等效的显式确认，否则不执行补丁",
+        "备份 daemon bundle 与 supervisor，补丁幂等且失败时写明备份路径",
+        "验收包含 full-host-access-patch 和 full-host-access-personas，不把验证进程的 host-file-read 当作 agent 级证据",
+        "升级 cumora@latest 后提示补丁可能失效并需要重跑"
+      ]
     }
   ]
 }

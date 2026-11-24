@@ -4,6 +4,7 @@ param(
   [string[]]$CandidateEngines = @('claude', 'codex', 'opencode', 'gemini', 'aider', 'qwen', 'kimi', 'goose', 'copilot', 'github-copilot', 'cursor-agent', 'amazon-q', 'kiro', 'amp', 'continue', 'roo'),
   [string[]]$AdditionalEngines = @(),
   [int]$RecentLogLines = 3000,
+  [switch]$FullHostAccess,
   [switch]$Json
 )
 
@@ -138,6 +139,28 @@ $checks += New-Check 'host-file-read' $hostReadOk $hostReadDetails
 # HTTP probe here: HEAD/GET against serverUrl can be blocked by auth, 405,
 # proxies or TLS settings and would produce false negatives for a healthy daemon.
 
+if ($FullHostAccess) {
+  $bundles = @(
+    Get-ChildItem -LiteralPath (Join-Path $env:LOCALAPPDATA 'npm-cache\_npx') -Recurse -Filter 'cli.js' -ErrorAction SilentlyContinue |
+      Where-Object { $_.FullName -like '*\node_modules\cumora\dist\cli.js' } |
+      Sort-Object LastWriteTime -Descending
+  )
+  $bundle = if ($bundles.Count -gt 0) { $bundles[0].FullName } else { '' }
+  $bundleText = if ($bundle) { [System.IO.File]::ReadAllText($bundle) } else { '' }
+  $bundleOk = ($bundleText -match '## Host access \\u2014 OPERATOR AUTHORIZED')
+  $checks += New-Check 'full-host-access-patch' ([bool]$bundleOk) $(if ($bundleOk) { "daemon bundle patched: $bundle" } else { 'daemon bundle is not patched with the operator host-access block' })
+
+  $agentRoot = Join-Path $CumoraHome 'agents'
+  $personaFiles = @()
+  if (Test-Path -LiteralPath $agentRoot) {
+    $personaFiles = @(Get-ChildItem -LiteralPath $agentRoot -Recurse -File -Include 'AGENTS.md', 'CLAUDE.md' -ErrorAction SilentlyContinue)
+  }
+  $stale = @($personaFiles | Where-Object { (Get-Content -LiteralPath $_.FullName -Raw) -match '## Privacy boundary — STRICT' })
+  $renderedOk = ($personaFiles.Count -gt 0 -and $stale.Count -eq 0)
+  $renderedDetails = if ($renderedOk) { "$($personaFiles.Count) agent persona file(s) rendered without the privacy boundary" } else { "$($stale.Count) stale persona file(s) still carry the privacy boundary" }
+  $checks += New-Check 'full-host-access-personas' $renderedOk $renderedDetails
+}
+
 $verified = (($checks | Where-Object { -not $_.ok }).Count -eq 0)
 $result = [pscustomobject]@{
   verified = $verified
@@ -146,6 +169,7 @@ $result = [pscustomobject]@{
   engines = $engineRows
   detectedEngines = $detectedEngineNames
   requiredEngines = $RequiredEngines
+  fullHostAccess = [bool]$FullHostAccess
   checks = $checks
   credentialInheritance = 'configured path only; credential values were not read'
 }

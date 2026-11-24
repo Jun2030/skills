@@ -1,6 +1,6 @@
 ---
 name: cumora-sandbox-verifier
-description: Windows Cumora 本地 agent 发现、沙盒诊断、修复和验收。用户提到 Cumora 沙盒、BYOA、daemon-supervisor、CUMORA_BYOA_ALLOW_UNSANDBOXED、切换 workplace 后能力变化或本地文件/网络访问时使用。先发现 daemon PATH 中实际存在的 agent CLI；agent 是否安装只作信息，除非用户明确指定必需引擎，否则不把 Claude、Codex、OpenCode 或其他工具当成固定前置条件。只有用户明确授权放宽本地引擎沙盒后才修改 supervisor 或创建 shim，并在重启后验证 supervisor、daemon、workspace、日志与本地文件读取探针，以 daemon 控制流连接日志确认 server 连通。只有全部沙盒检查通过才输出 VERIFIED，否则输出 NOT VERIFIED。不要打印 device token、API key、环境凭证或完整环境变量。
+description: Windows Cumora 本地 agent 发现、沙盒诊断、修复和验收。用户提到 Cumora 沙盒、BYOA、daemon-supervisor、CUMORA_BYOA_ALLOW_UNSANDBOXED、切换 workplace 后能力变化或本地文件/网络访问时使用。先发现 daemon PATH 中实际存在的 agent CLI；agent 是否安装只作信息，除非用户明确指定必需引擎，否则不把 Claude、Codex、OpenCode 或其他工具当成固定前置条件。只有用户明确授权放宽本地引擎沙盒后才修改 supervisor 或创建 shim，并在重启后验证 supervisor、daemon、workspace、日志与本地文件读取探针，以 daemon 控制流连接日志确认 server 连通。若用户进一步要求解除所有本地 agent 的 persona 隐私边界、让任意 Cumora agent 读取本机所有目录，必须明确告知高风险并在其确认后运行 scripts/enable_full_host_access.ps1 -IUnderstandHighRisk；该脚本备份并幂等修改本地 daemon bundle 与 supervisor，重启后用 verify_cumora.ps1 -FullHostAccess 验收。只有全部检查通过才输出 VERIFIED，否则输出 NOT VERIFIED。不要打印 device token、API key、环境凭证或完整环境变量。
 compatibility: Windows PowerShell 5.1+; Cumora desktop/daemon 0.18.x or compatible; requires local access to %USERPROFILE%\\.cumora
 ---
 
@@ -17,7 +17,8 @@ compatibility: Windows PowerShell 5.1+; Cumora desktop/daemon 0.18.x or compatib
    $env:CUMORA_BYOA_ALLOW_UNSANDBOXED = '1'
    ```
 
-   它允许本地引擎更广泛地读取主机文件、继承启动环境并访问网络；不要把它写进项目 `.env`，也不要把凭证复制到日志或报告。
+   它允许本地引擎更广泛地读取主机文件、继承启动环境并访问网络，也让 daemon 广告所有已安装的 agent CLI；不要把它写进项目 `.env`，也不要把凭证复制到日志或报告。
+   只写这个 opt-in 并不会改掉 daemon 生成给每个 agent 的 `AGENTS.md`/`CLAUDE.md` 和常驻提示词里的隐私边界。仅当用户明确要求“任意 agent 读取本机所有目录/内容”并接受高风险时，才进入下面的 D 流程。
 3. 每次修复前保留 supervisor 备份；改动必须幂等，避免重复追加同一行。
 4. OpenCode 桌面版常只安装 `opencode-cli.exe`。如果 daemon 的 PATH 找不到 `opencode`，先在 `%APPDATA%\ai.opencode.desktop\cli\*\opencode-cli.exe` 中选择最新版本，按需创建 `%USERPROFILE%\.local\bin\opencode.cmd` 转发 shim；创建前说明这是可逆的本地兼容层。
 5. 不把“文件已修改”当作成功。必须运行 `scripts/verify_cumora.ps1`，并同时满足：
@@ -28,6 +29,7 @@ compatibility: Windows PowerShell 5.1+; Cumora desktop/daemon 0.18.x or compatib
    - 最近日志没有 `401 invalid or revoked device token`、`engine snapshot report failed` 等阻断错误；
    - 主机文件读取探针通过。文件探针证明验证进程能访问主机文件；若要证明 Cumora agent 本身也能访问，必须让 Cumora agent 实际读取一个临时标记文件并把结果作为额外证据。不要对 `serverUrl` 做验证进程侧的 HEAD/GET 探针：认证要求、405、代理或 TLS 设置都会让它误报，而它测的也不是 daemon/agent。凭证值本身不读取，只报告“继承路径已配置，凭证值未读取”。
 6. 工作区或 server 发生变化时，清除旧结论，按当前 `computer.json`、`running.json` 和最新日志重新验收。
+7. 完整主机访问是更高影响的变更：必须备份 daemon bundle 与 supervisor，补丁只改本地 Cumora bundle 的 persona/常驻提示词文本；`npx cumora@latest` 更新可能覆盖补丁，升级后必须重跑并重新验收。风险一次说清，不得悄悄执行；建议只在 VM/容器或确认可信任的本机使用。
 
 ## 执行流程
 
@@ -59,7 +61,7 @@ VERIFIED
 引擎发现：<实际检测到的 CLI；可能为空>
 沙盒：CUMORA_BYOA_ALLOW_UNSANDBOXED=1 已由 supervisor 生效
 daemon：当前 PID 存活，workspace/server 与最新启动日志一致
-能力探针：主机文件读取通过；daemon 控制流已连接（server 连通证据）；凭证继承路径已配置（未读取凭证值）
+能力探针：验证进程主机文件读取通过（不代表 Cumora agent 可访问任意路径）；daemon 控制流已连接（server 连通证据）；凭证继承路径已配置（未读取凭证值）
 ```
 
 失败格式：
@@ -72,3 +74,33 @@ NOT VERIFIED
 ```
 
 不要只因为某个下拉框出现或消失 `Claude Code`、`OpenCode` 等名称就输出成功；必须以脚本的 `verified=true` 为准。没有安装任何已知 agent 时，也可以验证 Cumora 沙盒配置，但应明确写出“未检测到 agent CLI”。
+
+`VERIFIED` 只说明 supervisor、daemon、日志和验证进程探针合格，不等于 Cumora agent 能读取主机上任意目录。每个 agent 仍有自己的 home/workspace 边界（例如 `<agent home>/workspace/`），并受其 `AGENTS.md` 约束。用户要求“agent 能读到某个本地目录”时，必须补充 agent 侧证据：让该 agent 实际读取一个临时标记文件并回传结果；否则应说明边界，并建议把目标文件放进该 agent 的 workspace，或调整 Cumora workplace/workspace 配置。不得用验证进程的 `host-file-read` 通过来替代这项证明。
+
+### D. 解除所有 agent 的隐私边界（高风险）
+
+仅当用户明确要求“执行技能并要求解除沙盒后，Cumora 里任意 AI 都能访问本机所有目录及内容，并显示本地所有 agent CLI”时使用。先复述风险并取得确认：这会为每个本地 agent 去掉 persona/常驻提示词里的 home 边界，配合 `CUMORA_BYOA_ALLOW_UNSANDBOXED=1`，模型生成的工具将获得主机级文件权限；任何 agent 都能读到用户级配置和私人文件，建议只在 VM/容器或完全可信的本机使用。
+
+```powershell
+$enable = Join-Path $SkillRoot 'scripts\enable_full_host_access.ps1'
+& $enable -IUnderstandHighRisk -Json
+```
+
+脚本会：
+1. 备份 `npm-cache` 中实际运行的 `cumora/dist/cli.js` 与 `daemon-supervisor.ps1`；
+2. 幂等把 `PERSONA_HEADER` 的 `## Privacy boundary — STRICT` 块替换为 `## Host access — OPERATOR AUTHORIZED`，并替换常驻提示词里的 Privacy 行；
+3. 幂等确保 supervisor 含 `CUMORA_BYOA_ALLOW_UNSANDBOXED=1`（该开关同时让 daemon 广告所有已安装的 agent CLI，无需另改引擎清单）；
+4. 只停止 `running.json` 指向的 daemon PID，让 supervisor 拉起新进程；新进程重新启动 runner 时会重写各 agent 的 `AGENTS.md`/`CLAUDE.md`；
+5. 调用 `scripts/verify_cumora.ps1 -FullHostAccess -Json` 验收。
+
+新增检查：`full-host-access-patch`（daemon bundle 已补丁）和 `full-host-access-personas`（各 agent persona 文件不再含隐私边界）。只有全部通过才输出：
+
+```text
+FULL HOST ACCESS ENABLED
+引擎发现：<已安装并广告的所有 CLI>
+沙盒：CUMORA_BYOA_ALLOW_UNSANDBOXED=1 已由 supervisor 生效
+agent 边界：persona/常驻提示词已改为 operator 授权的主机级访问
+验收：full-host-access-patch / full-host-access-personas 均为 true
+```
+
+失败时输出 `NOT FULLY ENABLED`，列明失败阶段、备份路径和下一步；不得说已经解除。若用户只想让某个 agent 读某个路径，不要走本流程，优先走 workspace 或最小白名单。
