@@ -1,0 +1,8 @@
+{
+  "_说明": "提取脚本按这里列出的形状合成矢量装饰层 SVG(assets/schools/xmu/<name>.svg,位置写进 manifest.json 的 layers[].box)。",
+  "layers": [
+    { "name": "cover-band", "slide": 351, "shapes": ["封面-底幕", "封面-飘带", "封面-细线"] },
+    { "name": "toc-curtain", "slide": 291, "shapes": ["!!弧带", "!!右幕"] },
+    { "name": "toc-goldline", "slide": 291, "shapes": ["!!金线"] }
+  ]
+}

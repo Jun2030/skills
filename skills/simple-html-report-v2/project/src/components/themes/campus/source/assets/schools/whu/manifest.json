@@ -1,0 +1,943 @@
+{
+ "school": "whu",
+ "name": "武汉大学",
+ "en": "Wuhan University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 349,
+   "index": 54,
+   "preview": "预览/各页/54.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide54.xml",
+   "fields": [
+    "主标题（在前景樱花之后）",
+    "引言",
+    "活动名称",
+    "目录页脚"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image54.jpeg"
+   },
+   "stack": [
+    "00 视频「jimeng-2026-11-11-8365- 镜头模拟专业电影摄影机，向前推进，逐渐靠近画面右侧的校园建筑。 近景樱花枝条在」",
+    "01 文字「主标题（在前景樱花之后）」",
+    "02 文字「引言」",
+    "03 文字「活动名称」",
+    "04 图片「武汉大学校徽校名」",
+    "05 文字「目录页脚」"
+   ],
+   "notes": [
+    "压在视频 / 3D 模型之上的装饰:「武汉大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 259,
+   "index": 55,
+   "preview": "预览/各页/55.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide55.xml",
+   "fields": [
+    "主标题（在前景樱花之后）",
+    "引言",
+    "活动名称",
+    "目录页脚"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image54.jpeg"
+   },
+   "stack": [
+    "00 视频「jimeng-2026-11-11-8365- 镜头模拟专业电影摄影机，向前推进，逐渐靠近画面右侧的校园建筑。 近景樱花枝条在」",
+    "01 文字「主标题（在前景樱花之后）」",
+    "02 文字「引言」",
+    "03 文字「活动名称」",
+    "04 图片「武汉大学校徽校名」",
+    "05 文字「目录页脚」"
+   ],
+   "notes": [
+    "压在视频 / 3D 模型之上的装饰:「武汉大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "keyword",
+   "slideId": 350,
+   "index": 56,
+   "preview": "预览/各页/56.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide56.xml",
+   "fields": [
+    "主标题（在前景樱花之后）",
+    "引言",
+    "活动名称",
+    "目录页脚"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image54.jpeg"
+   },
+   "stack": [
+    "00 视频「jimeng-2026-11-11-8365- 镜头模拟专业电影摄影机，向前推进，逐渐靠近画面右侧的校园建筑。 近景樱花枝条在」",
+    "01 文字「主标题（在前景樱花之后）」",
+    "02 文字「引言」",
+    "03 文字「活动名称」",
+    "04 图片「武汉大学校徽校名」",
+    "05 文字「目录页脚」"
+   ],
+   "notes": [
+    "压在视频 / 3D 模型之上的装饰:「武汉大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 324,
+   "index": 58,
+   "preview": "预览/各页/58.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide58.xml",
+   "fields": [
+    "目录英文大标题",
+    "目录页脚",
+    "目录英文大标题#2",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「!!背景视频-武大老图书馆」",
+    "01 形状「矩形 26」",
+    "02 图片「武汉大学校徽校名」",
+    "03 文字「目录英文大标题」",
+    "04 形状「当前项高亮」",
+    "05 文字「目录英文01」",
+    "06 文字「目录序号01」",
+    "07 文字「目录条目01」",
+    "08 文字「目录英文02」",
+    "09 文字「目录序号02」",
+    "10 文字「目录条目02」",
+    "11 文字「目录页脚」",
+    "12 图片「图片 24」",
+    "13 形状「目录竖线」",
+    "14 形状「椭圆 27」",
+    "15 文字「目录英文大标题」"
+   ],
+   "notes": [
+    "「当前项高亮」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「图片 24」在模板里是隐藏的",
+    "压在视频 / 3D 模型之上的装饰:「矩形 26」、「武汉大学校徽校名」、「当前项高亮」、「图片 24」、「目录竖线」、「椭圆 27」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 325,
+   "index": 59,
+   "preview": "预览/各页/59.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide59.xml",
+   "fields": [
+    "目录英文大标题",
+    "目录页脚",
+    "目录英文大标题#2",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「!!背景视频-武大老图书馆」",
+    "01 形状「矩形 26」",
+    "02 图片「武汉大学校徽校名」",
+    "03 文字「目录英文大标题」",
+    "04 形状「当前项高亮」",
+    "05 文字「目录英文01」",
+    "06 文字「目录序号01」",
+    "07 文字「目录条目01」",
+    "08 文字「目录英文02」",
+    "09 文字「目录序号02」",
+    "10 文字「目录条目02」",
+    "11 文字「目录英文03」",
+    "12 文字「目录序号03」",
+    "13 文字「目录条目03」",
+    "14 文字「目录页脚」",
+    "15 图片「图片 24」",
+    "16 形状「目录竖线」",
+    "17 形状「椭圆 27」",
+    "18 文字「目录英文大标题」"
+   ],
+   "notes": [
+    "「当前项高亮」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「图片 24」在模板里是隐藏的",
+    "压在视频 / 3D 模型之上的装饰:「矩形 26」、「武汉大学校徽校名」、「当前项高亮」、「图片 24」、「目录竖线」、「椭圆 27」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 287,
+   "index": 57,
+   "preview": "预览/各页/57.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide57.xml",
+   "fields": [
+    "目录英文大标题",
+    "目录页脚",
+    "目录英文大标题#2",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「!!背景视频-武大老图书馆」",
+    "01 形状「矩形 26」",
+    "02 图片「武汉大学校徽校名」",
+    "03 文字「目录英文大标题」",
+    "04 形状「当前项高亮」",
+    "05 文字「目录英文01」",
+    "06 文字「目录序号01」",
+    "07 文字「目录条目01」",
+    "08 文字「目录英文02」",
+    "09 文字「目录序号02」",
+    "10 文字「目录条目02」",
+    "11 文字「目录英文03」",
+    "12 文字「目录序号03」",
+    "13 文字「目录条目03」",
+    "14 文字「目录英文04」",
+    "15 文字「目录序号04」",
+    "16 文字「目录条目04」",
+    "17 文字「目录页脚」",
+    "18 图片「图片 24」",
+    "19 形状「目录竖线」",
+    "20 形状「椭圆 27」",
+    "21 文字「目录英文大标题」"
+   ],
+   "notes": [
+    "「当前项高亮」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「图片 24」在模板里是隐藏的",
+    "压在视频 / 3D 模型之上的装饰:「矩形 26」、「武汉大学校徽校名」、「当前项高亮」、「图片 24」、「目录竖线」、「椭圆 27」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 326,
+   "index": 60,
+   "preview": "预览/各页/60.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide60.xml",
+   "fields": [
+    "目录英文大标题",
+    "目录页脚",
+    "目录英文大标题#2",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「!!背景视频-武大老图书馆」",
+    "01 形状「矩形 26」",
+    "02 图片「武汉大学校徽校名」",
+    "03 文字「目录英文大标题」",
+    "04 形状「当前项高亮」",
+    "05 文字「目录英文01」",
+    "06 文字「目录序号01」",
+    "07 文字「目录条目01」",
+    "08 文字「目录英文02」",
+    "09 文字「目录序号02」",
+    "10 文字「目录条目02」",
+    "11 文字「目录英文03」",
+    "12 文字「目录序号03」",
+    "13 文字「目录条目03」",
+    "14 文字「目录英文05」",
+    "15 文字「目录序号05」",
+    "16 文字「目录条目05」",
+    "17 文字「目录页脚」",
+    "18 图片「图片 24」",
+    "19 形状「目录竖线」",
+    "20 形状「椭圆 27」",
+    "21 文字「目录英文大标题」",
+    "22 文字「目录英文04」",
+    "23 文字「目录序号04」",
+    "24 文字「目录条目04」"
+   ],
+   "notes": [
+    "「当前项高亮」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「图片 24」在模板里是隐藏的",
+    "压在视频 / 3D 模型之上的装饰:「矩形 26」、「武汉大学校徽校名」、「当前项高亮」、「图片 24」、「目录竖线」、「椭圆 27」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 327,
+   "index": 61,
+   "preview": "预览/各页/61.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide61.xml",
+   "fields": [
+    "目录英文大标题",
+    "目录页脚",
+    "目录英文大标题#2",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.en",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「!!背景视频-武大老图书馆」",
+    "01 形状「矩形 26」",
+    "02 图片「武汉大学校徽校名」",
+    "03 文字「目录英文大标题」",
+    "04 形状「当前项高亮」",
+    "05 文字「目录英文01」",
+    "06 文字「目录序号01」",
+    "07 文字「目录条目01」",
+    "08 文字「目录英文02」",
+    "09 文字「目录序号02」",
+    "10 文字「目录条目02」",
+    "11 文字「目录英文03」",
+    "12 文字「目录序号03」",
+    "13 文字「目录条目03」",
+    "14 文字「目录英文06」",
+    "15 文字「目录序号06」",
+    "16 文字「目录条目06」",
+    "17 文字「目录页脚」",
+    "18 图片「图片 24」",
+    "19 形状「目录竖线」",
+    "20 形状「椭圆 27」",
+    "21 文字「目录英文大标题」",
+    "22 文字「目录英文04」",
+    "23 文字「目录序号04」",
+    "24 文字「目录条目04」",
+    "25 文字「目录英文05」",
+    "26 文字「目录序号05」",
+    "27 文字「目录条目05」"
+   ],
+   "notes": [
+    "「当前项高亮」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「图片 24」在模板里是隐藏的",
+    "压在视频 / 3D 模型之上的装饰:「矩形 26」、「武汉大学校徽校名」、「当前项高亮」、「图片 24」、「目录竖线」、「椭圆 27」"
+   ],
+   "warnings": []
+  }
+ ],
+ "assets": [
+  {
+   "file": "bg-image54.jpg",
+   "kind": "background",
+   "sourceMedia": "ppt/media/image54.jpeg",
+   "model": null,
+   "originalSize": [
+    1672,
+    941
+   ],
+   "outputSize": [
+    1672,
+    941
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 472006,
+   "uses": [
+    {
+     "slideId": 349,
+     "page": "cover",
+     "variant": "default",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 259,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 350,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    }
+   ]
+  },
+  {
+   "file": "logo-image56.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image56.png",
+   "model": null,
+   "originalSize": [
+    2334,
+    734
+   ],
+   "outputSize": [
+    416,
+    131
+   ],
+   "displaySize": [
+    207.8,
+    65.3
+   ],
+   "bytes": 52488,
+   "uses": [
+    {
+     "slideId": 349,
+     "page": "cover",
+     "variant": "default",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      135.25,
+      121.41,
+      207.75,
+      65.33
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 259,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      135.25,
+      121.41,
+      207.75,
+      65.33
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 350,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      135.25,
+      121.41,
+      207.75,
+      65.33
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 324,
+     "page": "toc",
+     "variant": "2",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      111.0,
+      72.0,
+      192.32,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 325,
+     "page": "toc",
+     "variant": "3",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      111.0,
+      72.0,
+      192.32,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 287,
+     "page": "toc",
+     "variant": "4",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      111.0,
+      72.0,
+      192.32,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 326,
+     "page": "toc",
+     "variant": "5",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      111.0,
+      72.0,
+      192.32,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 327,
+     "page": "toc",
+     "variant": "6",
+     "shape": "武汉大学校徽校名",
+     "box": [
+      111.0,
+      72.0,
+      192.32,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "logo-image58.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image58.png",
+   "model": null,
+   "originalSize": [
+    600,
+    189
+   ],
+   "outputSize": [
+    385,
+    121
+   ],
+   "displaySize": [
+    192.3,
+    60.6
+   ],
+   "bytes": 51061,
+   "uses": [
+    {
+     "slideId": 324,
+     "page": "toc",
+     "variant": "2",
+     "shape": "图片 24",
+     "box": [
+      108.0,
+      72.0,
+      192.32,
+      60.58
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 325,
+     "page": "toc",
+     "variant": "3",
+     "shape": "图片 24",
+     "box": [
+      108.0,
+      72.0,
+      192.32,
+      60.58
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 287,
+     "page": "toc",
+     "variant": "4",
+     "shape": "图片 24",
+     "box": [
+      108.0,
+      72.0,
+      192.32,
+      60.58
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 326,
+     "page": "toc",
+     "variant": "5",
+     "shape": "图片 24",
+     "box": [
+      108.0,
+      72.0,
+      192.32,
+      60.58
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 327,
+     "page": "toc",
+     "variant": "6",
+     "shape": "图片 24",
+     "box": [
+      108.0,
+      72.0,
+      192.32,
+      60.58
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "video-media5.mp4",
+   "poster": "video-media5-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media5.mp4",
+   "uses": [
+    {
+     "slideId": 349,
+     "page": "cover",
+     "variant": "default",
+     "shape": "jimeng-2026-11-11-8365- 镜头模拟专业电影摄影机，向前推进，逐渐靠近画面右侧的校园建筑。 近景樱花枝条在",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 259,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "jimeng-2026-11-11-8365- 镜头模拟专业电影摄影机，向前推进，逐渐靠近画面右侧的校园建筑。 近景樱花枝条在",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 350,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "jimeng-2026-11-11-8365- 镜头模拟专业电影摄影机，向前推进，逐渐靠近画面右侧的校园建筑。 近景樱花枝条在",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 7292746
+   },
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 56644236
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 5895090
+    },
+    {
+     "crf": 24,
+     "bytes": 4588353
+    }
+   ],
+   "params": "libx264 preset=slow crf=24 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1564523,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image55.png",
+   "posterBytes": 440029
+  },
+  {
+   "file": "video-media6.mp4",
+   "poster": "video-media6-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media6.mp4",
+   "uses": [
+    {
+     "slideId": 324,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!背景视频-武大老图书馆",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 325,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!背景视频-武大老图书馆",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 287,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!背景视频-武大老图书馆",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 326,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!背景视频-武大老图书馆",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 327,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!背景视频-武大老图书馆",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration": 5.042,
+    "bitRate": 3408639
+   },
+   "source": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration": 5.108,
+    "bitRate": 1699050
+   },
+   "width": 1280,
+   "fps": 24.0,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 2148153
+    }
+   ],
+   "params": "libx264 preset=slow crf=22 maxrate=9M yuv420p +faststart, -an, scale=1280:-2, fps=24",
+   "bytes": 759664,
+   "duration": 5.042,
+   "posterSource": "ppt/media/image57.png",
+   "posterBytes": 159610
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Source Han Serif CN Medium": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN SemiBold": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title"
+  ],
+  "思源宋体": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源宋体 CN Heavy": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源黑体": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 3499381
+}

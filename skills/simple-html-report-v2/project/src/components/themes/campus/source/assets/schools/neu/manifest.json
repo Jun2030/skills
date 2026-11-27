@@ -1,0 +1,1997 @@
+{
+ "school": "neu",
+ "name": "东北大学",
+ "en": "Northeastern University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 354,
+   "index": 77,
+   "preview": "预览/各页/77.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide77.xml",
+   "fields": [
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "!!寄自标签",
+    "主标题",
+    "英文校名",
+    "校歌引句"
+   ],
+   "transitionIn": null,
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 文字「!!寄件人_标签」",
+    "04 文字「!!寄件人_值」",
+    "05 形状「!!寄件人_线」",
+    "06 文字「!!日期_标签」",
+    "07 文字「!!日期_值」",
+    "08 形状「!!日期_线」",
+    "09 图片「图片 37」",
+    "10 形状「!!明信片_卡」",
+    "11 文字「!!寄自标签」",
+    "12 文字「主标题」",
+    "13 文字「英文校名」",
+    "14 文字「校歌引句」",
+    "15 线「直接连接符 44」",
+    "16 视频「东北大学」",
+    "17 图片「!!邮戳波纹」",
+    "18 图片「!!邮戳」",
+    "19 图片「!!邮票」"
+   ],
+   "notes": [
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片_卡」旋转 358.0°",
+    "「东北大学」有裁切 {'l': 0.05663, 'r': 0.09147}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 358.0°",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "压在视频 / 3D 模型之上的装饰:「!!邮戳波纹」、「!!邮戳」、「!!邮票」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 280,
+   "index": 78,
+   "preview": "预览/各页/78.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide78.xml",
+   "fields": [
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "!!寄自标签",
+    "主标题",
+    "英文校名",
+    "校歌引句"
+   ],
+   "transitionIn": null,
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 文字「!!寄件人_标签」",
+    "04 文字「!!寄件人_值」",
+    "05 形状「!!寄件人_线」",
+    "06 文字「!!日期_标签」",
+    "07 文字「!!日期_值」",
+    "08 形状「!!日期_线」",
+    "09 图片「图片 37」",
+    "10 形状「!!明信片_卡」",
+    "11 文字「!!寄自标签」",
+    "12 文字「主标题」",
+    "13 文字「英文校名」",
+    "14 文字「校歌引句」",
+    "15 线「直接连接符 44」",
+    "16 视频「东北大学」",
+    "17 图片「!!邮戳波纹」",
+    "18 图片「!!邮戳」",
+    "19 图片「!!邮票」"
+   ],
+   "notes": [
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片_卡」旋转 358.0°",
+    "「东北大学」有裁切 {'l': 0.05663, 'r': 0.09147}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 358.0°",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "压在视频 / 3D 模型之上的装饰:「!!邮戳波纹」、「!!邮戳」、「!!邮票」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "keyword",
+   "slideId": 355,
+   "index": 79,
+   "preview": "预览/各页/79.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide79.xml",
+   "fields": [
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "!!寄自标签",
+    "主标题",
+    "英文校名",
+    "校歌引句",
+    "副标题（长）"
+   ],
+   "transitionIn": null,
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 文字「!!寄件人_标签」",
+    "04 文字「!!寄件人_值」",
+    "05 形状「!!寄件人_线」",
+    "06 文字「!!日期_标签」",
+    "07 文字「!!日期_值」",
+    "08 形状「!!日期_线」",
+    "09 图片「图片 37」",
+    "10 形状「!!明信片_卡」",
+    "11 文字「!!寄自标签」",
+    "12 文字「主标题」",
+    "13 文字「英文校名」",
+    "14 文字「校歌引句」",
+    "15 线「直接连接符 44」",
+    "16 视频「东北大学」",
+    "17 图片「!!邮戳波纹」",
+    "18 图片「!!邮戳」",
+    "19 图片「!!邮票」",
+    "20 文字「副标题（长）」"
+   ],
+   "notes": [
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片_卡」旋转 358.0°",
+    "「东北大学」有裁切 {'l': 0.05663, 'r': 0.09147}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 358.0°",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "压在视频 / 3D 模型之上的装饰:「!!邮戳波纹」、「!!邮戳」、「!!邮票」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 336,
+   "index": 81,
+   "preview": "预览/各页/81.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide81.xml",
+   "fields": [
+    "邮编1",
+    "邮编2",
+    "邮编3",
+    "邮编4",
+    "邮编5",
+    "邮编6",
+    "目录标题",
+    "目录英文",
+    "收件_标签",
+    "收件_1",
+    "收件_2",
+    "收件_3",
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 形状「!!明信片2_卡」",
+    "04 形状「!!明信片_卡」",
+    "05 形状「邮编格1」",
+    "06 文字「邮编1」",
+    "07 形状「邮编格2」",
+    "08 文字「邮编2」",
+    "09 形状「邮编格3」",
+    "10 文字「邮编3」",
+    "11 形状「邮编格4」",
+    "12 文字「邮编4」",
+    "13 形状「邮编格5」",
+    "14 文字「邮编5」",
+    "15 形状「邮编格6」",
+    "16 文字「邮编6」",
+    "17 形状「中缝」",
+    "18 文字「目录标题」",
+    "19 文字「目录英文」",
+    "20 文字「目录序号1」",
+    "21 文字「目录项1」",
+    "22 文字「目录说明1」",
+    "23 形状「目录横线1」",
+    "24 文字「目录序号2」",
+    "25 文字「目录项2」",
+    "26 文字「目录说明2」",
+    "27 形状「目录横线2」",
+    "28 文字「收件_标签」",
+    "29 文字「收件_1」",
+    "30 形状「收件_线1」",
+    "31 文字「收件_2」",
+    "32 形状「收件_线2」",
+    "33 文字「收件_3」",
+    "34 形状「收件_线3」",
+    "35 文字「!!寄件人_标签」",
+    "36 文字「!!寄件人_值」",
+    "37 形状「!!寄件人_线」",
+    "38 文字「!!日期_标签」",
+    "39 文字「!!日期_值」",
+    "40 形状「!!日期_线」",
+    "41 图片「图片 67」",
+    "42 图片「!!邮戳波纹」",
+    "43 图片「!!邮戳」",
+    "44 图片「!!邮票」",
+    "45 视频「东北大学」"
+   ],
+   "notes": [
+    "「!!明信片2_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片2_卡」旋转 357.0°",
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "「东北大学」有裁切 {'l': 0.52657, 't': 0.02112, 'r': 0.06523, 'b': -0.02112}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 357.0°"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 337,
+   "index": 82,
+   "preview": "预览/各页/82.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide82.xml",
+   "fields": [
+    "邮编1",
+    "邮编2",
+    "邮编3",
+    "邮编4",
+    "邮编5",
+    "邮编6",
+    "目录标题",
+    "目录英文",
+    "收件_标签",
+    "收件_1",
+    "收件_2",
+    "收件_3",
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 形状「!!明信片2_卡」",
+    "04 形状「!!明信片_卡」",
+    "05 形状「邮编格1」",
+    "06 文字「邮编1」",
+    "07 形状「邮编格2」",
+    "08 文字「邮编2」",
+    "09 形状「邮编格3」",
+    "10 文字「邮编3」",
+    "11 形状「邮编格4」",
+    "12 文字「邮编4」",
+    "13 形状「邮编格5」",
+    "14 文字「邮编5」",
+    "15 形状「邮编格6」",
+    "16 文字「邮编6」",
+    "17 形状「中缝」",
+    "18 文字「目录标题」",
+    "19 文字「目录英文」",
+    "20 文字「目录序号1」",
+    "21 文字「目录项1」",
+    "22 文字「目录说明1」",
+    "23 形状「目录横线1」",
+    "24 文字「目录序号2」",
+    "25 文字「目录项2」",
+    "26 文字「目录说明2」",
+    "27 形状「目录横线2」",
+    "28 文字「目录序号3」",
+    "29 文字「目录项3」",
+    "30 文字「目录说明3」",
+    "31 形状「目录横线3」",
+    "32 文字「收件_标签」",
+    "33 文字「收件_1」",
+    "34 形状「收件_线1」",
+    "35 文字「收件_2」",
+    "36 形状「收件_线2」",
+    "37 文字「收件_3」",
+    "38 形状「收件_线3」",
+    "39 文字「!!寄件人_标签」",
+    "40 文字「!!寄件人_值」",
+    "41 形状「!!寄件人_线」",
+    "42 文字「!!日期_标签」",
+    "43 文字「!!日期_值」",
+    "44 形状「!!日期_线」",
+    "45 图片「图片 67」",
+    "46 图片「!!邮戳波纹」",
+    "47 图片「!!邮戳」",
+    "48 图片「!!邮票」",
+    "49 视频「东北大学」"
+   ],
+   "notes": [
+    "「!!明信片2_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片2_卡」旋转 357.0°",
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "「东北大学」有裁切 {'l': 0.52657, 't': 0.02112, 'r': 0.06523, 'b': -0.02112}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 357.0°"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 281,
+   "index": 80,
+   "preview": "预览/各页/80.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide80.xml",
+   "fields": [
+    "邮编1",
+    "邮编2",
+    "邮编3",
+    "邮编4",
+    "邮编5",
+    "邮编6",
+    "目录标题",
+    "目录英文",
+    "收件_标签",
+    "收件_1",
+    "收件_2",
+    "收件_3",
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 形状「!!明信片2_卡」",
+    "04 形状「!!明信片_卡」",
+    "05 形状「邮编格1」",
+    "06 文字「邮编1」",
+    "07 形状「邮编格2」",
+    "08 文字「邮编2」",
+    "09 形状「邮编格3」",
+    "10 文字「邮编3」",
+    "11 形状「邮编格4」",
+    "12 文字「邮编4」",
+    "13 形状「邮编格5」",
+    "14 文字「邮编5」",
+    "15 形状「邮编格6」",
+    "16 文字「邮编6」",
+    "17 形状「中缝」",
+    "18 文字「目录标题」",
+    "19 文字「目录英文」",
+    "20 文字「目录序号1」",
+    "21 文字「目录项1」",
+    "22 文字「目录说明1」",
+    "23 形状「目录横线1」",
+    "24 文字「目录序号2」",
+    "25 文字「目录项2」",
+    "26 文字「目录说明2」",
+    "27 形状「目录横线2」",
+    "28 文字「目录序号3」",
+    "29 文字「目录项3」",
+    "30 文字「目录说明3」",
+    "31 形状「目录横线3」",
+    "32 文字「目录序号4」",
+    "33 文字「目录项4」",
+    "34 文字「目录说明4」",
+    "35 形状「目录横线4」",
+    "36 文字「收件_标签」",
+    "37 文字「收件_1」",
+    "38 形状「收件_线1」",
+    "39 文字「收件_2」",
+    "40 形状「收件_线2」",
+    "41 文字「收件_3」",
+    "42 形状「收件_线3」",
+    "43 文字「!!寄件人_标签」",
+    "44 文字「!!寄件人_值」",
+    "45 形状「!!寄件人_线」",
+    "46 文字「!!日期_标签」",
+    "47 文字「!!日期_值」",
+    "48 形状「!!日期_线」",
+    "49 图片「图片 67」",
+    "50 图片「!!邮戳波纹」",
+    "51 图片「!!邮戳」",
+    "52 图片「!!邮票」",
+    "53 视频「东北大学」"
+   ],
+   "notes": [
+    "「!!明信片2_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片2_卡」旋转 357.0°",
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "「东北大学」有裁切 {'l': 0.52657, 't': 0.02112, 'r': 0.06523, 'b': -0.02112}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 357.0°"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 338,
+   "index": 83,
+   "preview": "预览/各页/83.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide83.xml",
+   "fields": [
+    "邮编1",
+    "邮编2",
+    "邮编3",
+    "邮编4",
+    "邮编5",
+    "邮编6",
+    "目录标题",
+    "目录英文",
+    "收件_标签",
+    "收件_1",
+    "收件_2",
+    "收件_3",
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 形状「!!明信片2_卡」",
+    "04 形状「!!明信片_卡」",
+    "05 形状「邮编格1」",
+    "06 文字「邮编1」",
+    "07 形状「邮编格2」",
+    "08 文字「邮编2」",
+    "09 形状「邮编格3」",
+    "10 文字「邮编3」",
+    "11 形状「邮编格4」",
+    "12 文字「邮编4」",
+    "13 形状「邮编格5」",
+    "14 文字「邮编5」",
+    "15 形状「邮编格6」",
+    "16 文字「邮编6」",
+    "17 形状「中缝」",
+    "18 文字「目录标题」",
+    "19 文字「目录英文」",
+    "20 文字「目录序号1」",
+    "21 文字「目录项1」",
+    "22 文字「目录说明1」",
+    "23 形状「目录横线1」",
+    "24 文字「目录序号2」",
+    "25 文字「目录项2」",
+    "26 文字「目录说明2」",
+    "27 形状「目录横线2」",
+    "28 文字「目录序号3」",
+    "29 文字「目录项3」",
+    "30 文字「目录说明3」",
+    "31 形状「目录横线3」",
+    "32 文字「目录序号5」",
+    "33 文字「目录项5」",
+    "34 文字「目录说明5」",
+    "35 形状「目录横线5」",
+    "36 文字「收件_标签」",
+    "37 文字「收件_1」",
+    "38 形状「收件_线1」",
+    "39 文字「收件_2」",
+    "40 形状「收件_线2」",
+    "41 文字「收件_3」",
+    "42 形状「收件_线3」",
+    "43 文字「!!寄件人_标签」",
+    "44 文字「!!寄件人_值」",
+    "45 形状「!!寄件人_线」",
+    "46 文字「!!日期_标签」",
+    "47 文字「!!日期_值」",
+    "48 形状「!!日期_线」",
+    "49 图片「图片 67」",
+    "50 图片「!!邮戳波纹」",
+    "51 图片「!!邮戳」",
+    "52 图片「!!邮票」",
+    "53 视频「东北大学」",
+    "54 文字「目录序号4」",
+    "55 文字「目录项4」",
+    "56 文字「目录说明4」",
+    "57 形状「目录横线4」"
+   ],
+   "notes": [
+    "「!!明信片2_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片2_卡」旋转 357.0°",
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "「东北大学」有裁切 {'l': 0.52657, 't': 0.02112, 'r': 0.06523, 'b': -0.02112}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 357.0°",
+    "压在视频 / 3D 模型之上的装饰:「目录横线4」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 339,
+   "index": 84,
+   "preview": "预览/各页/84.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide84.xml",
+   "fields": [
+    "邮编1",
+    "邮编2",
+    "邮编3",
+    "邮编4",
+    "邮编5",
+    "邮编6",
+    "目录标题",
+    "目录英文",
+    "收件_标签",
+    "收件_1",
+    "收件_2",
+    "收件_3",
+    "!!寄件人_标签",
+    "!!寄件人_值",
+    "!!日期_标签",
+    "!!日期_值",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.desc"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!纸纹背景」",
+    "01 图片「!!航空条_上」",
+    "02 图片「!!航空条_下」",
+    "03 形状「!!明信片2_卡」",
+    "04 形状「!!明信片_卡」",
+    "05 形状「邮编格1」",
+    "06 文字「邮编1」",
+    "07 形状「邮编格2」",
+    "08 文字「邮编2」",
+    "09 形状「邮编格3」",
+    "10 文字「邮编3」",
+    "11 形状「邮编格4」",
+    "12 文字「邮编4」",
+    "13 形状「邮编格5」",
+    "14 文字「邮编5」",
+    "15 形状「邮编格6」",
+    "16 文字「邮编6」",
+    "17 形状「中缝」",
+    "18 文字「目录标题」",
+    "19 文字「目录英文」",
+    "20 文字「目录序号1」",
+    "21 文字「目录项1」",
+    "22 文字「目录说明1」",
+    "23 形状「目录横线1」",
+    "24 文字「目录序号2」",
+    "25 文字「目录项2」",
+    "26 文字「目录说明2」",
+    "27 形状「目录横线2」",
+    "28 文字「目录序号3」",
+    "29 文字「目录项3」",
+    "30 文字「目录说明3」",
+    "31 形状「目录横线3」",
+    "32 文字「目录序号6」",
+    "33 文字「目录项6」",
+    "34 文字「目录说明6」",
+    "35 形状「目录横线6」",
+    "36 文字「收件_标签」",
+    "37 文字「收件_1」",
+    "38 形状「收件_线1」",
+    "39 文字「收件_2」",
+    "40 形状「收件_线2」",
+    "41 文字「收件_3」",
+    "42 形状「收件_线3」",
+    "43 文字「!!寄件人_标签」",
+    "44 文字「!!寄件人_值」",
+    "45 形状「!!寄件人_线」",
+    "46 文字「!!日期_标签」",
+    "47 文字「!!日期_值」",
+    "48 形状「!!日期_线」",
+    "49 图片「图片 67」",
+    "50 图片「!!邮戳波纹」",
+    "51 图片「!!邮戳」",
+    "52 图片「!!邮票」",
+    "53 视频「东北大学」",
+    "54 文字「目录序号4」",
+    "55 文字「目录项4」",
+    "56 文字「目录说明4」",
+    "57 形状「目录横线4」",
+    "58 文字「目录序号5」",
+    "59 文字「目录项5」",
+    "60 文字「目录说明5」",
+    "61 形状「目录横线5」"
+   ],
+   "notes": [
+    "「!!明信片2_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!明信片2_卡」旋转 357.0°",
+    "「!!明信片_卡」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「!!邮票」旋转 5.0°",
+    "「东北大学」有裁切 {'l': 0.52657, 't': 0.02112, 'r': 0.06523, 'b': -0.02112}(网页用 object-position / 外框裁切还原)",
+    "「东北大学」旋转 357.0°",
+    "压在视频 / 3D 模型之上的装饰:「目录横线4」、「目录横线5」"
+   ],
+   "warnings": []
+  }
+ ],
+ "assets": [
+  {
+   "file": "img-image69.jpg",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image69.jpg",
+   "model": null,
+   "originalSize": [
+    1920,
+    1080
+   ],
+   "outputSize": [
+    1920,
+    1080
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 239671,
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!纸纹背景",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image70.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image70.png",
+   "model": null,
+   "originalSize": [
+    3840,
+    24
+   ],
+   "outputSize": [
+    3840,
+    24
+   ],
+   "displaySize": [
+    1920.0,
+    12.0
+   ],
+   "bytes": 1973,
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!航空条_上",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!航空条_下",
+     "box": [
+      0.0,
+      1068.0,
+      1920.0,
+      12.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image71.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image71.png",
+   "model": null,
+   "originalSize": [
+    309,
+    83
+   ],
+   "outputSize": [
+    309,
+    83
+   ],
+   "displaySize": [
+    232.7,
+    62.5
+   ],
+   "bytes": 10407,
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "图片 37",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "图片 37",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "图片 37",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "图片 67",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "图片 67",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "图片 67",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "图片 67",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "图片 67",
+     "box": [
+      96.0,
+      63.25,
+      232.67,
+      62.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "img-image73.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image73.png",
+   "model": null,
+   "originalSize": [
+    1600,
+    384
+   ],
+   "outputSize": [
+    800,
+    192
+   ],
+   "displaySize": [
+    400.0,
+    96.0
+   ],
+   "bytes": 96409,
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!邮戳波纹",
+     "box": [
+      1144.0,
+      196.0,
+      400.0,
+      96.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image74.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image74.png",
+   "model": null,
+   "originalSize": [
+    920,
+    920
+   ],
+   "outputSize": [
+    460,
+    460
+   ],
+   "displaySize": [
+    230.0,
+    230.0
+   ],
+   "bytes": 94432,
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!邮戳",
+     "box": [
+      1529.0,
+      155.0,
+      230.0,
+      230.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "logo-image75.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image75.png",
+   "model": null,
+   "originalSize": [
+    640,
+    800
+   ],
+   "outputSize": [
+    320,
+    400
+   ],
+   "displaySize": [
+    160.0,
+    200.0
+   ],
+   "bytes": 74467,
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!邮票",
+     "box": [
+      1706.0,
+      138.0,
+      160.0,
+      200.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "video-media10.mp4",
+   "poster": "video-media10-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media10.mp4",
+   "uses": [
+    {
+     "slideId": 336,
+     "page": "toc",
+     "variant": "2",
+     "shape": "东北大学",
+     "box": [
+      140.06,
+      206.66,
+      539.58,
+      743.53
+     ],
+     "crop": {
+      "l": 0.52657,
+      "t": 0.02112,
+      "r": 0.06523,
+      "b": -0.02112
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 337,
+     "page": "toc",
+     "variant": "3",
+     "shape": "东北大学",
+     "box": [
+      140.06,
+      206.66,
+      539.58,
+      743.53
+     ],
+     "crop": {
+      "l": 0.52657,
+      "t": 0.02112,
+      "r": 0.06523,
+      "b": -0.02112
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 281,
+     "page": "toc",
+     "variant": "4",
+     "shape": "东北大学",
+     "box": [
+      140.06,
+      206.66,
+      539.58,
+      743.53
+     ],
+     "crop": {
+      "l": 0.52657,
+      "t": 0.02112,
+      "r": 0.06523,
+      "b": -0.02112
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 338,
+     "page": "toc",
+     "variant": "5",
+     "shape": "东北大学",
+     "box": [
+      140.06,
+      206.66,
+      539.58,
+      743.53
+     ],
+     "crop": {
+      "l": 0.52657,
+      "t": 0.02112,
+      "r": 0.06523,
+      "b": -0.02112
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 339,
+     "page": "toc",
+     "variant": "6",
+     "shape": "东北大学",
+     "box": [
+      140.06,
+      206.66,
+      539.58,
+      743.53
+     ],
+     "crop": {
+      "l": 0.52657,
+      "t": 0.02112,
+      "r": 0.06523,
+      "b": -0.02112
+     },
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 2496658
+   },
+   "source": {
+    "width": 1280,
+    "height": 720,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 13409939
+   },
+   "width": 1280,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 1570713
+    }
+   ],
+   "params": "libx264 preset=slow crf=22 maxrate=9M yuv420p +faststart, -an, scale=1280:-2, fps=30",
+   "bytes": 463785,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image76.png",
+   "posterBytes": 179939
+  },
+  {
+   "file": "video-media9.mp4",
+   "poster": "video-media9-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media9.mp4",
+   "uses": [
+    {
+     "slideId": 354,
+     "page": "cover",
+     "variant": "default",
+     "shape": "东北大学",
+     "box": [
+      827.0,
+      217.47,
+      962.0,
+      635.53
+     ],
+     "crop": {
+      "l": 0.05663,
+      "r": 0.09147
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 280,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "东北大学",
+     "box": [
+      827.0,
+      217.47,
+      962.0,
+      635.53
+     ],
+     "crop": {
+      "l": 0.05663,
+      "r": 0.09147
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 355,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "东北大学",
+     "box": [
+      827.0,
+      217.47,
+      962.0,
+      635.53
+     ],
+     "crop": {
+      "l": 0.05663,
+      "r": 0.09147
+     },
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 7302841
+   },
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 58822494
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 6415603
+    },
+    {
+     "crf": 24,
+     "bytes": 6060242
+    },
+    {
+     "crf": 26,
+     "bytes": 4594704
+    }
+   ],
+   "params": "libx264 preset=slow crf=26 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1441729,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image72.png",
+   "posterBytes": 601182
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Cutive Mono": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "LXGW WenKai": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Heavy": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Medium": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源宋体": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title"
+  ],
+  "思源宋体 CN Heavy": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源黑体 CN Light": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 3203994
+}

@@ -1,0 +1,1151 @@
+{
+  "title": "基于 B/S 模式的 Java 编程知识在线测试系统",
+  "goal": "本科毕业设计答辩:交代课题背景、研究现状、系统设计与实现、持续集成与运维,以及总结",
+  "audience": "答辩委员会 / 指导教师",
+  "owner": "答辩人",
+  "randomSeed": "thesis-defense-engineering-demo",
+  "themePack": "campus",
+  "brand": {
+    "name": "示例大学",
+    "nameEn": "EXAMPLE UNIVERSITY",
+    "mark": "示",
+    "headerNote": "GRADUATION PROJECT DEFENSE · 2026",
+    "footerNote": "示例大学 · 计算机学院 · 本科毕业设计答辩",
+    "accent": "#1F4E9C",
+    "chapters": [
+      "背景与意义",
+      "研究现状",
+      "主要工作",
+      "总结"
+    ],
+    "fill": "gradient",
+    "nav": "band",
+    "titleStyle": "bar"
+  },
+  "slides": [
+    {
+      "layout": "campus_temp_cover",
+      "props": {
+        "kicker": "本科毕业设计答辩",
+        "title": "Java 编程知识在线测试系统",
+        "subtitle": "基于 B/S 模式的设计与实现",
+        "presenterLabel": "答辩人",
+        "presenter": "示例同学",
+        "dateLabel": "指导教师",
+        "date": "示例老师"
+      }
+    },
+    {
+      "layout": "campus_temp_agenda",
+      "props": {
+        "itemCount": 4,
+        "title": "目录",
+        "subtitle": "CONTENTS",
+        "items": [
+          {
+            "no": "01",
+            "title": "背景、目的和意义",
+            "note": "BACKGROUND"
+          },
+          {
+            "no": "02",
+            "title": "国内外研究现状",
+            "note": "RELATED WORK"
+          },
+          {
+            "no": "03",
+            "title": "主要工作内容",
+            "note": "MAIN WORK"
+          },
+          {
+            "no": "04",
+            "title": "总结",
+            "note": "CONCLUSION"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_lead_quotes_subject",
+      "props": {
+        "chapterIndex": 1,
+        "quoteCount": 3,
+        "factCount": 3,
+        "showConclusion": true,
+        "sectionNo": "1.1",
+        "title": "背景、目的和意义",
+        "lead": "国内多数考试仍采用传统方式，组织一次成规模的考试费时、费力、成本高。",
+        "quotesLabel": "传统考试",
+        "quotes": [
+          {
+            "text": "费时"
+          },
+          {
+            "text": "费力"
+          },
+          {
+            "text": "成本高"
+          }
+        ],
+        "subjectLabel": "本课题",
+        "subjectName": "在线测试系统",
+        "subjectTagline": "面向高校计算机专业学生的 B/S 系统",
+        "subjectDesc": "作为传统考试的补充和延伸：浏览器即可作答，试题多样、随机，能覆盖各类知识点。",
+        "facts": [
+          {
+            "label": "目的",
+            "text": "设计基于 B/S 模式的在线测试系统"
+          },
+          {
+            "label": "对象",
+            "text": "高校计算机专业学生"
+          },
+          {
+            "label": "意义",
+            "text": "节省人力、物力和财力"
+          }
+        ],
+        "conclusionLabel": "课题目标",
+        "conclusion": "用一套在线测试系统，把组卷、作答、阅卷和数据分析搬到浏览器里完成。"
+      }
+    },
+    {
+      "layout": "campus_domestic_abroad",
+      "props": {
+        "chapterIndex": 2,
+        "abroadCount": 2,
+        "domesticCount": 2,
+        "showNotes": true,
+        "showReview": true,
+        "sectionNo": "2.1",
+        "title": "国内外研究现状",
+        "abroadName": "产业与企业",
+        "abroadNote": "在线考试已成新的信息产业",
+        "abroadItems": [
+          {
+            "who": "信息产业",
+            "year": "现状",
+            "body": "基于 B/S 模式的在线考试系统已经形成一个**新的信息产业**，相关产品和服务不断出现。"
+          },
+          {
+            "who": "国内外企业",
+            "year": "研发",
+            "body": "国内外企业都在研究和开发基于互联网的在线考试系统，作为在线教育产品的一部分。"
+          }
+        ],
+        "domesticName": "高校与教学",
+        "domesticNote": "构建更有效的在线教育平台",
+        "domesticItems": [
+          {
+            "who": "高校平台",
+            "year": "建设",
+            "body": "高校也在研究和开发在线考试系统，目标是构建**更有效的在线教育平台**。"
+          },
+          {
+            "who": "考试现状",
+            "year": "痛点",
+            "body": "国内多数考试仍采用传统方式，组织一次成规模的考试费时、费力、成本高。"
+          }
+        ],
+        "reviewLabel": "研究述评",
+        "gapLabel": "现有不足",
+        "gap": "多数考试仍采用传统方式，组织成规模的考试**费时、费力、成本高**",
+        "focusLabel": "本文切入",
+        "focus": "面向计算机专业学生，做**基于 B/S 模式**的 Java 在线测试系统"
+      }
+    },
+    {
+      "layout": "campus_chapter_opener",
+      "props": {
+        "blockSide": "left",
+        "photoCount": 1,
+        "showPoints": true,
+        "pointCount": 4,
+        "images": [],
+        "title": "主要工作内容",
+        "number": "03",
+        "titleEn": "MAIN WORK",
+        "lead": "从开发技术与环境、需求与总体设计，到前后台实现和持续集成运维，共七个方面。",
+        "points": [
+          {
+            "index": "3.1",
+            "text": "开发技术与环境"
+          },
+          {
+            "index": "3.2",
+            "text": "需求分析与总体结构设计"
+          },
+          {
+            "index": "3.5",
+            "text": "数据库、后台与前台实现"
+          },
+          {
+            "index": "3.7",
+            "text": "持续集成与运维"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_layer_architecture",
+      "props": {
+        "chapterIndex": 3,
+        "layerCount": 4,
+        "showLinks": true,
+        "showSide": true,
+        "showNotes": true,
+        "showConclusion": true,
+        "sectionNo": "3.1",
+        "title": "开发技术与系统架构",
+        "layers": [
+          {
+            "no": "01",
+            "name": "表现层",
+            "en": "BROWSER",
+            "chips": [
+              "学生前台",
+              "管理后台",
+              "验证码服务",
+              "CDN 头像存储"
+            ],
+            "link": "HTTP 请求 · Cookie",
+            "note": "B/S 模式，学生与管理员通过浏览器访问，登录注册接入第三方验证码。"
+          },
+          {
+            "no": "02",
+            "name": "接入层",
+            "en": "GATEWAY",
+            "chips": [
+              "Nginx",
+              "Tomcat × 3"
+            ],
+            "link": "请求分发 · 负载均衡",
+            "note": "Nginx 容器把请求分发到 3 个 Tomcat 容器。"
+          },
+          {
+            "no": "03",
+            "name": "业务层",
+            "en": "SERVICE",
+            "chips": [
+              "Spring",
+              "SpringMVC",
+              "MyBatis",
+              "Spring Boot"
+            ],
+            "link": "MyBatis 数据访问",
+            "note": "用 Spring Boot、SpringMVC 与 MyBatis 实现学生与管理员两类功能。"
+          },
+          {
+            "no": "04",
+            "name": "数据层",
+            "en": "DATA",
+            "chips": [
+              "MySQL 5.6",
+              "MongoDB 3.2.4"
+            ],
+            "link": "",
+            "note": "两种数据库并用：MySQL 存主要属性，MongoDB 存详细试卷与测试用例。"
+          }
+        ],
+        "sideTitle": "开发与运行环境",
+        "sideItems": [
+          "IDEA 15",
+          "Windows 10",
+          "CentOS 7",
+          "Docker"
+        ],
+        "conclusionLabel": "技术选型",
+        "conclusion": "主流 Java Web 框架 + 双数据库，开发在 Windows 10，生产运行在 CentOS 7。"
+      }
+    },
+    {
+      "layout": "campus_figure_matrix",
+      "props": {
+        "chapterIndex": 3,
+        "figureCount": 2,
+        "colCount": 2,
+        "cellRatio": "4:3",
+        "showRowLabels": false,
+        "showColLabels": true,
+        "showTags": true,
+        "showCaptions": true,
+        "showRowNotes": false,
+        "showLead": true,
+        "legendMode": "none",
+        "showConclusion": true,
+        "images": [],
+        "sectionNo": "3.2",
+        "title": "系统用例图",
+        "leadLabel": "读图说明",
+        "lead": "人形图标代表系统用户，右侧方框内为系统提供的用例。",
+        "cornerLabel": "用例图",
+        "notesLabel": "观察",
+        "cols": [
+          {
+            "label": "用例图（一）"
+          },
+          {
+            "label": "用例图（二）"
+          }
+        ],
+        "rows": [
+          {
+            "label": "系统用户",
+            "note": ""
+          }
+        ],
+        "figures": [
+          {
+            "tag": "图 3",
+            "caption": "一位用户对应六个用例"
+          },
+          {
+            "tag": "图 4",
+            "caption": "一位用户对应五个用例"
+          }
+        ],
+        "legendItems": [
+          {
+            "name": "用户"
+          }
+        ],
+        "scaleLabel": "",
+        "scaleMin": "",
+        "scaleMax": "",
+        "conclusionLabel": "需求小结",
+        "conclusion": "两张用例图分别梳理两类用户可以使用的功能，作为功能结构设计的依据。"
+      }
+    },
+    {
+      "layout": "campus_tree_structure",
+      "props": {
+        "chapterIndex": 3,
+        "treeMode": "dual",
+        "branchCount": 4,
+        "secondBranchCount": 5,
+        "showRootNote": true,
+        "showConclusion": true,
+        "sectionNo": "3.2",
+        "title": "系统功能结构图",
+        "root": "学生",
+        "rootNote": "STUDENT",
+        "branches": [
+          {
+            "name": "个人资料管理",
+            "labels": [
+              "修改资料",
+              "登录",
+              "注册"
+            ]
+          },
+          {
+            "name": "在线测试",
+            "labels": [
+              "练习",
+              "考试"
+            ]
+          },
+          {
+            "name": "数据分析",
+            "labels": [
+              "排行榜",
+              "技能分布",
+              "题型分析",
+              "技能成熟度"
+            ]
+          },
+          {
+            "name": "试卷管理",
+            "labels": [
+              "查看试卷",
+              "删除试卷"
+            ]
+          }
+        ],
+        "secondRoot": "管理员",
+        "secondRootNote": "ADMINISTRATOR",
+        "secondBranches": [
+          {
+            "name": "试卷管理",
+            "labels": [
+              "删除试卷",
+              "关闭试卷"
+            ]
+          },
+          {
+            "name": "试题管理",
+            "labels": [
+              "添加试题",
+              "修改试题",
+              "删除试题"
+            ]
+          },
+          {
+            "name": "用户管理",
+            "labels": [
+              "添加用户",
+              "编辑用户",
+              "删除用户",
+              "审核用户"
+            ]
+          },
+          {
+            "name": "系统数据分析",
+            "labels": [
+              "技能占比",
+              "题型占比",
+              "作答分布"
+            ]
+          },
+          {
+            "name": "个人资料管理",
+            "labels": [
+              "更新资料",
+              "退出系统"
+            ]
+          }
+        ],
+        "conclusionLabel": "角色划分",
+        "conclusion": "学生 4 个模块侧重测试与自我分析，管理员 5 个模块侧重题库、试卷与用户管理。"
+      }
+    },
+    {
+      "layout": "campus_stage_cards",
+      "props": {
+        "chapterIndex": 3,
+        "cardCount": 3,
+        "sectionNo": "3.3",
+        "title": "系统结构：三阶段演进",
+        "ballValue": "3",
+        "ballSuffix": "个",
+        "ballCaption": "演进阶段",
+        "cards": [
+          {
+            "no": "01",
+            "title": "直接部署",
+            "body": "在 CentOS 7 上直接运行 MySQL、MongoDB 和 Tomcat Web 应用。"
+          },
+          {
+            "no": "02",
+            "title": "组件容器化",
+            "body": "MySQL、MongoDB、Tomcat 三个组件分别放入各自的 Docker 容器。"
+          },
+          {
+            "no": "03",
+            "title": "负载均衡",
+            "body": "Nginx 容器把请求分发到 3 个 Tomcat 容器，后端连接 MongoDB 与 MySQL 容器。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_swimlane_flow",
+      "props": {
+        "chapterIndex": 3,
+        "laneCount": 4,
+        "stepCount": 8,
+        "showConclusion": true,
+        "sectionNo": "3.3",
+        "title": "总体业务流程",
+        "lanes": [
+          {
+            "name": "用户",
+            "note": "USER"
+          },
+          {
+            "name": "系统",
+            "note": "SYSTEM"
+          },
+          {
+            "name": "学生",
+            "note": "STUDENT"
+          },
+          {
+            "name": "管理员",
+            "note": "ADMIN"
+          }
+        ],
+        "steps": [
+          {
+            "no": "01",
+            "lane": 1,
+            "col": 1,
+            "text": "在线注册",
+            "next": 2,
+            "nextLabel": "",
+            "branch": 0,
+            "branchLabel": ""
+          },
+          {
+            "no": "02",
+            "lane": 1,
+            "col": 2,
+            "text": "登录",
+            "next": 3,
+            "nextLabel": "",
+            "branch": 0,
+            "branchLabel": ""
+          },
+          {
+            "no": "03",
+            "lane": 2,
+            "col": 3,
+            "text": "登录成功？",
+            "next": 4,
+            "nextLabel": "是",
+            "branch": 2,
+            "branchLabel": "否"
+          },
+          {
+            "no": "04",
+            "lane": 2,
+            "col": 4,
+            "text": "是管理员？",
+            "next": 5,
+            "nextLabel": "否",
+            "branch": 6,
+            "branchLabel": "是"
+          },
+          {
+            "no": "05",
+            "lane": 3,
+            "col": 5,
+            "text": "学生功能",
+            "next": 8,
+            "nextLabel": "",
+            "branch": 0,
+            "branchLabel": ""
+          },
+          {
+            "no": "06",
+            "lane": 4,
+            "col": 4,
+            "text": "审核用户",
+            "next": 7,
+            "nextLabel": "",
+            "branch": 0,
+            "branchLabel": ""
+          },
+          {
+            "no": "07",
+            "lane": 4,
+            "col": 5,
+            "text": "管理员功能",
+            "next": 8,
+            "nextLabel": "",
+            "branch": 0,
+            "branchLabel": ""
+          },
+          {
+            "no": "08",
+            "lane": 2,
+            "col": 6,
+            "text": "与数据库交互",
+            "next": 0,
+            "nextLabel": "",
+            "branch": 0,
+            "branchLabel": ""
+          }
+        ],
+        "imageCaption": "图 10 系统总体业务流程图",
+        "conclusionLabel": "流程要点",
+        "conclusion": "登录后按角色分流，学生与管理员各 5 项功能，管理员多一个「审核用户」环节。"
+      }
+    },
+    {
+      "layout": "campus_er_schema",
+      "props": {
+        "chapterIndex": 3,
+        "tableCount": 4,
+        "fieldCount": 5,
+        "relationCount": 3,
+        "showLegend": true,
+        "showConclusion": true,
+        "sectionNo": "3.4",
+        "title": "系统数据库设计（MySQL）",
+        "legend": [
+          {
+            "mark": "PK",
+            "text": "主键"
+          },
+          {
+            "mark": "FK",
+            "text": "外键"
+          }
+        ],
+        "tables": [
+          {
+            "name": "user",
+            "label": "用户表",
+            "fields": [
+              {
+                "mark": "PK",
+                "name": "id",
+                "datatype": "int",
+                "note": "用户编号"
+              },
+              {
+                "mark": "",
+                "name": "username",
+                "datatype": "varchar",
+                "note": "用户名"
+              },
+              {
+                "mark": "",
+                "name": "password",
+                "datatype": "char(32)",
+                "note": "MD5 密文"
+              },
+              {
+                "mark": "",
+                "name": "role",
+                "datatype": "tinyint",
+                "note": "学生 / 管理员"
+              },
+              {
+                "mark": "",
+                "name": "status",
+                "datatype": "tinyint",
+                "note": "审核状态"
+              }
+            ]
+          },
+          {
+            "name": "paper",
+            "label": "试卷表",
+            "fields": [
+              {
+                "mark": "PK",
+                "name": "id",
+                "datatype": "int",
+                "note": "试卷编号"
+              },
+              {
+                "mark": "FK",
+                "name": "user_id",
+                "datatype": "int",
+                "note": "作答用户"
+              },
+              {
+                "mark": "",
+                "name": "mongo_id",
+                "datatype": "char(24)",
+                "note": "详情存 MongoDB"
+              },
+              {
+                "mark": "",
+                "name": "state",
+                "datatype": "tinyint",
+                "note": "是否已关闭"
+              },
+              {
+                "mark": "",
+                "name": "score",
+                "datatype": "int",
+                "note": "得分"
+              }
+            ]
+          },
+          {
+            "name": "question",
+            "label": "试题表",
+            "fields": [
+              {
+                "mark": "PK",
+                "name": "id",
+                "datatype": "int",
+                "note": "试题编号"
+              },
+              {
+                "mark": "FK",
+                "name": "tag_id",
+                "datatype": "int",
+                "note": "所属标签"
+              },
+              {
+                "mark": "",
+                "name": "kind",
+                "datatype": "tinyint",
+                "note": "单选 / 多选 / 编程"
+              },
+              {
+                "mark": "",
+                "name": "content",
+                "datatype": "text",
+                "note": "题干"
+              },
+              {
+                "mark": "",
+                "name": "answer",
+                "datatype": "text",
+                "note": "参考答案"
+              }
+            ]
+          },
+          {
+            "name": "tag",
+            "label": "标签表",
+            "fields": [
+              {
+                "mark": "PK",
+                "name": "id",
+                "datatype": "int",
+                "note": "标签编号"
+              },
+              {
+                "mark": "",
+                "name": "name",
+                "datatype": "varchar",
+                "note": "Java、MySQL 等"
+              },
+              {
+                "mark": "",
+                "name": "total",
+                "datatype": "int",
+                "note": "试题数量"
+              },
+              {
+                "mark": "",
+                "name": "status",
+                "datatype": "tinyint",
+                "note": "是否启用"
+              },
+              {
+                "mark": "",
+                "name": "created_at",
+                "datatype": "datetime",
+                "note": "创建时间"
+              }
+            ]
+          }
+        ],
+        "relations": [
+          {
+            "from": 1,
+            "fromField": 1,
+            "to": 2,
+            "toField": 2,
+            "label": "1 : N",
+            "verb": "作答"
+          },
+          {
+            "from": 2,
+            "fromField": 0,
+            "to": 3,
+            "toField": 0,
+            "label": "N : M",
+            "verb": "组卷"
+          },
+          {
+            "from": 3,
+            "fromField": 2,
+            "to": 4,
+            "toField": 1,
+            "label": "N : 1",
+            "verb": "归类"
+          }
+        ],
+        "imageCaption": "图 12 MySQL 四张表结构图",
+        "conclusionLabel": "设计说明",
+        "conclusion": "MySQL 存 4 张表的主要属性；详细试卷与测试用例存 MongoDB 的 3 个集合（字段为示例）"
+      }
+    },
+    {
+      "layout": "campus_screenshot_grid",
+      "props": {
+        "chapterIndex": 3,
+        "layout": "desktop",
+        "shotCount": 2,
+        "frame": "device",
+        "showArrows": false,
+        "showPoints": true,
+        "pointCount": 3,
+        "showConclusion": true,
+        "images": [],
+        "sectionNo": "3.5",
+        "title": "后台实现：登录与注册",
+        "shots": [
+          {
+            "no": "图 13",
+            "text": "登录界面"
+          },
+          {
+            "no": "图 14",
+            "text": "注册界面"
+          }
+        ],
+        "pointsLabel": "技术要点",
+        "points": [
+          {
+            "no": "01",
+            "title": "验证码",
+            "desc": "使用第三方验证码服务，并做二次验证。"
+          },
+          {
+            "no": "02",
+            "title": "密码加密",
+            "desc": "密码传输使用 MD5 加密。"
+          },
+          {
+            "no": "03",
+            "title": "身份验证",
+            "desc": "登录后的身份验证使用 Cookie。"
+          }
+        ],
+        "conclusionLabel": "安全措施",
+        "conclusion": "验证码、密码加密、身份验证三道措施保证登录注册环节的安全。"
+      }
+    },
+    {
+      "layout": "campus_finding_figure",
+      "props": {
+        "chapterIndex": 3,
+        "notesPosition": "side",
+        "noteCount": 3,
+        "showKicker": true,
+        "showCounter": false,
+        "showSource": false,
+        "images": [],
+        "sectionNo": "3.5",
+        "kicker": "数据分析",
+        "counter": "",
+        "title": "后台按知识技能、题型和作答分布三类统计，持续监控整个题库的试题质量",
+        "figureNo": "图 19",
+        "caption": "系统数据分析界面",
+        "source": "",
+        "notesLabel": "图里看什么",
+        "notes": [
+          {
+            "tag": "(a)",
+            "title": "知识技能占比",
+            "desc": "Java 类试题占 44.44%，HTML 类占 10.71%。"
+          },
+          {
+            "tag": "(b)",
+            "title": "题型数量占比",
+            "desc": "单选、多选、编程题三种题型各占多少。"
+          },
+          {
+            "tag": "(c)",
+            "title": "作答分布",
+            "desc": "各知识技能的作答情况，用来提升题库试题质量。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_screenshot_grid",
+      "props": {
+        "chapterIndex": 3,
+        "layout": "desktop",
+        "shotCount": 4,
+        "frame": "device",
+        "showArrows": false,
+        "showPoints": false,
+        "pointCount": 2,
+        "showConclusion": true,
+        "images": [],
+        "sectionNo": "3.6",
+        "title": "系统前台实现",
+        "shots": [
+          {
+            "no": "图 20",
+            "text": "在线测试：计时作答，可部分提交"
+          },
+          {
+            "no": "图 21",
+            "text": "我的试卷：已关闭的试卷不能展开"
+          },
+          {
+            "no": "图 22",
+            "text": "排行榜：按用户综合得分排名"
+          },
+          {
+            "no": "图 23",
+            "text": "我的数据分析：技能与题型占比"
+          }
+        ],
+        "pointsLabel": "实现要点",
+        "points": [
+          {
+            "no": "01",
+            "title": "计时与提交",
+            "desc": "在线测试支持计时、部分提交。"
+          },
+          {
+            "no": "02",
+            "title": "防止题库泄露",
+            "desc": "已关闭的试卷不允许展开详细内容。"
+          }
+        ],
+        "conclusionLabel": "功能小结",
+        "conclusion": "前台四个模块串起「作答 → 查卷 → 排名 → 自我分析」的完整使用路径。"
+      }
+    },
+    {
+      "layout": "campus_arrow_ring",
+      "props": {
+        "chapterIndex": 3,
+        "segmentCount": 4,
+        "sideCount": 4,
+        "sectionNo": "3.7",
+        "title": "持续集成与容器化运维",
+        "centerTitle": "持续集成",
+        "centerNote": "JENKINS · DOCKER",
+        "segments": [
+          {
+            "name": "项目打包"
+          },
+          {
+            "name": "发布测试"
+          },
+          {
+            "name": "发布监控"
+          },
+          {
+            "name": "邮件告警"
+          }
+        ],
+        "leftTitle": "Jenkins 集成",
+        "leftNote": "CONTINUOUS INTEGRATION",
+        "rightTitle": "Docker 容器",
+        "rightNote": "CONTAINERIZATION",
+        "leftItems": [
+          {
+            "title": "三模块打包",
+            "desc": "parent、service、webapp 三个模块分别打包。"
+          },
+          {
+            "title": "自动发布",
+            "desc": "打包后发送到对应的 3 个容器并重启程序。"
+          },
+          {
+            "title": "发布监控",
+            "desc": "持续监控每一次发布的运行情况。"
+          },
+          {
+            "title": "邮件告警",
+            "desc": "构建或发布出错时自动发送告警邮件。"
+          }
+        ],
+        "rightItems": [
+          {
+            "title": "轻量虚拟化",
+            "desc": "容器启动为秒级，硬盘占用一般为 MB 级。"
+          },
+          {
+            "title": "交付更快",
+            "desc": "交付和部署比虚拟机更快。"
+          },
+          {
+            "title": "迁移扩展",
+            "desc": "迁移和扩展更轻松。"
+          },
+          {
+            "title": "管理简单",
+            "desc": "容器由第三方管理平台统一管理。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_option_matrix",
+      "props": {
+        "chapterIndex": 3,
+        "rowCount": 2,
+        "dimensionCount": 4,
+        "highlightIndex": 1,
+        "showConclusion": true,
+        "sectionNo": "3.7",
+        "title": "Docker：容器与虚拟机对比",
+        "cornerLabel": "虚拟化方式",
+        "pickLabel": "本系统",
+        "dimensions": [
+          "启动",
+          "硬盘使用",
+          "性能",
+          "系统支持量"
+        ],
+        "rows": [
+          {
+            "no": "01",
+            "name": "容器",
+            "note": "Docker",
+            "cells": [
+              "秒级",
+              "一般为 MB",
+              "接近原生",
+              "单机支持上千个容器"
+            ]
+          },
+          {
+            "no": "02",
+            "name": "虚拟机",
+            "note": "对照",
+            "cells": [
+              "分钟级",
+              "一般为 GB",
+              "弱于原生",
+              "一般几十个"
+            ]
+          }
+        ],
+        "conclusionLabel": "选择理由",
+        "conclusion": "轻量级虚拟化、交付部署更快、迁移扩展更轻松、管理更简单，因此采用 Docker。"
+      }
+    },
+    {
+      "layout": "campus_status_table",
+      "props": {
+        "chapterIndex": 3,
+        "rowCount": 7,
+        "stateAt": "last",
+        "showMeta": false,
+        "showTotal": true,
+        "showConclusion": true,
+        "sectionNo": "3.7",
+        "title": "Docker 容器管理",
+        "headNo": "序号",
+        "headMain": "容器",
+        "headMeta": "类型",
+        "headDetail": "说明",
+        "headState": "状态",
+        "rows": [
+          {
+            "no": "1",
+            "main": "nginx",
+            "meta": "",
+            "detail": "把请求分发到 3 个 Tomcat 容器",
+            "status": "已启动"
+          },
+          {
+            "no": "2",
+            "main": "tomcat1",
+            "meta": "",
+            "detail": "运行 Web 应用",
+            "status": "已启动"
+          },
+          {
+            "no": "3",
+            "main": "tomcat2",
+            "meta": "",
+            "detail": "运行 Web 应用",
+            "status": "已启动"
+          },
+          {
+            "no": "4",
+            "main": "tomcat3",
+            "meta": "",
+            "detail": "运行 Web 应用",
+            "status": "已启动"
+          },
+          {
+            "no": "5",
+            "main": "mongodb",
+            "meta": "",
+            "detail": "详细试卷、测试用例",
+            "status": "已启动"
+          },
+          {
+            "no": "6",
+            "main": "rabbitmq",
+            "meta": "",
+            "detail": "消息队列",
+            "status": "已启动"
+          },
+          {
+            "no": "7",
+            "main": "mysql",
+            "meta": "",
+            "detail": "用户、试题、标签、试卷",
+            "status": "已启动"
+          }
+        ],
+        "total": {
+          "no": "合计",
+          "main": "7 个容器",
+          "meta": "",
+          "detail": "运行状态均为 Up",
+          "status": "已启动"
+        },
+        "conclusionLabel": "运维方式",
+        "conclusion": "所有容器使用第三方 Docker 管理平台统一管理（图 26 容器列表）。"
+      }
+    },
+    {
+      "layout": "campus_key_statement",
+      "props": {
+        "chapterIndex": 3,
+        "supportCount": 2,
+        "showSource": true,
+        "sectionNo": "3.7",
+        "title": "让技术充满情感",
+        "kicker": "一点用心",
+        "statement": "技术之外，也让系统在用户走错页面时传递一点温度。",
+        "source": "—— 图 27 接入公益项目后的 404 页面",
+        "supports": [
+          {
+            "no": "01",
+            "title": "接入公益 404",
+            "desc": "系统接入公益 404 项目。"
+          },
+          {
+            "no": "02",
+            "title": "显示寻人信息",
+            "desc": "访问不存在的页面时，显示公益寻人信息。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_summary_outlook",
+      "props": {
+        "chapterIndex": 4,
+        "conclusionCount": 3,
+        "limitCount": 1,
+        "outlookCount": 1,
+        "sectionNo": "4.1",
+        "title": "总结",
+        "conclusionsLabel": "系统特点",
+        "conclusions": [
+          {
+            "no": "01",
+            "title": "并发与容灾",
+            "desc": "依托负载均衡和 Docker 技术，系统具有较强的并发性能和容灾性能。"
+          },
+          {
+            "no": "02",
+            "title": "扩展性强",
+            "desc": "各组件运行在各自的 Docker 容器中，系统扩展性强。"
+          },
+          {
+            "no": "03",
+            "title": "技术较先进",
+            "desc": "使用 Spring Boot、Docker、Jenkins 等较为先进的技术。"
+          }
+        ],
+        "limitsLabel": "工作小结",
+        "limits": [
+          {
+            "text": "完成了在线测试系统应具备的各项基本功能。"
+          }
+        ],
+        "outlookLabel": "后续计划",
+        "outlooks": [
+          {
+            "text": "排行榜增加多角度排名和单场考试排名。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_temp_closing",
+      "props": {
+        "kicker": "THANK YOU",
+        "title": "谢谢聆听",
+        "subtitle": "恳请各位老师批评指正",
+        "contact": "答辩人 · 示例同学"
+      }
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "title": "本科毕业论文答辩(厦门大学定制封面目录)",
+  "goal": "用 9 页横向翻页 PPT 交代研究背景、研究设计、结果与结论;封面目录用厦门大学的定制设计(视频背景),导出 PPTX 时换成设计师的原生页",
+  "audience": "答辩委员会 / 指导教师",
+  "owner": "答辩人",
+  "randomSeed": "thesis-defense-xmu-demo",
+  "themePack": "campus",
+  "brand": {
+    "school": "xmu",
+    "headerNote": "GRADUATION THESIS DEFENSE · 2026",
+    "chapters": [
+      "研究背景",
+      "研究设计",
+      "结果分析",
+      "总结展望"
+    ],
+    "fill": "gradient",
+    "nav": "band",
+    "titleStyle": "ribbon"
+  },
+  "slides": [
+    {
+      "layout": "campus_temp_cover",
+      "props": {
+        "kicker": "本科毕业论文答辩",
+        "title": "基于潮汐出行数据的校园共享单车调度优化研究",
+        "presenterLabel": "答辩人",
+        "presenter": "示例同学",
+        "advisor": "示例教授",
+        "unit": "交通运输学院",
+        "date": "2026年6月"
+      }
+    },
+    {
+      "layout": "campus_temp_agenda",
+      "props": {
+        "itemCount": 4,
+        "title": "目录",
+        "subtitle": "CONTENTS",
+        "items": [
+          {
+            "no": "01",
+            "title": "研究背景",
+            "note": "BACKGROUND",
+            "desc": "早晚高峰车辆潮汐失衡"
+          },
+          {
+            "no": "02",
+            "title": "研究设计",
+            "note": "RESEARCH DESIGN",
+            "desc": "分时段需求预测与路径求解"
+          },
+          {
+            "no": "03",
+            "title": "结果分析",
+            "note": "RESULTS",
+            "desc": "两个学期的实测数据对比"
+          },
+          {
+            "no": "04",
+            "title": "总结展望",
+            "note": "CONCLUSION",
+            "desc": "主要结论与后续工作"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_lead_quotes_subject",
+      "props": {
+        "chapterIndex": 1,
+        "quoteCount": 4,
+        "factCount": 3,
+        "showConclusion": true,
+        "sectionNo": "1.1",
+        "title": "研究背景",
+        "lead": "早晚高峰的单向出行，让教学区和宿舍区的车辆数量长期失衡：上课前宿舍区无车可骑，下课后教学区车辆堆积。",
+        "quotesLabel": "典型现象",
+        "quotes": [
+          {
+            "text": "早八前宿舍区找不到车"
+          },
+          {
+            "text": "教学楼门口车辆堆成山"
+          },
+          {
+            "text": "调度车总在错的时间到"
+          },
+          {
+            "text": "高峰期一车难求"
+          }
+        ],
+        "subjectLabel": "研究对象",
+        "subjectName": "校园共享单车",
+        "subjectTagline": "12 个站点 · 约 1800 辆车（示例数据）",
+        "subjectDesc": "覆盖教学区、宿舍区和生活区，日均骑行约 9000 次，早晚高峰的潮汐特征明显。",
+        "facts": [
+          {
+            "label": "范围",
+            "text": "主校区 12 个站点"
+          },
+          {
+            "label": "周期",
+            "text": "两个学期逐时段记录"
+          },
+          {
+            "label": "样本",
+            "text": "60 位骑行用户访谈"
+          }
+        ],
+        "conclusionLabel": "研究问题",
+        "conclusion": "能否根据潮汐规律提前调度，让车在对的时间出现在对的站点？"
+      }
+    },
+    {
+      "layout": "campus_method_roadmap",
+      "props": {
+        "chapterIndex": 2,
+        "methodCount": 2,
+        "stepCount": 3,
+        "showOutputs": true,
+        "showConclusion": true,
+        "sectionNo": "2.1",
+        "title": "研究方法与技术路线",
+        "methodsLabel": "研究方法",
+        "coreLabel": "核心方法",
+        "coreTitle": "需求预测 + 路径优化",
+        "coreDesc": "先预测各站点分时段需求，再求解调度车的再平衡路线。",
+        "methodsSubLabel": "具体方法",
+        "methods": [
+          {
+            "title": "实地调研",
+            "desc": "逐时段记录 12 个站点的车辆数量。"
+          },
+          {
+            "title": "用户访谈",
+            "desc": "访谈 60 位骑行用户，了解出行时段与痛点。"
+          }
+        ],
+        "stepsLabel": "技术路线",
+        "outputLabel": "阶段产出",
+        "steps": [
+          {
+            "no": "01",
+            "title": "潮汐特征识别",
+            "desc": "按时段聚合骑行记录，识别早晚高峰的单向流动规律。",
+            "output": "站点潮汐画像"
+          },
+          {
+            "no": "02",
+            "title": "分时段需求预测",
+            "desc": "以时段、天气、课表为特征，预测各站点未来两小时的需求。",
+            "output": "需求预测模型"
+          },
+          {
+            "no": "03",
+            "title": "再平衡路径求解",
+            "desc": "在满足率约束下求解调度车路线，最小化调度里程。",
+            "output": "调度方案"
+          }
+        ],
+        "conclusionLabel": "研究主线",
+        "conclusion": "数据采集 → 规律识别 → 需求预测 → 路径优化"
+      }
+    },
+    {
+      "layout": "campus_metric_grid",
+      "props": {
+        "chapterIndex": 2,
+        "metricCount": 6,
+        "highlightIndex": 3,
+        "showLead": true,
+        "showFootnote": true,
+        "sectionNo": "2.3",
+        "title": "数据采集与样本规模",
+        "leadLabel": "数据说明",
+        "lead": "数据来自校内 12 个站点两个学期的逐时段实地观测，以及运营方提供的脱敏骑行记录。",
+        "metrics": [
+          {
+            "no": "01",
+            "label": "观测站点",
+            "value": "12",
+            "unit": "个",
+            "note": "覆盖宿舍、教学与生活区"
+          },
+          {
+            "no": "02",
+            "label": "观测周期",
+            "value": "2",
+            "unit": "学期",
+            "note": "2024—2025 学年"
+          },
+          {
+            "no": "03",
+            "label": "骑行记录",
+            "value": "4.8",
+            "unit": "万条",
+            "note": "运营方脱敏数据"
+          },
+          {
+            "no": "04",
+            "label": "用户访谈",
+            "value": "60",
+            "unit": "人",
+            "note": "学生与教职工"
+          },
+          {
+            "no": "05",
+            "label": "时段划分",
+            "value": "6",
+            "unit": "段",
+            "note": "按课表划分高峰时段"
+          },
+          {
+            "no": "06",
+            "label": "调度车辆",
+            "value": "2",
+            "unit": "辆",
+            "note": "用于方案实地验证"
+          }
+        ],
+        "footnote": "注：以上数字为示例数据。"
+      }
+    },
+    {
+      "layout": "campus_bar_chart_insight",
+      "props": {
+        "chapterIndex": 3,
+        "barCount": 6,
+        "seriesMode": "double",
+        "highlightIndex": 1,
+        "insightCount": 3,
+        "showConclusion": false,
+        "sectionNo": "3.1",
+        "title": "调度前后各站点满足率",
+        "chartLabel": "早高峰满足率",
+        "chartNote": "单位：% · 示例数据",
+        "seriesA": "调度后",
+        "seriesB": "调度前",
+        "bars": [
+          {
+            "label": "宿舍一区",
+            "value": 92,
+            "value2": 61
+          },
+          {
+            "label": "宿舍二区",
+            "value": 89,
+            "value2": 58
+          },
+          {
+            "label": "教学楼 A",
+            "value": 94,
+            "value2": 80
+          },
+          {
+            "label": "教学楼 B",
+            "value": 91,
+            "value2": 77
+          },
+          {
+            "label": "图书馆",
+            "value": 95,
+            "value2": 84
+          },
+          {
+            "label": "食堂",
+            "value": 90,
+            "value2": 72
+          }
+        ],
+        "insightsLabel": "主要发现",
+        "insights": [
+          {
+            "no": "01",
+            "title": "宿舍区改善最明显",
+            "desc": "早高峰满足率由六成左右提升到九成左右，“无车可骑”基本缓解。"
+          },
+          {
+            "no": "02",
+            "title": "整体满足率提升",
+            "desc": "六个站点的平均满足率提高约 20 个百分点，波动明显收窄。"
+          },
+          {
+            "no": "03",
+            "title": "调度成本可控",
+            "desc": "调度车日均里程增加不到 10%，现有人力即可执行。"
+          }
+        ],
+        "conclusionLabel": "结论",
+        "conclusion": "矩阵内各账号分工明确，整体增长明显快于单账号运营的对照组。"
+      }
+    },
+    {
+      "layout": "campus_summary_outlook",
+      "props": {
+        "chapterIndex": 4,
+        "conclusionCount": 3,
+        "limitCount": 2,
+        "outlookCount": 2,
+        "sectionNo": "3.3",
+        "title": "结论与展望",
+        "conclusionsLabel": "研究结论",
+        "conclusions": [
+          {
+            "no": "01",
+            "title": "潮汐规律可预测",
+            "desc": "车辆失衡集中在课前与课后两个时段，方向稳定，可以提前预测。"
+          },
+          {
+            "no": "02",
+            "title": "分时段调度更有效",
+            "desc": "按预测结果在高峰前完成再平衡，比固定时刻调度的满足率更高。"
+          },
+          {
+            "no": "03",
+            "title": "方案可落地",
+            "desc": "调度里程与人力在现有条件下可承受，适合在校内推广。"
+          }
+        ],
+        "limitsLabel": "研究不足",
+        "limits": [
+          {
+            "text": "只在一所学校、两个学期内验证，季节与校历差异考虑不足。"
+          },
+          {
+            "text": "天气等外部因素以简化方式处理，极端天气下预测误差较大。"
+          }
+        ],
+        "outlookLabel": "未来展望",
+        "outlooks": [
+          {
+            "text": "接入实时订单数据，做滚动预测与动态调度。"
+          },
+          {
+            "text": "扩展到多校区与周边社区，检验方案的适用范围。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_qa_response",
+      "props": {
+        "chapterIndex": 4,
+        "itemCount": 3,
+        "sectionNo": "3.4",
+        "title": "答辩问题预设",
+        "questionLabel": "问",
+        "answerLabel": "答",
+        "items": [
+          {
+            "no": "Q1",
+            "question": "为什么以两小时为预测窗口？",
+            "answer": "两小时覆盖一次课前到课后的完整高峰，也留出调度车完成一轮再平衡所需的时间；更长的窗口误差明显增大。"
+          },
+          {
+            "no": "Q2",
+            "question": "样本只有一所学校，结论能推广吗？",
+            "answer": "方法本身不依赖特定学校，换校时需要用当地数据重新识别潮汐特征和训练预测模型，文中已说明这一前提。"
+          },
+          {
+            "no": "Q3",
+            "question": "运营方为什么愿意采用这套方案？",
+            "answer": "方案在不增加车辆的前提下提高满足率，调度里程增加有限，能直接减少用户投诉与车辆闲置。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_temp_closing",
+      "props": {
+        "kicker": "THANK YOU",
+        "title": "谢谢聆听",
+        "subtitle": "恳请各位老师批评指正",
+        "contact": "答辩人 · 示例同学"
+      }
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+ "school": "thu",
+ "name": "清华大学",
+ "en": "Tsinghua University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 345,
+   "index": 36,
+   "preview": "预览/各页/36.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide36.xml",
+   "fields": [
+    "眉题",
+    "主标题",
+    "校训",
+    "地点标签",
+    "地点说明"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 视频「2」",
+    "01 图片「文字衬底（保留在视频上方）」",
+    "02 文字「眉题」",
+    "03 文字「主标题」",
+    "04 文字「校训」",
+    "05 文字「地点标签」",
+    "06 文字「地点说明」",
+    "07 图片「图片 17」"
+   ],
+   "notes": [
+    "「2」有裁切 {'l': 0.02203, 'r': 0.02203}(网页用 object-position / 外框裁切还原)",
+    "压在视频 / 3D 模型之上的装饰:「文字衬底（保留在视频上方）」、「图片 17」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 276,
+   "index": 37,
+   "preview": "预览/各页/37.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide37.xml",
+   "fields": [
+    "眉题",
+    "主标题",
+    "地点标签",
+    "地点说明"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 视频「2」",
+    "01 图片「文字衬底（保留在视频上方）」",
+    "02 文字「眉题」",
+    "03 文字「主标题」",
+    "04 文字「地点标签」",
+    "05 文字「地点说明」",
+    "06 图片「图片 17」"
+   ],
+   "notes": [
+    "「2」有裁切 {'l': 0.02203, 'r': 0.02203}(网页用 object-position / 外框裁切还原)",
+    "压在视频 / 3D 模型之上的装饰:「文字衬底（保留在视频上方）」、「图片 17」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "page2",
+   "variant": "default",
+   "slideId": 277,
+   "index": 38,
+   "preview": "预览/各页/38.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide38.xml",
+   "fields": [
+    "眉题",
+    "主标题",
+    "副标题",
+    "标签1",
+    "内容1",
+    "标签2",
+    "内容2",
+    "标签3",
+    "内容3",
+    "地点标签",
+    "地点说明"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 视频「1」",
+    "01 图片「文字衬底（保留在视频上方）」",
+    "02 图片「文字衬底（保留在视频上方）」",
+    "03 文字「眉题」",
+    "04 文字「主标题」",
+    "05 文字「副标题」",
+    "06 形状「玻璃条1」",
+    "07 文字「标签1」",
+    "08 文字「内容1」",
+    "09 形状「玻璃条2」",
+    "10 文字「标签2」",
+    "11 文字「内容2」",
+    "12 形状「玻璃条3」",
+    "13 文字「标签3」",
+    "14 文字「内容3」",
+    "15 文字「地点标签」",
+    "16 文字「地点说明」",
+    "17 图片「图片 20」"
+   ],
+   "notes": [
+    "「1」有裁切 {'l': 0.11103, 't': 0.19322, 'r': 0.0818}(网页用 object-position / 外框裁切还原)",
+    "「文字衬底（保留在视频上方）」有裁切 {'t': 0.6562}(网页用 object-position / 外框裁切还原)",
+    "压在视频 / 3D 模型之上的装饰:「文字衬底（保留在视频上方）」、「文字衬底（保留在视频上方）」、「玻璃条1」、「玻璃条2」、「玻璃条3」、「图片 20」"
+   ],
+   "warnings": []
+  }
+ ],
+ "assets": [
+  {
+   "file": "img-image46.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image46.png",
+   "model": null,
+   "originalSize": [
+    1920,
+    1080
+   ],
+   "outputSize": [
+    1920,
+    1080
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 10265,
+   "uses": [
+    {
+     "slideId": 345,
+     "page": "cover",
+     "variant": "default",
+     "shape": "文字衬底（保留在视频上方）",
+     "box": [
+      0.02,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 276,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "文字衬底（保留在视频上方）",
+     "box": [
+      0.02,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 277,
+     "page": "page2",
+     "variant": "default",
+     "shape": "文字衬底（保留在视频上方）",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 277,
+     "page": "page2",
+     "variant": "default",
+     "shape": "文字衬底（保留在视频上方）",
+     "box": [
+      0.0,
+      708.69,
+      1919.95,
+      371.31
+     ],
+     "crop": {
+      "t": 0.6562
+     },
+     "alpha": 1.0,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image47.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image47.png",
+   "model": null,
+   "originalSize": [
+    896,
+    316
+   ],
+   "outputSize": [
+    458,
+    162
+   ],
+   "displaySize": [
+    228.9,
+    80.7
+   ],
+   "bytes": 39505,
+   "uses": [
+    {
+     "slideId": 345,
+     "page": "cover",
+     "variant": "default",
+     "shape": "图片 17",
+     "box": [
+      78.4,
+      63.67,
+      228.88,
+      80.72
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 276,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "图片 17",
+     "box": [
+      78.4,
+      63.67,
+      228.88,
+      80.72
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 277,
+     "page": "page2",
+     "variant": "default",
+     "shape": "图片 20",
+     "box": [
+      78.4,
+      63.67,
+      228.88,
+      80.72
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "video-media1.mp4",
+   "poster": "video-media1-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media1.mp4",
+   "uses": [
+    {
+     "slideId": 345,
+     "page": "cover",
+     "variant": "default",
+     "shape": "2",
+     "box": [
+      0.02,
+      -0.0,
+      1919.95,
+      1130.33
+     ],
+     "crop": {
+      "l": 0.02203,
+      "r": 0.02203
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 276,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "2",
+     "box": [
+      0.02,
+      -0.0,
+      1919.95,
+      1130.33
+     ],
+     "crop": {
+      "l": 0.02203,
+      "r": 0.02203
+     },
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 8232683
+   },
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 57560454
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 5179730
+    }
+   ],
+   "params": "libx264 preset=slow crf=22 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1314876,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image45.png",
+   "posterBytes": 407979
+  },
+  {
+   "file": "video-media2.mp4",
+   "poster": "video-media2-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media2.mp4",
+   "uses": [
+    {
+     "slideId": 277,
+     "page": "page2",
+     "variant": "default",
+     "shape": "1",
+     "box": [
+      0.02,
+      0.0,
+      1919.93,
+      1080.0
+     ],
+     "crop": {
+      "l": 0.11103,
+      "t": 0.19322,
+      "r": 0.0818
+     },
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 6222728
+   },
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 57821012
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 5245888
+    },
+    {
+     "crf": 24,
+     "bytes": 3915133
+    }
+   ],
+   "params": "libx264 preset=slow crf=24 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1509281,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image48.png",
+   "posterBytes": 378930
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Arial": [
+   "cover/default",
+   "cover/long_title"
+  ],
+  "Microsoft YaHei": [
+   "cover/default",
+   "cover/long_title",
+   "page2/default"
+  ],
+  "Source Han Serif SC": [
+   "cover/default",
+   "page2/default"
+  ],
+  "Source Han Serif SC Heavy": [
+   "cover/default",
+   "cover/long_title",
+   "page2/default"
+  ],
+  "思源黑体 CN Light": [
+   "cover/default",
+   "cover/long_title",
+   "page2/default"
+  ]
+ },
+ "totalBytes": 3660836
+}

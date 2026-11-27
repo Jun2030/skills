@@ -1,0 +1,131 @@
+{
+ "fonts": [
+  {
+   "source": "Cinzel-Regular.ttf",
+   "file": "Cinzel-Regular.woff2",
+   "subset": "full",
+   "sourceBytes": 54572,
+   "bytes": 17320
+  },
+  {
+   "source": "Cinzel-Bold.ttf",
+   "file": "Cinzel-Bold.woff2",
+   "subset": "full",
+   "sourceBytes": 56088,
+   "bytes": 18816
+  },
+  {
+   "source": "PlayfairDisplay-Black.ttf",
+   "file": "PlayfairDisplay-Black.woff2",
+   "subset": "full",
+   "sourceBytes": 236440,
+   "bytes": 58496
+  },
+  {
+   "source": "D-DIN.ttf",
+   "file": "D-DIN.woff2",
+   "subset": "full",
+   "sourceBytes": 49276,
+   "bytes": 10680
+  },
+  {
+   "source": "CutiveMono-Regular.ttf",
+   "file": "CutiveMono-Regular.woff2",
+   "subset": "full",
+   "sourceBytes": 77252,
+   "bytes": 18336
+  },
+  {
+   "source": "MaShanZheng-Regular.ttf",
+   "file": "MaShanZheng-Regular.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 5857936,
+   "bytes": 3234332
+  },
+  {
+   "source": "AlimamaDongFangDaKai-Regular.ttf",
+   "file": "AlimamaDongFangDaKai-Regular.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 5251184,
+   "bytes": 2538096
+  },
+  {
+   "source": "Alimama_ShuHeiTi_Bold.ttf",
+   "file": "Alimama-ShuHeiTi-Bold.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 1360412,
+   "bytes": 569468
+  },
+  {
+   "source": "SourceHanSerifCN-Heavy.otf",
+   "file": "SourceHanSerifCN-Heavy.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 11304840,
+   "bytes": 1489752
+  },
+  {
+   "source": "SourceHanSerifCN-SemiBold.otf",
+   "file": "SourceHanSerifCN-SemiBold.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 11453056,
+   "bytes": 1517192
+  },
+  {
+   "source": "SourceHanSerifCN-Medium.otf",
+   "file": "SourceHanSerifCN-Medium.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 11373656,
+   "bytes": 1508300
+  },
+  {
+   "source": "SourceHanSerifCN-Regular.otf",
+   "file": "SourceHanSerifCN-Regular.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 11257480,
+   "bytes": 1486072
+  },
+  {
+   "source": "SourceHanSerifCN-Light.otf",
+   "file": "SourceHanSerifCN-Light.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 11090240,
+   "bytes": 1459224
+  },
+  {
+   "source": "ChillJinshuSongHeavy.otf",
+   "file": "ChillJinshuSong-Heavy.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 15342340,
+   "bytes": 1771620
+  },
+  {
+   "source": "ChillJinshuSongBold.otf",
+   "file": "ChillJinshuSong-Bold.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 15651488,
+   "bytes": 1750552
+  },
+  {
+   "source": "ChillJinshuSongMedium.otf",
+   "file": "ChillJinshuSong-Medium.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 16024064,
+   "bytes": 1687580
+  },
+  {
+   "source": "LXGWWenKai-Regular.ttf",
+   "file": "LXGWWenKai-Regular.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 16301638,
+   "bytes": 1635648
+  },
+  {
+   "source": "CN-Heavy.otf",
+   "file": "SourceHanSansCN-Heavy.woff2",
+   "subset": "gb2312",
+   "sourceBytes": 11385136,
+   "bytes": 1337408
+  }
+ ],
+ "totalBytes": 22108892
+}

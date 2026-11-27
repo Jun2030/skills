@@ -1,0 +1,10 @@
+{
+  "_说明": "提取脚本按这里列出的形状合成矢量装饰层 SVG(assets/schools/zju/<name>.svg,位置写进 manifest.json 的 layers[].box)。",
+  "layers": [
+    { "name": "cover-band", "slide": 348, "shapes": ["任意多边形: 形状 7", "任意多边形: 形状 9"] },
+    { "name": "icon-track", "slide": 348, "shapes": ["封面-图标1"] },
+    { "name": "icon-team", "slide": 348, "shapes": ["封面-图标2"] },
+    { "name": "icon-unit", "slide": 348, "shapes": ["封面-图标3"] },
+    { "name": "icon-date", "slide": 348, "shapes": ["封面-图标4"] }
+  ]
+}

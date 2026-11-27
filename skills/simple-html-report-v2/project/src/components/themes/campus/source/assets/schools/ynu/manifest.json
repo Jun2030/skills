@@ -1,0 +1,940 @@
+{
+ "school": "ynu",
+ "name": "云南大学",
+ "en": "Yunnan University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 353,
+   "index": 70,
+   "preview": "预览/各页/70.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide70.xml",
+   "fields": [
+    "主标题（云大精神）",
+    "副标题",
+    "汇报信息"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image64.jpeg"
+   },
+   "stack": [
+    "00 视频「云南大学」",
+    "01 图片「天空蓝色渐变遮罩」",
+    "02 图片「天空蓝色渐变遮罩」",
+    "03 图片「天空蓝色渐变遮罩」",
+    "04 文字「主标题（云大精神）」 组合:组合 7",
+    "05 文字「副标题」 组合:组合 7",
+    "06 形状「信息胶囊底」 组合:组合 7",
+    "07 文字「汇报信息」 组合:组合 7",
+    "08 图片「云南大学校徽校名」"
+   ],
+   "notes": [
+    "遮罩层「天空蓝色渐变遮罩」(z=1),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "遮罩层「天空蓝色渐变遮罩」(z=2),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "遮罩层「天空蓝色渐变遮罩」(z=3),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "「主标题（云大精神）」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「副标题」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「天空蓝色渐变遮罩」、「天空蓝色渐变遮罩」、「天空蓝色渐变遮罩」、「信息胶囊底」、「云南大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 256,
+   "index": 71,
+   "preview": "预览/各页/71.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide71.xml",
+   "fields": [
+    "主标题（云大精神）",
+    "副标题",
+    "汇报信息"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image64.jpeg"
+   },
+   "stack": [
+    "00 视频「云南大学」",
+    "01 图片「天空蓝色渐变遮罩」",
+    "02 图片「天空蓝色渐变遮罩」",
+    "03 图片「天空蓝色渐变遮罩」",
+    "04 文字「主标题（云大精神）」 组合:组合 7",
+    "05 文字「副标题」 组合:组合 7",
+    "06 形状「信息胶囊底」 组合:组合 7",
+    "07 文字「汇报信息」 组合:组合 7",
+    "08 图片「云南大学校徽校名」"
+   ],
+   "notes": [
+    "遮罩层「天空蓝色渐变遮罩」(z=1),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "遮罩层「天空蓝色渐变遮罩」(z=2),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "遮罩层「天空蓝色渐变遮罩」(z=3),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "「主标题（云大精神）」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「副标题」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「天空蓝色渐变遮罩」、「天空蓝色渐变遮罩」、「天空蓝色渐变遮罩」、「信息胶囊底」、「云南大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 332,
+   "index": 73,
+   "preview": "预览/各页/73.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide73.xml",
+   "fields": [
+    "目录标题",
+    "英文标题",
+    "云大精神",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image68.jpeg"
+   },
+   "stack": [
+    "00 图片「云南大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「英文标题」",
+    "03 文字「云大精神」",
+    "04 形状「目录卡片01」",
+    "05 文字「序号01」",
+    "06 文字「条目01」",
+    "07 文字「英文01」",
+    "08 形状「目录图标-年度综述」",
+    "09 形状「目录卡片02」",
+    "10 文字「序号02」",
+    "11 文字「条目02」",
+    "12 文字「英文02」",
+    "13 形状「目录图标-工作展望」"
+   ],
+   "notes": [],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 333,
+   "index": 74,
+   "preview": "预览/各页/74.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide74.xml",
+   "fields": [
+    "目录标题",
+    "英文标题",
+    "云大精神",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image68.jpeg"
+   },
+   "stack": [
+    "00 图片「云南大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「英文标题」",
+    "03 文字「云大精神」",
+    "04 形状「目录卡片01」",
+    "05 文字「序号01」",
+    "06 文字「条目01」",
+    "07 文字「英文01」",
+    "08 形状「目录图标-年度综述」",
+    "09 形状「目录卡片02」",
+    "10 文字「序号02」",
+    "11 文字「条目02」",
+    "12 文字「英文02」",
+    "13 形状「目录图标-人才培养」",
+    "14 形状「目录卡片03」",
+    "15 文字「序号03」",
+    "16 文字「条目03」",
+    "17 文字「英文03」",
+    "18 形状「目录图标-工作展望」"
+   ],
+   "notes": [],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 334,
+   "index": 75,
+   "preview": "预览/各页/75.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide75.xml",
+   "fields": [
+    "目录标题",
+    "英文标题",
+    "云大精神",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image68.jpeg"
+   },
+   "stack": [
+    "00 图片「云南大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「英文标题」",
+    "03 文字「云大精神」",
+    "04 形状「目录卡片01」",
+    "05 文字「序号01」",
+    "06 文字「条目01」",
+    "07 文字「英文01」",
+    "08 形状「目录图标-年度综述」",
+    "09 形状「目录卡片02」",
+    "10 文字「序号02」",
+    "11 文字「条目02」",
+    "12 文字「英文02」",
+    "13 形状「目录图标-人才培养」",
+    "14 形状「目录卡片03」",
+    "15 文字「序号03」",
+    "16 文字「条目03」",
+    "17 文字「英文03」",
+    "18 形状「目录图标-科学研究」",
+    "19 形状「目录卡片04」",
+    "20 文字「序号04」",
+    "21 文字「条目04」",
+    "22 文字「英文04」",
+    "23 形状「目录图标-工作展望」"
+   ],
+   "notes": [],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 257,
+   "index": 72,
+   "preview": "预览/各页/72.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide72.xml",
+   "fields": [
+    "目录标题",
+    "英文标题",
+    "云大精神",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image68.jpeg"
+   },
+   "stack": [
+    "00 图片「云南大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「英文标题」",
+    "03 文字「云大精神」",
+    "04 形状「目录卡片01」",
+    "05 文字「序号01」",
+    "06 文字「条目01」",
+    "07 文字「英文01」",
+    "08 形状「目录图标-年度综述」",
+    "09 形状「目录卡片02」",
+    "10 文字「序号02」",
+    "11 文字「条目02」",
+    "12 文字「英文02」",
+    "13 形状「目录图标-人才培养」",
+    "14 形状「目录卡片03」",
+    "15 文字「序号03」",
+    "16 文字「条目03」",
+    "17 文字「英文03」",
+    "18 形状「目录图标-科学研究」",
+    "19 形状「目录卡片04」",
+    "20 文字「序号04」",
+    "21 文字「条目04」",
+    "22 文字「英文04」",
+    "23 形状「目录图标-校区建设」",
+    "24 形状「目录卡片05」",
+    "25 文字「序号05」",
+    "26 文字「条目05」",
+    "27 文字「英文05」",
+    "28 形状「目录图标-工作展望」"
+   ],
+   "notes": [],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 335,
+   "index": 76,
+   "preview": "预览/各页/76.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide76.xml",
+   "fields": [
+    "目录标题",
+    "英文标题",
+    "云大精神",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.en",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.en"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image68.jpeg"
+   },
+   "stack": [
+    "00 图片「云南大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「英文标题」",
+    "03 文字「云大精神」",
+    "04 形状「目录卡片01」",
+    "05 文字「序号01」",
+    "06 文字「条目01」",
+    "07 文字「英文01」",
+    "08 形状「目录图标-年度综述」",
+    "09 形状「目录卡片02」",
+    "10 文字「序号02」",
+    "11 文字「条目02」",
+    "12 文字「英文02」",
+    "13 形状「目录图标-人才培养」",
+    "14 形状「目录卡片03」",
+    "15 文字「序号03」",
+    "16 文字「条目03」",
+    "17 文字「英文03」",
+    "18 形状「目录图标-科学研究」",
+    "19 形状「目录卡片04」",
+    "20 文字「序号04」",
+    "21 文字「条目04」",
+    "22 文字「英文04」",
+    "23 形状「目录图标-校区建设」",
+    "24 形状「目录卡片06」",
+    "25 文字「序号06」",
+    "26 文字「条目06」",
+    "27 文字「英文06」",
+    "28 形状「目录图标-工作展望」",
+    "29 形状「目录卡片05」",
+    "30 文字「序号05」",
+    "31 文字「条目05」",
+    "32 文字「英文05」",
+    "33 形状「椭圆 29」 组合:目录图标-国际交流",
+    "34 形状「椭圆 30」 组合:目录图标-国际交流",
+    "35 线「直接连接符 95」 组合:目录图标-国际交流"
+   ],
+   "notes": [],
+   "warnings": []
+  }
+ ],
+ "assets": [
+  {
+   "file": "bg-image64.jpg",
+   "kind": "background",
+   "sourceMedia": "ppt/media/image64.jpeg",
+   "model": null,
+   "originalSize": [
+    1672,
+    941
+   ],
+   "outputSize": [
+    1672,
+    941
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 482263,
+   "uses": [
+    {
+     "slideId": 353,
+     "page": "cover",
+     "variant": "default",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 256,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    }
+   ]
+  },
+  {
+   "file": "img-image66.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image66.png",
+   "model": null,
+   "originalSize": [
+    1920,
+    1080
+   ],
+   "outputSize": [
+    1920,
+    1080
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 10243,
+   "uses": [
+    {
+     "slideId": 353,
+     "page": "cover",
+     "variant": "default",
+     "shape": "天空蓝色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 353,
+     "page": "cover",
+     "variant": "default",
+     "shape": "天空蓝色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 353,
+     "page": "cover",
+     "variant": "default",
+     "shape": "天空蓝色渐变遮罩",
+     "box": [
+      0.0,
+      530.67,
+      1919.95,
+      549.33
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 256,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "天空蓝色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 256,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "天空蓝色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 256,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "天空蓝色渐变遮罩",
+     "box": [
+      0.0,
+      530.67,
+      1919.95,
+      549.33
+     ],
+     "crop": null,
+     "alpha": 1.0,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image67.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image67.png",
+   "model": null,
+   "originalSize": [
+    394,
+    121
+   ],
+   "outputSize": [
+    394,
+    121
+   ],
+   "displaySize": [
+    234.4,
+    72.0
+   ],
+   "bytes": 11098,
+   "uses": [
+    {
+     "slideId": 353,
+     "page": "cover",
+     "variant": "default",
+     "shape": "云南大学校徽校名",
+     "box": [
+      842.78,
+      938.5,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 256,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "云南大学校徽校名",
+     "box": [
+      842.78,
+      938.5,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 332,
+     "page": "toc",
+     "variant": "2",
+     "shape": "云南大学校徽校名",
+     "box": [
+      122.4,
+      100.8,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 333,
+     "page": "toc",
+     "variant": "3",
+     "shape": "云南大学校徽校名",
+     "box": [
+      122.4,
+      100.8,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 334,
+     "page": "toc",
+     "variant": "4",
+     "shape": "云南大学校徽校名",
+     "box": [
+      122.4,
+      100.8,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 257,
+     "page": "toc",
+     "variant": "5",
+     "shape": "云南大学校徽校名",
+     "box": [
+      122.4,
+      100.8,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 335,
+     "page": "toc",
+     "variant": "6",
+     "shape": "云南大学校徽校名",
+     "box": [
+      122.4,
+      100.8,
+      234.45,
+      72.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "bg-image68.jpg",
+   "kind": "background",
+   "sourceMedia": "ppt/media/image68.jpeg",
+   "model": null,
+   "originalSize": [
+    1672,
+    941
+   ],
+   "outputSize": [
+    1672,
+    941
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 54153,
+   "uses": [
+    {
+     "slideId": 332,
+     "page": "toc",
+     "variant": "2",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 333,
+     "page": "toc",
+     "variant": "3",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 334,
+     "page": "toc",
+     "variant": "4",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 257,
+     "page": "toc",
+     "variant": "5",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 335,
+     "page": "toc",
+     "variant": "6",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    }
+   ]
+  },
+  {
+   "file": "video-media8.mp4",
+   "poster": "video-media8-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media8.mp4",
+   "uses": [
+    {
+     "slideId": 353,
+     "page": "cover",
+     "variant": "default",
+     "shape": "云南大学",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 256,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "云南大学",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 7365093
+   },
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 57320443
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 6214874
+    },
+    {
+     "crf": 24,
+     "bytes": 4633871
+    }
+   ],
+   "params": "libx264 preset=slow crf=24 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1363594,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image65.png",
+   "posterBytes": 461835
+  }
+ ],
+ "layers": [
+  {
+   "file": "icon-overview.svg",
+   "slideId": 257,
+   "box": [
+    1672,
+    199,
+    72,
+    72
+   ],
+   "shapes": [
+    "目录图标-年度综述"
+   ],
+   "missing": [],
+   "bytes": 610
+  },
+  {
+   "file": "icon-education.svg",
+   "slideId": 257,
+   "box": [
+    1672,
+    351,
+    72,
+    72
+   ],
+   "shapes": [
+    "目录图标-人才培养"
+   ],
+   "missing": [],
+   "bytes": 432
+  },
+  {
+   "file": "icon-research.svg",
+   "slideId": 257,
+   "box": [
+    1672,
+    504,
+    72,
+    72
+   ],
+   "shapes": [
+    "目录图标-科学研究"
+   ],
+   "missing": [],
+   "bytes": 435
+  },
+  {
+   "file": "icon-campus.svg",
+   "slideId": 257,
+   "box": [
+    1672,
+    657,
+    72,
+    72
+   ],
+   "shapes": [
+    "目录图标-校区建设"
+   ],
+   "missing": [],
+   "bytes": 438
+  },
+  {
+   "file": "icon-global.svg",
+   "slideId": 335,
+   "box": [
+    1676,
+    708,
+    64,
+    63
+   ],
+   "shapes": [
+    "椭圆 29",
+    "椭圆 30",
+    "直接连接符 95"
+   ],
+   "missing": [],
+   "bytes": 501
+  },
+  {
+   "file": "icon-outlook.svg",
+   "slideId": 257,
+   "box": [
+    1672,
+    809,
+    72,
+    72
+   ],
+   "shapes": [
+    "目录图标-工作展望"
+   ],
+   "missing": [],
+   "bytes": 367
+  }
+ ],
+ "fonts": {
+  "Alimama ShuHeiTi": [
+   "cover/default",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源宋体 CN Heavy": [
+   "cover/default",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源黑体 CN Regular": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 2385969
+}

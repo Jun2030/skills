@@ -1,0 +1,1020 @@
+{
+  "title": "城市复杂环境下北斗 / INS 深组合关键算法研究",
+  "goal": "硕士研究生学位论文开题答辩:交代研究背景与意义、研究现状与综述、研究内容、研究方案与可行性、创新点,以及研究计划与预期成果",
+  "audience": "开题评审专家 / 指导教师",
+  "owner": "答辩人",
+  "randomSeed": "proposal-defense-demo",
+  "themePack": "campus",
+  "brand": {
+    "school": "seu",
+    "headerNote": "THESIS PROPOSAL DEFENSE · 2026",
+    "chapters": [
+      "背景及意义",
+      "研究现状",
+      "研究内容",
+      "研究方案",
+      "主要创新点",
+      "研究计划"
+    ]
+  },
+  "slides": [
+    {
+      "layout": "campus_temp_cover",
+      "props": {
+        "kicker": "硕士学位论文开题答辩",
+        "title": "北斗 / INS 深组合关键算法研究",
+        "subtitle": "面向城市复杂环境的高灵敏度跟踪与抗差估计",
+        "presenterLabel": "答辩人",
+        "presenter": "示例同学",
+        "advisor": "示例教授",
+        "unit": "自动化学院",
+        "date": "2026年11月"
+      }
+    },
+    {
+      "layout": "campus_temp_agenda",
+      "props": {
+        "itemCount": 6,
+        "title": "目录",
+        "subtitle": "CONTENTS",
+        "items": [
+          {
+            "no": "01",
+            "title": "研究背景及意义",
+            "note": "BACKGROUND"
+          },
+          {
+            "no": "02",
+            "title": "研究现状与综述",
+            "note": "LITERATURE REVIEW"
+          },
+          {
+            "no": "03",
+            "title": "研究内容",
+            "note": "RESEARCH CONTENT"
+          },
+          {
+            "no": "04",
+            "title": "研究方案",
+            "note": "METHODOLOGY"
+          },
+          {
+            "no": "05",
+            "title": "创新点",
+            "note": "INNOVATION"
+          },
+          {
+            "no": "06",
+            "title": "研究计划",
+            "note": "SCHEDULE"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_background_figure",
+      "props": {
+        "chapterIndex": 1,
+        "paragraphCount": 2,
+        "showMetrics": true,
+        "metricCount": 3,
+        "imageSide": "right",
+        "imageFit": "cover",
+        "showSource": true,
+        "sectionNo": "1.1",
+        "title": "城市复杂环境的挑战",
+        "metricsLabel": "要点速览",
+        "metrics": [
+          {
+            "value": "4",
+            "unit": "类",
+            "label": "树荫道、隧道、高楼峡谷、高架"
+          },
+          {
+            "value": "4",
+            "unit": "项",
+            "label": "高精度、高灵敏度、高抗差、高抗干扰"
+          },
+          {
+            "value": "3",
+            "unit": "种",
+            "label": "组合方式：松组合、紧组合、深组合"
+          }
+        ],
+        "paragraphs": [
+          {
+            "no": "01",
+            "title": "卫星信号易受遮挡",
+            "body": "随着城镇化发展，树荫道、隧道、高楼峡谷、高架等场景会使卫星信号频繁遭受衰弱、遮挡和反射，观测量质量急剧下降。城市导航定位因此对**高精度、高灵敏度、高抗差性和高抗干扰能力**提出了更高要求。"
+          },
+          {
+            "no": "02",
+            "title": "两套系统优势互补",
+            "body": "卫星导航易被干扰和遮挡、定位精度较低，但长期精度稳定；惯导误差随时间累积，但隐蔽性好、短时精度高、可全自主工作。把二者组合起来**取长补短**，是城市复杂环境下实现连续可靠定位的主要途径。"
+          }
+        ],
+        "figureNo": "图 1-1",
+        "caption": "城市典型场景：树荫道、隧道、高楼峡谷、高架",
+        "source": "配图位：请替换为实景照片"
+      }
+    },
+    {
+      "layout": "campus_duo_ring",
+      "props": {
+        "chapterIndex": 1,
+        "itemCount": 3,
+        "emphasis": "even",
+        "sectionNo": "1.3",
+        "title": "深组合导航的优势与挑战",
+        "centerLabel": "深组合",
+        "leftLabel": "优势",
+        "rightLabel": "挑战",
+        "leftTitle": "三项性能优势",
+        "rightTitle": "有待攻克的难题",
+        "topNote": "发挥优势",
+        "bottomNote": "攻克挑战",
+        "leftItems": [
+          {
+            "title": "抗干扰性",
+            "desc": "标量深组合可压缩环路带宽；矢量深组合把惯导与接收机耦合，抗干扰更强。"
+          },
+          {
+            "title": "高动态性",
+            "desc": "惯性信息辅助载波跟踪，减小动态应力误差，提高高动态适应能力。"
+          },
+          {
+            "title": "高精度",
+            "desc": "惯性辅助减小环路等效带宽，提高观测量的估计精度。"
+          }
+        ],
+        "rightItems": [
+          {
+            "title": "导航滤波器",
+            "desc": "需同时兼顾计算量、非线性与最优收敛。"
+          },
+          {
+            "title": "观测异常",
+            "desc": "误差累积或信号中断使观测量异常，需抗差。"
+          },
+          {
+            "title": "高灵敏度",
+            "desc": "相干积分时间受比特跳变限制，还要兼顾动态。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_significance_cards",
+      "props": {
+        "chapterIndex": 1,
+        "cardCount": 3,
+        "showImages": false,
+        "arrange": "row",
+        "showSummary": true,
+        "sectionNo": "1.4",
+        "title": "研究意义",
+        "items": [
+          {
+            "no": "01",
+            "title": "推动成品研制",
+            "desc": "为研制开发**深组合导航系统成品**提供关键算法与软件平台支撑，缩短从理论到产品的距离。"
+          },
+          {
+            "no": "02",
+            "title": "提升城市性能",
+            "desc": "针对遮挡、反射与干扰，提高复杂城市环境下导航系统的**定位精度、灵敏度与抗差能力**。"
+          },
+          {
+            "no": "03",
+            "title": "拓展应用前景",
+            "desc": "增强卫星导航在弱信号、强干扰环境中的可用性，**拓展卫星导航系统的应用前景**。"
+          }
+        ],
+        "summaryLabel": "一句话",
+        "summary": "深组合是城市复杂环境下实现正常、精确、连续定位的关键途径"
+      }
+    },
+    {
+      "layout": "campus_domestic_abroad",
+      "props": {
+        "chapterIndex": 2,
+        "abroadCount": 3,
+        "domesticCount": 3,
+        "showNotes": true,
+        "showReview": true,
+        "sectionNo": "2.2",
+        "title": "跟踪与抗差方法研究现状",
+        "abroadName": "高灵敏度跟踪",
+        "abroadNote": "延长相干积分，提高环路信噪比",
+        "abroadItems": [
+          {
+            "who": "学者 A",
+            "year": "长相干",
+            "body": "采用 1 s 相干积分时间，实现室内 15 dB-Hz 弱信号的稳定跟踪，取得厘米级载波相位量测信息。"
+          },
+          {
+            "who": "学者 B",
+            "year": "惯性辅助",
+            "body": "基于惯性辅助的紧组合结构设计协同跟踪环路，仿真显示 **25 dB-Hz 弱信号下可稳定跟踪**。"
+          },
+          {
+            "who": "学者 D",
+            "year": "位同步",
+            "body": "提出改进直方图的位同步方法，利用调制周期性电文快速实现比特同步。"
+          }
+        ],
+        "domesticName": "深组合抗差",
+        "domesticNote": "检测、隔离并排除异常观测量",
+        "domesticItems": [
+          {
+            "who": "学者 F",
+            "year": "多径检测",
+            "body": "结合各通道早、晚相关积分值定义对称与非对称指标，检测跟踪相关峰中的多径失真。"
+          },
+          {
+            "who": "学者 H",
+            "year": "故障诊断",
+            "body": "利用残差序列建立时间序列模型，对相关器输出的异常信息做**故障诊断与隔离**。"
+          },
+          {
+            "who": "学者 I",
+            "year": "子滤波器",
+            "body": "在导航滤波器和鉴别器之间为每个通道增加子滤波器，据其运行状态判断量测质量。"
+          }
+        ],
+        "reviewLabel": "研究述评",
+        "gapLabel": "现有不足",
+        "gap": "积分时间受比特跳变制约，加长后**动态性能下降**，二者难兼顾",
+        "focusLabel": "本文切入",
+        "focus": "用**惯性信息辅助**协调二者冲突，抗差聚焦导航信息处理阶段"
+      }
+    },
+    {
+      "layout": "campus_paper_intro",
+      "props": {
+        "chapterIndex": 2,
+        "sectionNo": "2.3",
+        "title": "代表性文献精读",
+        "introMode": "points",
+        "pointCount": 3,
+        "fieldCount": 3,
+        "showMetric": false,
+        "paperTitle": "面向城市峡谷的惯导辅助矢量跟踪与抗差深组合方法",
+        "authors": "刘思齐，郭振宇，吴晓峰，等",
+        "abstract": "提出惯导辅助的矢量跟踪环路与基于新息检验的抗差滤波，在车载实测中把城市峡谷路段的定位误差均方根降低约 35%。",
+        "fields": [
+          {
+            "label": "发表时间",
+            "value": "2023 年 9 月"
+          },
+          {
+            "label": "期刊类别",
+            "value": "智能交通领域 SCI 期刊"
+          },
+          {
+            "label": "论文分区",
+            "value": "中科院一区"
+          }
+        ],
+        "points": [
+          {
+            "title": "研究问题",
+            "body": "城市峡谷中信号频繁遮挡，标量跟踪环路易失锁、滤波易发散。"
+          },
+          {
+            "title": "核心方法",
+            "body": "矢量跟踪 + 惯导速度辅助，新息检验逐通道调整观测权重。"
+          },
+          {
+            "title": "对本课题的启发",
+            "body": "抗差权函数可直接借鉴，但未考虑长时中断，正是本文切入点。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_objective_contents",
+      "props": {
+        "chapterIndex": 3,
+        "contentCount": 3,
+        "showKeywords": true,
+        "sectionNo": "3.0",
+        "title": "研究目标与研究内容",
+        "goalLabel": "研究目标",
+        "goal": "在城市复杂环境下实现**正常、精确、连续**的北斗 / INS 深组合定位",
+        "items": [
+          {
+            "no": "01",
+            "title": "深组合灵敏度",
+            "desc": "研究消除导航比特跳变的方法，并结合惯导速度预报提出**频率传递辅助的弱信号跟踪**。",
+            "keywords": "长相干积分"
+          },
+          {
+            "no": "02",
+            "title": "深组合抗差",
+            "desc": "研究粗差的影响特征与各类抗差算法，提出结合惯性辅助的**粗差预报与剔除方法**。",
+            "keywords": "权函数定权"
+          },
+          {
+            "no": "03",
+            "title": "软件平台架构",
+            "desc": "设计预滤波器与组合导航滤波器，分析惯导与码环、载波环的**耦合关系**。",
+            "keywords": "平台搭建"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_problem_work_map",
+      "props": {
+        "chapterIndex": 4,
+        "pairCount": 4,
+        "goalPosition": "right",
+        "sectionNo": "4.0",
+        "title": "关键问题与解决思路",
+        "problemLabel": "待解决的问题",
+        "workLabel": "本文工作",
+        "goalLabel": "研究目标",
+        "pairs": [
+          {
+            "no": "01",
+            "problem": "城市信号弱，长相干积分受**导航比特跳变**限制",
+            "workTitle": "最大似然估计",
+            "work": "检测比特边缘，延长相干积分时间"
+          },
+          {
+            "no": "02",
+            "problem": "积分时间加长后可容忍频偏减小，**能量损失增大**",
+            "workTitle": "频率稳定度传递",
+            "work": "强信号通道辅助补偿弱通道频偏"
+          },
+          {
+            "no": "03",
+            "problem": "多路径、遮挡导致观测量异常，**滤波器易发散**",
+            "workTitle": "权函数抗差估计",
+            "work": "观测量分三类定权，剔除异常值"
+          },
+          {
+            "no": "04",
+            "problem": "缺少可验证算法的深组合软件平台",
+            "workTitle": "搭建仿真平台",
+            "work": "软件接收机、惯导解算与滤波器一体化"
+          }
+        ],
+        "goal": "城市复杂环境下**正常、精确、连续**的深组合定位"
+      }
+    },
+    {
+      "layout": "campus_method_roadmap",
+      "props": {
+        "chapterIndex": 4,
+        "sectionNo": "4.1",
+        "title": "总体研究方案",
+        "methodCount": 3,
+        "stepCount": 4,
+        "showOutputs": true,
+        "showConclusion": true,
+        "methodsLabel": "研究方法",
+        "coreLabel": "核心思路",
+        "coreTitle": "惯导信息辅助的深组合",
+        "coreDesc": "用惯导递推的速度与姿态辅助接收机环路，再以抗差滤波融合两类观测。",
+        "methodsSubLabel": "支撑手段",
+        "methods": [
+          {
+            "title": "理论建模",
+            "desc": "建立深组合状态方程与弱信号跟踪误差模型。"
+          },
+          {
+            "title": "软件接收机平台",
+            "desc": "基于中频采样数据搭建可改环路的软件接收机。"
+          },
+          {
+            "title": "仿真与车载实测",
+            "desc": "多场景仿真考核，再用城市车载数据复核。"
+          }
+        ],
+        "stepsLabel": "研究步骤",
+        "outputLabel": "阶段产出",
+        "steps": [
+          {
+            "no": "01",
+            "title": "机理分析",
+            "desc": "分析城市峡谷中信号衰减、多路径与遮挡对跟踪环路和观测质量的影响机理。",
+            "output": "误差特性与建模报告"
+          },
+          {
+            "no": "02",
+            "title": "弱信号跟踪",
+            "desc": "设计惯导辅助的长相干积分载波跟踪环路，压缩环路带宽、提升跟踪灵敏度。",
+            "output": "辅助跟踪算法"
+          },
+          {
+            "no": "03",
+            "title": "抗差深组合滤波",
+            "desc": "基于新息检验构造自适应权函数，对异常观测逐通道降权，抑制滤波发散。",
+            "output": "抗差滤波算法"
+          },
+          {
+            "no": "04",
+            "title": "仿真与实测验证",
+            "desc": "在仿真场景与城市车载数据上评估定位精度、连续性和信号中断后的漂移。",
+            "output": "验证结果与论文"
+          }
+        ],
+        "conclusionLabel": "研究主线",
+        "conclusion": "机理分析 → 辅助跟踪 → 抗差融合 → 仿真与实测双路验证"
+      }
+    },
+    {
+      "layout": "campus_model_pipeline",
+      "props": {
+        "chapterIndex": 4,
+        "moduleCount": 4,
+        "groupCount": 2,
+        "highlightIndex": 2,
+        "showSkip": false,
+        "showSteps": true,
+        "stepCount": 4,
+        "showConclusion": true,
+        "sectionNo": "4.3",
+        "title": "频率稳定度传递：降低弱信号通道频偏",
+        "input": {
+          "tag": "输入",
+          "title": "强信号通道",
+          "note": "捕获、跟踪得到跟踪频率",
+          "flow": "跟踪频率"
+        },
+        "modules": [
+          {
+            "no": "1",
+            "title": "动态频差估计",
+            "desc": "惯导速度预报算出载体运动频差",
+            "flow": "动态频差"
+          },
+          {
+            "no": "2",
+            "title": "晶振频偏估计",
+            "desc": "扣除动态频差，得到晶振频偏",
+            "flow": "晶振频偏"
+          },
+          {
+            "no": "3",
+            "title": "弱通道补偿",
+            "desc": "把晶振频偏补偿到弱信号通道",
+            "flow": "补偿频率"
+          },
+          {
+            "no": "4",
+            "title": "历元预测补偿",
+            "desc": "补偿惯导预测的下一历元频偏",
+            "flow": "频率误差"
+          }
+        ],
+        "output": {
+          "tag": "输出",
+          "title": "稳定跟踪",
+          "note": "减少能量损失"
+        },
+        "groups": [
+          {
+            "label": "频偏估计",
+            "from": 1,
+            "to": 2
+          },
+          {
+            "label": "频偏补偿",
+            "from": 3,
+            "to": 4
+          }
+        ],
+        "highlightLabel": "核心环节",
+        "skip": {
+          "from": 0,
+          "to": 2,
+          "label": ""
+        },
+        "steps": [
+          {
+            "no": "1",
+            "title": "估计动态频差",
+            "desc": "结合惯导辅助的高精度速度预报，算出载体运动带来的动态频差。"
+          },
+          {
+            "no": "2",
+            "title": "估计晶振频偏",
+            "desc": "从强信号通道的跟踪频率中扣除动态频差，得到本地晶振频偏。"
+          },
+          {
+            "no": "3",
+            "title": "补偿弱通道",
+            "desc": "把晶振频偏补偿到弱信号通道，缩小本地频率与信号的偏差。"
+          },
+          {
+            "no": "4",
+            "title": "预测下一历元",
+            "desc": "再补偿惯导预测的下一历元频偏，保持长相干积分的能量。"
+          }
+        ],
+        "imageCaption": "图 4-3 频率稳定度传递示意",
+        "conclusionLabel": "原理",
+        "conclusion": "积分时间越长主瓣越窄，频率误差过大可使能量损失一半，须先压低频偏。"
+      }
+    },
+    {
+      "layout": "campus_decision_flow",
+      "props": {
+        "chapterIndex": 4,
+        "nodeCount": 7,
+        "noteCount": 4,
+        "sectionNo": "4.4",
+        "title": "观测异常抗差：权函数调权流程",
+        "nodes": [
+          {
+            "tag": "",
+            "text": "输入量测信息",
+            "yes": "",
+            "no": "",
+            "noTo": 0,
+            "side": "",
+            "sideTo": 0
+          },
+          {
+            "tag": "",
+            "text": "计算残差",
+            "yes": "",
+            "no": "",
+            "noTo": 0,
+            "side": "",
+            "sideTo": 0
+          },
+          {
+            "tag": "",
+            "text": "残差绝对值大于 c？",
+            "yes": "是",
+            "no": "否",
+            "noTo": 0,
+            "side": "因子取 1，维持原权重",
+            "sideTo": 6
+          },
+          {
+            "tag": "",
+            "text": "降低自适应因子权重",
+            "yes": "",
+            "no": "",
+            "noTo": 0,
+            "side": "",
+            "sideTo": 0
+          },
+          {
+            "tag": "",
+            "text": "增大量测噪声协方差权重",
+            "yes": "",
+            "no": "",
+            "noTo": 0,
+            "side": "",
+            "sideTo": 0
+          },
+          {
+            "tag": "",
+            "text": "卡尔曼滤波更新",
+            "yes": "",
+            "no": "",
+            "noTo": 0,
+            "side": "",
+            "sideTo": 0
+          },
+          {
+            "tag": "",
+            "text": "输出导航解",
+            "yes": "",
+            "no": "",
+            "noTo": 0,
+            "side": "",
+            "sideTo": 0
+          }
+        ],
+        "notesLabel": "三类定权",
+        "notes": [
+          {
+            "no": "01",
+            "title": "有效信息",
+            "desc": "残差在 ±k0 之内，权值为 1，保留并按最小二乘估计。"
+          },
+          {
+            "no": "02",
+            "title": "可利用信息",
+            "desc": "残差在 k0 与 k1 之间，权值随残差增大逐渐下降。"
+          },
+          {
+            "no": "03",
+            "title": "有害信息",
+            "desc": "残差超出 k1，权值为 0，零权估计，相当于剔除。"
+          },
+          {
+            "no": "04",
+            "title": "抗差效果",
+            "desc": "异常观测被降权或剔除，滤波器转而更信任预测值。"
+          }
+        ],
+        "imageCaption": "图 4-4 抗差流程图"
+      }
+    },
+    {
+      "layout": "campus_figure_points",
+      "props": {
+        "chapterIndex": 4,
+        "sectionNo": "4.5",
+        "title": "预实验：信号中断仿真",
+        "figureCount": 2,
+        "chartForm": "line",
+        "seriesCount": 3,
+        "pointCount": 11,
+        "itemCount": 3,
+        "showConclusion": false,
+        "series": [
+          {
+            "name": "本文深组合"
+          },
+          {
+            "name": "紧组合"
+          },
+          {
+            "name": "松组合"
+          }
+        ],
+        "charts": [
+          {
+            "tag": "(a)",
+            "title": "水平定位误差",
+            "unit": "m · 横轴为中断时长 s",
+            "decimals": 1
+          },
+          {
+            "tag": "(b)",
+            "title": "速度误差",
+            "unit": "m/s · 横轴为中断时长 s",
+            "decimals": 2
+          }
+        ],
+        "points": [
+          {
+            "label": "0",
+            "a1": 1.2,
+            "a2": 1.4,
+            "a3": 1.6,
+            "b1": 0.05,
+            "b2": 0.06,
+            "b3": 0.08
+          },
+          {
+            "label": "6",
+            "a1": 1.5,
+            "a2": 2.1,
+            "a3": 2.8,
+            "b1": 0.07,
+            "b2": 0.11,
+            "b3": 0.16
+          },
+          {
+            "label": "12",
+            "a1": 1.9,
+            "a2": 3,
+            "a3": 4.5,
+            "b1": 0.09,
+            "b2": 0.17,
+            "b3": 0.27
+          },
+          {
+            "label": "18",
+            "a1": 2.3,
+            "a2": 4.2,
+            "a3": 6.9,
+            "b1": 0.1,
+            "b2": 0.22,
+            "b3": 0.38
+          },
+          {
+            "label": "24",
+            "a1": 2.6,
+            "a2": 5.1,
+            "a3": 9.1,
+            "b1": 0.12,
+            "b2": 0.27,
+            "b3": 0.47
+          },
+          {
+            "label": "30",
+            "a1": 3.1,
+            "a2": 6.6,
+            "a3": 12,
+            "b1": 0.14,
+            "b2": 0.33,
+            "b3": 0.6
+          },
+          {
+            "label": "36",
+            "a1": 3.4,
+            "a2": 7.8,
+            "a3": 14.8,
+            "b1": 0.13,
+            "b2": 0.36,
+            "b3": 0.69
+          },
+          {
+            "label": "42",
+            "a1": 3.9,
+            "a2": 9.5,
+            "a3": 18.1,
+            "b1": 0.16,
+            "b2": 0.42,
+            "b3": 0.81
+          },
+          {
+            "label": "48",
+            "a1": 4.2,
+            "a2": 10.9,
+            "a3": 21.3,
+            "b1": 0.17,
+            "b2": 0.46,
+            "b3": 0.9
+          },
+          {
+            "label": "54",
+            "a1": 4.8,
+            "a2": 12.8,
+            "a3": 24.9,
+            "b1": 0.19,
+            "b2": 0.51,
+            "b3": 1.02
+          },
+          {
+            "label": "60",
+            "a1": 5.3,
+            "a2": 14.6,
+            "a3": 28.7,
+            "b1": 0.2,
+            "b2": 0.55,
+            "b3": 1.11
+          }
+        ],
+        "items": [
+          {
+            "title": "中断后漂移更慢",
+            "body": "信号中断 60 s 时水平误差约 5.3 m，仅为松组合的五分之一左右。"
+          },
+          {
+            "title": "速度保持稳定",
+            "body": "速度误差始终低于 0.2 m/s，为环路辅助提供了可靠的多普勒预报。"
+          },
+          {
+            "title": "优势随时长扩大",
+            "body": "中断越久与紧组合、松组合的差距越大，验证了深组合方案的必要性。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_feasibility",
+      "props": {
+        "chapterIndex": 4,
+        "dimCount": 3,
+        "pointCount": 2,
+        "mediaAt": "right",
+        "showBadges": true,
+        "sectionNo": "4.6",
+        "title": "可行性分析",
+        "dims": [
+          {
+            "name": "理论可行性",
+            "badge": "已具备",
+            "points": [
+              "深组合与抗差估计理论较成熟，有大量文献可借鉴",
+              "Q、R 取值规律清楚，观测异常时可定权实现抗差"
+            ]
+          },
+          {
+            "name": "技术可行性",
+            "badge": "已具备",
+            "points": [
+              "已有软件接收机，可实现中频数据的捕获、跟踪和定位",
+              "已实现松组合定位解算，为深组合滤波器设计打基础"
+            ]
+          },
+          {
+            "name": "时间可行性",
+            "badge": "有保障",
+            "points": [
+              "研究计划共 17 个月，覆盖平台、验证到论文全过程",
+              "软件接收机已搭好，后续工作可按计划推进"
+            ]
+          }
+        ],
+        "figureLabel": "前期结果",
+        "figureNote": "松组合定位误差",
+        "figureNo": "图 4-5",
+        "figureCaption": "松组合解算的位置误差：一组随时间累积增大，另一组保持在较小范围内"
+      }
+    },
+    {
+      "layout": "campus_innovation_points",
+      "props": {
+        "chapterIndex": 5,
+        "pointCount": 3,
+        "showTags": true,
+        "showHero": true,
+        "sectionNo": "5",
+        "title": "创新点",
+        "heroKicker": "INNOVATION",
+        "heroTitle": "创新点",
+        "heroNote": "针对观测异常与弱信号难题",
+        "points": [
+          {
+            "no": "01",
+            "tag": "抗差定权",
+            "keyword": "权函数三类定权",
+            "desc": "针对多路径、遮挡导致的观测异常，把观测量分三类定权，**降低异常观测值的权重**。"
+          },
+          {
+            "no": "02",
+            "tag": "异常剔除",
+            "keyword": "惯导短时预报比对",
+            "desc": "结合惯导短时预报的高精度观测量做比对，**剔除异常值**，避免滤波器发散。"
+          },
+          {
+            "no": "03",
+            "tag": "弱信号跟踪",
+            "keyword": "频率稳定度传递",
+            "desc": "用辅助信号补偿弱信号通道频偏，**消除频偏导致的能量损失**，支撑长相干积分。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_schedule_table",
+      "props": {
+        "chapterIndex": 6,
+        "rowCount": 7,
+        "currentIndex": 1,
+        "showProgress": false,
+        "showSpan": true,
+        "showConclusion": true,
+        "sectionNo": "6.1",
+        "title": "研究计划与进度安排",
+        "span": "2023.01 — 2024.05 · 共 17 个月",
+        "headTime": "起讫日期",
+        "headTask": "工作内容和要求",
+        "headResult": "预期成果",
+        "headProgress": "完成度",
+        "currentLabel": "当前阶段",
+        "todoLabel": "未开始",
+        "rows": [
+          {
+            "time": "2023.01—2023.02",
+            "task": "调试软件接收机",
+            "result": "可以处理中频数据",
+            "progress": 0
+          },
+          {
+            "time": "2023.03—2023.05",
+            "task": "基础理论验证、平台搭建、少量数据处理",
+            "result": "熟悉代码、了解流程",
+            "progress": 0
+          },
+          {
+            "time": "2023.06—2023.07",
+            "task": "数据验证，小论文撰写",
+            "result": "获得实验结论、小论文写好",
+            "progress": 0
+          },
+          {
+            "time": "2023.08—2023.09",
+            "task": "修改小论文，实测数据处理",
+            "result": "小论文发表",
+            "progress": 0
+          },
+          {
+            "time": "2023.10—2023.12",
+            "task": "撰写大论文，优化软件平台，完成中期答辩",
+            "result": "论文前 3 章 + 相关小论文",
+            "progress": 0
+          },
+          {
+            "time": "2024.01—2024.02",
+            "task": "整理成果，完善毕业论文",
+            "result": "学位论文初稿",
+            "progress": 0
+          },
+          {
+            "time": "2024.03—2024.05",
+            "task": "论文修改、送审及答辩",
+            "result": "学位论文终稿",
+            "progress": 0
+          }
+        ],
+        "conclusionLabel": "时间保障",
+        "conclusion": "按「平台 → 验证 → 论文」推进，中期答辩后留出四个月修改与送审。"
+      }
+    },
+    {
+      "layout": "campus_expected_outcomes",
+      "props": {
+        "chapterIndex": 6,
+        "cardCount": 4,
+        "groupCount": 3,
+        "showTags": true,
+        "showDue": true,
+        "showConclusion": true,
+        "sectionNo": "6.2",
+        "title": "预期成果（示例数据）",
+        "noteLabel": "考核",
+        "dueLabel": "完成时间",
+        "groups": [
+          {
+            "name": "学术成果",
+            "note": "PAPERS"
+          },
+          {
+            "name": "工程成果",
+            "note": "SOFTWARE"
+          },
+          {
+            "name": "学位论文",
+            "note": "THESIS"
+          }
+        ],
+        "cards": [
+          {
+            "group": 1,
+            "value": "2",
+            "unit": "篇",
+            "name": "学术小论文",
+            "note": "围绕两项创新点撰写并投稿",
+            "tag": "预期性",
+            "due": "2023.09"
+          },
+          {
+            "group": 2,
+            "value": "1",
+            "unit": "套",
+            "name": "深组合软件平台",
+            "note": "可处理实测中频数据的软件接收机",
+            "tag": "约束性",
+            "due": "2023.12"
+          },
+          {
+            "group": 2,
+            "value": "1",
+            "unit": "份",
+            "name": "性能分析报告",
+            "note": "仿真与实测数据的性能分析",
+            "tag": "预期性",
+            "due": "2024.02"
+          },
+          {
+            "group": 3,
+            "value": "1",
+            "unit": "篇",
+            "name": "硕士学位论文",
+            "note": "按期完成学位论文撰写、送审与答辩",
+            "tag": "约束性",
+            "due": "2024.05"
+          }
+        ],
+        "conclusionLabel": "说明",
+        "conclusion": "成果数量为示例数据；小论文对应两项创新点，平台与报告支撑工程验证。"
+      }
+    },
+    {
+      "layout": "campus_references_list",
+      "props": {
+        "chapterIndex": 6,
+        "refCount": 8,
+        "showLegend": true,
+        "showNote": true,
+        "sectionNo": "",
+        "title": "参考文献",
+        "legend": "[J] 期刊　[D] 学位论文　[C] 会议　[M] 专著",
+        "note": "以上均为示例条目，请替换为开题报告实际参考文献",
+        "refs": [
+          "作者甲, 作者乙. 城市环境下卫星 / 惯导深组合跟踪方法研究（示例条目）[J]. 示例导航学报, 2021, 9(2): 12-20.",
+          "作者丙. 矢量跟踪与集中式深组合导航理论（示例条目）[M]. 示例市: 示例出版社, 2019.",
+          "作者丁. 惯性辅助的弱信号长相干积分方法（示例条目）[D]. 示例市: 示例大学, 2020.",
+          "作者戊, 作者己. 基于最大似然估计的比特边缘检测（示例条目）[J]. 示例测绘学报, 2022, 51(6): 88-95.",
+          "作者庚. 频率稳定度传递辅助的弱信号跟踪（示例条目）[C]//示例导航学术年会论文集. 示例市, 2021: 112-118.",
+          "作者辛. 权函数定权的组合导航抗差估计（示例条目）[J]. 示例控制与决策, 2020, 35(11): 30-38.",
+          "作者壬. 软件接收机与惯导解算平台设计（示例条目）[D]. 示例市: 示例理工大学, 2021.",
+          "作者癸. 卡尔曼滤波过程噪声与量测噪声的选取（示例条目）[J]. 示例仪器仪表学报, 2023, 44(2): 41-47."
+        ]
+      }
+    },
+    {
+      "layout": "campus_temp_closing",
+      "props": {
+        "kicker": "THANK YOU",
+        "title": "谢谢聆听",
+        "subtitle": "恳请各位老师批评指正",
+        "contact": "答辩人 · 示例同学"
+      }
+    }
+  ]
+}

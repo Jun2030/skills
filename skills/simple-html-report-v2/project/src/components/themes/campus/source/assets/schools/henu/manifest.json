@@ -1,0 +1,1560 @@
+{
+ "school": "henu",
+ "name": "河南大学",
+ "en": "Henan University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 295,
+   "index": 22,
+   "preview": "预览/各页/22.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide22.xml",
+   "fields": [
+    "!!校训",
+    "封面-眉题",
+    "封面-标题",
+    "封面-副题",
+    "封面-信息1",
+    "封面-信息2",
+    "封面-信息3",
+    "封面-信息4"
+   ],
+   "transitionIn": null,
+   "background": null,
+   "stack": [
+    "00 图片「!!背景-天青」",
+    "01 图片「!!开片纹理」",
+    "02 文字「!!校训」",
+    "03 文字「封面-眉题」",
+    "04 文字「封面-标题」",
+    "05 文字「封面-副题」",
+    "06 文字「封面-信息1」",
+    "07 文字「封面-信息2」",
+    "08 文字「封面-信息3」",
+    "09 文字「封面-信息4」",
+    "10 图片「图片 10」",
+    "11 图片「图片 11」",
+    "12 3D 模型「3D 模型 2」"
+   ],
+   "notes": [
+    "「图片 10」有裁切 {'r': 0.70781}(网页用 object-position / 外框裁切还原)",
+    "「图片 11」有裁切 {'l': 0.30581, 'r': -0.0041}(网页用 object-position / 外框裁切还原)"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 308,
+   "index": 24,
+   "preview": "预览/各页/24.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide24.xml",
+   "fields": [
+    "!!校训",
+    "目录-标题",
+    "目录-英文",
+    "目录-引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!背景-天青」",
+    "01 图片「!!开片纹理」",
+    "02 文字「!!校训」",
+    "03 文字「目录-标题」",
+    "04 文字「目录-英文」",
+    "05 文字「目录-引言」",
+    "06 图片「目录-瓷片1」",
+    "07 图片「目录-瓷片2」",
+    "08 文字「目录-01」",
+    "09 文字「目录-02」",
+    "10 3D 模型「3D 模型 6」"
+   ],
+   "notes": [
+    "「目录-瓷片1」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片2」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 309,
+   "index": 25,
+   "preview": "预览/各页/25.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide25.xml",
+   "fields": [
+    "!!校训",
+    "目录-标题",
+    "目录-英文",
+    "目录-引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!背景-天青」",
+    "01 图片「!!开片纹理」",
+    "02 文字「!!校训」",
+    "03 文字「目录-标题」",
+    "04 文字「目录-英文」",
+    "05 文字「目录-引言」",
+    "06 图片「目录-瓷片1」",
+    "07 图片「目录-瓷片2」",
+    "08 图片「目录-瓷片3」",
+    "09 文字「目录-01」",
+    "10 文字「目录-02」",
+    "11 文字「目录-03」",
+    "12 3D 模型「3D 模型 6」"
+   ],
+   "notes": [
+    "「目录-瓷片1」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片2」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片3」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 289,
+   "index": 23,
+   "preview": "预览/各页/23.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide23.xml",
+   "fields": [
+    "!!校训",
+    "目录-标题",
+    "目录-英文",
+    "目录-引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!背景-天青」",
+    "01 图片「!!开片纹理」",
+    "02 文字「!!校训」",
+    "03 文字「目录-标题」",
+    "04 文字「目录-英文」",
+    "05 文字「目录-引言」",
+    "06 图片「目录-瓷片1」",
+    "07 图片「目录-瓷片2」",
+    "08 图片「目录-瓷片3」",
+    "09 图片「目录-瓷片4」",
+    "10 文字「目录-01」",
+    "11 文字「目录-02」",
+    "12 文字「目录-03」",
+    "13 文字「目录-04」",
+    "14 3D 模型「3D 模型 6」"
+   ],
+   "notes": [
+    "「目录-瓷片1」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片2」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片3」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片4」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 310,
+   "index": 26,
+   "preview": "预览/各页/26.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide26.xml",
+   "fields": [
+    "!!校训",
+    "目录-标题",
+    "目录-英文",
+    "目录-引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.4.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!背景-天青」",
+    "01 图片「!!开片纹理」",
+    "02 文字「!!校训」",
+    "03 文字「目录-标题」",
+    "04 文字「目录-英文」",
+    "05 文字「目录-引言」",
+    "06 图片「目录-瓷片1」",
+    "07 图片「目录-瓷片2」",
+    "08 图片「目录-瓷片3」",
+    "09 图片「目录-瓷片4」",
+    "10 图片「目录-瓷片5」",
+    "11 文字「目录-01」",
+    "12 文字「目录-02」",
+    "13 文字「目录-03」",
+    "14 文字「目录-05」",
+    "15 3D 模型「3D 模型 6」",
+    "16 文字「目录-04」"
+   ],
+   "notes": [
+    "「目录-瓷片1」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片2」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片3」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片4」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片5」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 311,
+   "index": 27,
+   "preview": "预览/各页/27.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide27.xml",
+   "fields": [
+    "!!校训",
+    "目录-标题",
+    "目录-英文",
+    "目录-引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.4.en",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.desc",
+    "toc.5.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": null,
+   "stack": [
+    "00 图片「!!背景-天青」",
+    "01 图片「!!开片纹理」",
+    "02 文字「!!校训」",
+    "03 文字「目录-标题」",
+    "04 文字「目录-英文」",
+    "05 文字「目录-引言」",
+    "06 图片「目录-瓷片1」",
+    "07 图片「目录-瓷片2」",
+    "08 图片「目录-瓷片3」",
+    "09 图片「目录-瓷片4」",
+    "10 图片「目录-瓷片5」",
+    "11 图片「目录-瓷片6」",
+    "12 文字「目录-01」",
+    "13 文字「目录-02」",
+    "14 文字「目录-03」",
+    "15 文字「目录-06」",
+    "16 3D 模型「3D 模型 6」",
+    "17 文字「目录-04」",
+    "18 文字「目录-05」"
+   ],
+   "notes": [
+    "「目录-瓷片1」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片2」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片3」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片4」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片5」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "「目录-瓷片6」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": []
+  }
+ ],
+ "assets": [
+  {
+   "file": "img-image15.jpg",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image15.png",
+   "model": null,
+   "originalSize": [
+    1920,
+    1080
+   ],
+   "outputSize": [
+    1920,
+    1080
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 122872,
+   "uses": [
+    {
+     "slideId": 295,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!背景-天青",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 308,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!背景-天青",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 309,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!背景-天青",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!背景-天青",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!背景-天青",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!背景-天青",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image16.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image16.png",
+   "model": null,
+   "originalSize": [
+    1920,
+    1080
+   ],
+   "outputSize": [
+    1920,
+    1080
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 279441,
+   "uses": [
+    {
+     "slideId": 295,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!开片纹理",
+     "box": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 308,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!开片纹理",
+     "box": [
+      -40.0,
+      3.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 309,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!开片纹理",
+     "box": [
+      -40.0,
+      3.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!开片纹理",
+     "box": [
+      -40.0,
+      3.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!开片纹理",
+     "box": [
+      -40.0,
+      3.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!开片纹理",
+     "box": [
+      -40.0,
+      3.0,
+      1920.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image17.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image17.png",
+   "model": null,
+   "originalSize": [
+    260,
+    73
+   ],
+   "outputSize": [
+    260,
+    73
+   ],
+   "displaySize": [
+    201.9,
+    56.7
+   ],
+   "bytes": 20136,
+   "uses": [
+    {
+     "slideId": 295,
+     "page": "cover",
+     "variant": "default",
+     "shape": "图片 10",
+     "box": [
+      112.0,
+      75.93,
+      59.0,
+      56.69
+     ],
+     "crop": {
+      "r": 0.70781
+     },
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "logo-image18.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image18.png",
+   "model": null,
+   "originalSize": [
+    260,
+    73
+   ],
+   "outputSize": [
+    260,
+    73
+   ],
+   "displaySize": [
+    201.9,
+    56.7
+   ],
+   "bytes": 15064,
+   "uses": [
+    {
+     "slideId": 295,
+     "page": "cover",
+     "variant": "default",
+     "shape": "图片 11",
+     "box": [
+      173.75,
+      75.93,
+      141.0,
+      56.69
+     ],
+     "crop": {
+      "l": 0.30581,
+      "r": -0.0041
+     },
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "model-image19.png",
+   "kind": "model3d",
+   "sourceMedia": "ppt/media/image19.png",
+   "model": "ppt/media/model3d4.glb",
+   "originalSize": [
+    1432,
+    982
+   ],
+   "outputSize": [
+    1432,
+    982
+   ],
+   "displaySize": [
+    1432.1,
+    982.2
+   ],
+   "bytes": 1596000,
+   "uses": [
+    {
+     "slideId": 295,
+     "page": "cover",
+     "variant": "default",
+     "shape": "3D 模型 2",
+     "box": [
+      702.62,
+      85.86,
+      1432.07,
+      982.21
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image20.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image20.png",
+   "model": null,
+   "originalSize": [
+    832,
+    1112
+   ],
+   "outputSize": [
+    832,
+    1112
+   ],
+   "displaySize": [
+    416.0,
+    556.0
+   ],
+   "bytes": 238668,
+   "uses": [
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "目录-瓷片1",
+     "box": [
+      926.0,
+      117.0,
+      416.0,
+      556.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image21.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image21.png",
+   "model": null,
+   "originalSize": [
+    1042,
+    970
+   ],
+   "outputSize": [
+    1042,
+    970
+   ],
+   "displaySize": [
+    521.0,
+    485.0
+   ],
+   "bytes": 247905,
+   "uses": [
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "目录-瓷片2",
+     "box": [
+      1287.0,
+      111.0,
+      521.0,
+      485.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image22.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image22.png",
+   "model": null,
+   "originalSize": [
+    960,
+    1038
+   ],
+   "outputSize": [
+    960,
+    1038
+   ],
+   "displaySize": [
+    480.0,
+    519.0
+   ],
+   "bytes": 225238,
+   "uses": [
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "目录-瓷片3",
+     "box": [
+      1334.0,
+      474.0,
+      480.0,
+      519.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image23.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image23.png",
+   "model": null,
+   "originalSize": [
+    1022,
+    822
+   ],
+   "outputSize": [
+    1022,
+    822
+   ],
+   "displaySize": [
+    511.0,
+    411.0
+   ],
+   "bytes": 215239,
+   "uses": [
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "目录-瓷片4",
+     "box": [
+      940.0,
+      588.0,
+      511.0,
+      411.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "model-image24.png",
+   "kind": "model3d",
+   "sourceMedia": "ppt/media/image24.png",
+   "model": "ppt/media/model3d4.glb",
+   "originalSize": [
+    1248,
+    893
+   ],
+   "outputSize": [
+    1248,
+    893
+   ],
+   "displaySize": [
+    1249.0,
+    893.0
+   ],
+   "bytes": 1315983,
+   "uses": [
+    {
+     "slideId": 308,
+     "page": "toc",
+     "variant": "2",
+     "shape": "3D 模型 6",
+     "box": [
+      -222.97,
+      281.12,
+      1248.97,
+      893.02
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 309,
+     "page": "toc",
+     "variant": "3",
+     "shape": "3D 模型 6",
+     "box": [
+      -222.97,
+      281.12,
+      1248.97,
+      893.02
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 289,
+     "page": "toc",
+     "variant": "4",
+     "shape": "3D 模型 6",
+     "box": [
+      -222.97,
+      281.12,
+      1248.97,
+      893.02
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "3D 模型 6",
+     "box": [
+      -222.97,
+      281.12,
+      1248.97,
+      893.02
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "3D 模型 6",
+     "box": [
+      -222.97,
+      281.12,
+      1248.97,
+      893.02
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image25.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image25.png",
+   "model": null,
+   "originalSize": [
+    1029,
+    1716
+   ],
+   "outputSize": [
+    1029,
+    1716
+   ],
+   "displaySize": [
+    514.5,
+    858.0
+   ],
+   "bytes": 373380,
+   "uses": [
+    {
+     "slideId": 308,
+     "page": "toc",
+     "variant": "2",
+     "shape": "目录-瓷片1",
+     "box": [
+      935.42,
+      126.96,
+      514.5,
+      858.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image26.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image26.png",
+   "model": null,
+   "originalSize": [
+    933,
+    1710
+   ],
+   "outputSize": [
+    933,
+    1710
+   ],
+   "displaySize": [
+    466.5,
+    855.0
+   ],
+   "bytes": 301561,
+   "uses": [
+    {
+     "slideId": 308,
+     "page": "toc",
+     "variant": "2",
+     "shape": "目录-瓷片2",
+     "box": [
+      1338.58,
+      126.04,
+      466.5,
+      855.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image27.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image27.png",
+   "model": null,
+   "originalSize": [
+    948,
+    1321
+   ],
+   "outputSize": [
+    948,
+    1321
+   ],
+   "displaySize": [
+    474.0,
+    660.5
+   ],
+   "bytes": 252662,
+   "uses": [
+    {
+     "slideId": 309,
+     "page": "toc",
+     "variant": "3",
+     "shape": "目录-瓷片1",
+     "box": [
+      936.74,
+      123.52,
+      474.0,
+      660.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image28.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image28.png",
+   "model": null,
+   "originalSize": [
+    865,
+    1242
+   ],
+   "outputSize": [
+    865,
+    1242
+   ],
+   "displaySize": [
+    432.5,
+    621.0
+   ],
+   "bytes": 198700,
+   "uses": [
+    {
+     "slideId": 309,
+     "page": "toc",
+     "variant": "3",
+     "shape": "目录-瓷片2",
+     "box": [
+      1371.59,
+      125.55,
+      432.5,
+      621.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image29.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image29.png",
+   "model": null,
+   "originalSize": [
+    1501,
+    864
+   ],
+   "outputSize": [
+    1501,
+    864
+   ],
+   "displaySize": [
+    750.5,
+    432.0
+   ],
+   "bytes": 237211,
+   "uses": [
+    {
+     "slideId": 309,
+     "page": "toc",
+     "variant": "3",
+     "shape": "目录-瓷片3",
+     "box": [
+      1005.5,
+      557.7,
+      750.5,
+      432.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image30.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image30.png",
+   "model": null,
+   "originalSize": [
+    928,
+    877
+   ],
+   "outputSize": [
+    928,
+    877
+   ],
+   "displaySize": [
+    464.0,
+    438.5
+   ],
+   "bytes": 165564,
+   "uses": [
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "目录-瓷片1",
+     "box": [
+      954.35,
+      122.62,
+      464.0,
+      438.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image31.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image31.png",
+   "model": null,
+   "originalSize": [
+    831,
+    877
+   ],
+   "outputSize": [
+    831,
+    877
+   ],
+   "displaySize": [
+    415.5,
+    438.5
+   ],
+   "bytes": 124460,
+   "uses": [
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "目录-瓷片2",
+     "box": [
+      1366.61,
+      122.58,
+      415.5,
+      438.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image32.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image32.png",
+   "model": null,
+   "originalSize": [
+    871,
+    970
+   ],
+   "outputSize": [
+    871,
+    970
+   ],
+   "displaySize": [
+    435.5,
+    485.0
+   ],
+   "bytes": 137939,
+   "uses": [
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "目录-瓷片3",
+     "box": [
+      1368.7,
+      420.72,
+      435.5,
+      485.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image33.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image33.png",
+   "model": null,
+   "originalSize": [
+    981,
+    868
+   ],
+   "outputSize": [
+    981,
+    868
+   ],
+   "displaySize": [
+    490.5,
+    434.0
+   ],
+   "bytes": 134531,
+   "uses": [
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "目录-瓷片4",
+     "box": [
+      1135.33,
+      555.5,
+      490.5,
+      434.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image34.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image34.png",
+   "model": null,
+   "originalSize": [
+    873,
+    971
+   ],
+   "outputSize": [
+    873,
+    971
+   ],
+   "displaySize": [
+    436.5,
+    485.5
+   ],
+   "bytes": 146131,
+   "uses": [
+    {
+     "slideId": 310,
+     "page": "toc",
+     "variant": "5",
+     "shape": "目录-瓷片5",
+     "box": [
+      936.31,
+      434.23,
+      436.5,
+      485.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image35.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image35.png",
+   "model": null,
+   "originalSize": [
+    705,
+    864
+   ],
+   "outputSize": [
+    705,
+    864
+   ],
+   "displaySize": [
+    352.5,
+    432.0
+   ],
+   "bytes": 112414,
+   "uses": [
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "目录-瓷片1",
+     "box": [
+      1031.31,
+      122.23,
+      352.5,
+      432.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image36.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image36.png",
+   "model": null,
+   "originalSize": [
+    800,
+    864
+   ],
+   "outputSize": [
+    800,
+    864
+   ],
+   "displaySize": [
+    400.0,
+    432.0
+   ],
+   "bytes": 111703,
+   "uses": [
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "目录-瓷片2",
+     "box": [
+      1334.08,
+      122.45,
+      400.0,
+      432.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image37.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image37.png",
+   "model": null,
+   "originalSize": [
+    882,
+    849
+   ],
+   "outputSize": [
+    882,
+    849
+   ],
+   "displaySize": [
+    441.0,
+    424.5
+   ],
+   "bytes": 110695,
+   "uses": [
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "目录-瓷片3",
+     "box": [
+      1363.3,
+      319.08,
+      441.0,
+      424.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image38.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image38.png",
+   "model": null,
+   "originalSize": [
+    812,
+    881
+   ],
+   "outputSize": [
+    812,
+    881
+   ],
+   "displaySize": [
+    406.0,
+    440.5
+   ],
+   "bytes": 117581,
+   "uses": [
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "目录-瓷片4",
+     "box": [
+      1355.08,
+      548.05,
+      406.0,
+      440.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image39.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image39.png",
+   "model": null,
+   "originalSize": [
+    814,
+    881
+   ],
+   "outputSize": [
+    814,
+    881
+   ],
+   "displaySize": [
+    407.0,
+    440.5
+   ],
+   "bytes": 117752,
+   "uses": [
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "目录-瓷片5",
+     "box": [
+      993.74,
+      548.24,
+      407.0,
+      440.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image40.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image40.png",
+   "model": null,
+   "originalSize": [
+    863,
+    973
+   ],
+   "outputSize": [
+    863,
+    973
+   ],
+   "displaySize": [
+    431.5,
+    486.5
+   ],
+   "bytes": 145677,
+   "uses": [
+    {
+     "slideId": 311,
+     "page": "toc",
+     "variant": "6",
+     "shape": "目录-瓷片6",
+     "box": [
+      936.2,
+      284.34,
+      431.5,
+      486.5
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-color.png",
+   "kind": "logo",
+   "composite": [
+    "ppt/media/image17.png",
+    "ppt/media/image18.png"
+   ],
+   "note": "彩色圆章(image17 左侧,深色底用的白字版)+ 深色校名(image18 右侧,整枚黑色版)拼成,浅色页眉用的彩色校徽",
+   "outputSize": [
+    260,
+    73
+   ],
+   "bytes": 21250,
+   "uses": []
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Cinzel": [
+   "cover/default"
+  ],
+  "Source Han Serif CN Light": [
+   "cover/default",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Medium": [
+   "cover/default"
+  ],
+  "Source Han Serif CN SemiBold": [
+   "cover/default"
+  ],
+  "思源宋体 CN Heavy": [
+   "cover/default",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源黑体 CN": [
+   "cover/default",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 7085757
+}

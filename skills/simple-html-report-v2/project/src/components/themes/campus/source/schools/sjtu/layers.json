@@ -1,0 +1,17 @@
+{
+  "_说明": "提取脚本按这里列出的形状合成矢量装饰层 SVG(assets/schools/sjtu/<name>.svg,位置写进 manifest.json 的 layers[].box)。shapes 写模板里的形状名,支持通配符、「名字#2」、「@组合名」。",
+  "layers": [
+    { "name": "cover-ribbons", "slide": 340, "shapes": ["底部半透明白色飘带", "底部红色主飘带", "底部深红飘带", "底部红色光带", "底部金色细弧线"] },
+    { "name": "cover-dashes", "slide": 340, "shapes": ["@组合 26", "@组合 27"] },
+    { "name": "toc-back", "slide": 275, "shapes": ["右侧浅色曲面背景", "左上浅粉外弧", "左上红色弧形飘带", "左下白色弧形边", "左下红色主飘带", "左下浅粉边缘"] },
+    { "name": "toc-front", "slide": 275, "shapes": ["底部浅粉波纹", "右下红色飘带"] },
+    { "name": "toc-title-lines", "slide": 275, "shapes": ["标题细分隔线", "标题红色短线"] },
+    { "name": "toc-num", "slide": 275, "shapes": ["目录 1 · 红色编号形状"] },
+    { "name": "icon-gate", "slide": 275, "shapes": ["图标 · 校门"] },
+    { "name": "icon-cap", "slide": 275, "shapes": ["图标 · 学士帽"] },
+    { "name": "icon-flask", "slide": 275, "shapes": ["图标 · 科研烧瓶"] },
+    { "name": "icon-globe", "slide": 275, "shapes": ["图标 · 地球*"] },
+    { "name": "icon-people", "slide": 275, "shapes": ["图标 · 人群*"] },
+    { "name": "icon-sprout", "slide": 275, "shapes": ["图标 · 成长嫩芽"] }
+  ]
+}

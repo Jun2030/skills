@@ -1,0 +1,718 @@
+{
+  "title": "管理会计在企业经营管理中的应用",
+  "goal": "经管类本科毕业论文答辩:交代选题背景与国内外研究现状、七种研究方法、应用难点与行业趋势,以及结论、创新点与展望",
+  "audience": "答辩委员会 / 指导教师",
+  "owner": "答辩人",
+  "randomSeed": "thesis-defense-management-demo",
+  "themePack": "campus",
+  "brand": {
+    "name": "示例大学",
+    "nameEn": "EXAMPLE UNIVERSITY",
+    "mark": "示",
+    "headerNote": "THESIS DEFENSE · 2026",
+    "footerNote": "示例大学 · 经济管理学院 · 本科毕业论文答辩",
+    "accent": "#1A5C3A",
+    "chapters": [
+      "选题背景",
+      "研究方法",
+      "研究内容",
+      "归纳总结"
+    ]
+  },
+  "slides": [
+    {
+      "layout": "campus_temp_cover",
+      "props": {
+        "kicker": "本科毕业论文答辩",
+        "title": "管理会计在企业经营管理中的应用",
+        "subtitle": "工商管理专业 · 以成本、营运与战略分析为主线",
+        "presenterLabel": "答辩人",
+        "presenter": "示例同学",
+        "dateLabel": "指导教师",
+        "date": "示例老师"
+      }
+    },
+    {
+      "layout": "campus_temp_agenda",
+      "props": {
+        "itemCount": 5,
+        "title": "目录",
+        "subtitle": "CONTENTS",
+        "items": [
+          {
+            "no": "01",
+            "title": "选题背景",
+            "note": "BACKGROUND"
+          },
+          {
+            "no": "02",
+            "title": "研究方法",
+            "note": "METHODS"
+          },
+          {
+            "no": "03",
+            "title": "研究内容",
+            "note": "FINDINGS"
+          },
+          {
+            "no": "04",
+            "title": "归纳总结",
+            "note": "CONCLUSION"
+          },
+          {
+            "no": "05",
+            "title": "致谢",
+            "note": "ACKNOWLEDGEMENT"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_background_figure",
+      "props": {
+        "chapterIndex": 1,
+        "paragraphCount": 2,
+        "showMetrics": true,
+        "metricCount": 3,
+        "imageSide": "right",
+        "imageFit": "cover",
+        "showSource": true,
+        "sectionNo": "1.1",
+        "title": "选题背景",
+        "metricsLabel": "数字开场",
+        "metrics": [
+          {
+            "value": "85",
+            "unit": "%以上",
+            "label": "西方财务人员从事管理会计工作"
+          },
+          {
+            "value": "60",
+            "unit": "年代末",
+            "label": "我国管理会计研究与应用起步"
+          },
+          {
+            "value": "2.5",
+            "unit": "倍",
+            "label": "近十年国内管理会计从业收入提升"
+          }
+        ],
+        "paragraphs": [
+          {
+            "no": "01",
+            "title": "全球竞争倒逼管理升级",
+            "body": "国外经营环境变化大、全球性竞争日益激烈，企业面临许多新挑战。只重「事后算账」的财务会计已难以支撑决策，**管理会计**把解析过去、控制现在、筹划未来结合起来，直接参与计划、决策与控制，高级财务管理人才也因此受到世界 500 强企业的推崇。"
+          },
+          {
+            "no": "02",
+            "title": "国内起步晚、转型急",
+            "body": "我国管理会计研究和应用起步较晚，约始于上世纪六十年代末，此后在理论和实践上都有较大发展。但财务人员仍多集中在传统核算岗位，**管理会计人才缺口较大**，从业者普遍面临从核算型向管理型转型的挑战。"
+          }
+        ],
+        "figureNo": "图 1-1",
+        "caption": "财务职能从核算型向管理型转型",
+        "source": "配图位：请替换为论文实际配图"
+      }
+    },
+    {
+      "layout": "campus_domestic_abroad",
+      "props": {
+        "chapterIndex": 1,
+        "abroadCount": 2,
+        "domesticCount": 3,
+        "showNotes": true,
+        "showReview": true,
+        "sectionNo": "1.2",
+        "title": "国内外研究现状",
+        "abroadName": "国外研究",
+        "abroadNote": "竞争加剧，人才备受推崇",
+        "abroadItems": [
+          {
+            "who": "经营环境",
+            "year": "全球化",
+            "body": "国外经营环境变化大，全球性竞争日益激烈，企业面临许多新挑战，**管理会计成为应对挑战的重要工具**。"
+          },
+          {
+            "who": "人才需求",
+            "year": "现状",
+            "body": "国外研究的管理会计人才大受欢迎，高级财务管理人才受到世界 500 强企业的推崇。"
+          }
+        ],
+        "domesticName": "国内研究",
+        "domesticNote": "起步较晚，但发展迅速",
+        "domesticItems": [
+          {
+            "who": "起步迅速",
+            "year": "60年代末",
+            "body": "我国研究和应用起步较晚，但短短十年在理论和实践上都有较大发展，**参与研究的人员越来越多**。"
+          },
+          {
+            "who": "内容变化",
+            "year": "近年",
+            "body": "从传统的一维发展到多维，核算功能发生巨大变化；旧理论有局限性，改变不可避免。"
+          },
+          {
+            "who": "人才缺口",
+            "year": "现状",
+            "body": "管理会计人才缺口较大，大量财会从业者面临从核算型向管理型**转型的挑战**。"
+          }
+        ],
+        "reviewLabel": "研究述评",
+        "gapLabel": "现有不足",
+        "gap": "国内研究起步晚，管理会计常被并入财务会计，**工具应用领域偏少**",
+        "focusLabel": "本文切入",
+        "focus": "以**成本管理**为切入点，梳理管理会计方法的应用与对策"
+      }
+    },
+    {
+      "layout": "campus_significance_cards",
+      "props": {
+        "chapterIndex": 1,
+        "cardCount": 3,
+        "showImages": false,
+        "arrange": "row",
+        "showSummary": true,
+        "sectionNo": "1.3",
+        "title": "选题的目的与意义",
+        "items": [
+          {
+            "no": "01",
+            "title": "服务决策",
+            "desc": "针对企业编制计划、作出决策、控制经济活动的需要，记录分析业务，**直接参与决策控制过程**。"
+          },
+          {
+            "no": "02",
+            "title": "改善经营",
+            "desc": "捕捉和呈报管理信息，帮助管理部门发现问题、改进管理，保证企业**改善经营、提高经济效益**。"
+          },
+          {
+            "no": "03",
+            "title": "职能扩展",
+            "desc": "从财务会计单纯的核算，扩展到解析过去、控制现在、筹划未来相结合的**综合性职能**。"
+          }
+        ],
+        "summaryLabel": "工作环节",
+        "summary": "收集汇总 → 分析报告 → 预测决策，管理会计贯穿经营管理全过程"
+      }
+    },
+    {
+      "layout": "campus_thesis_structure",
+      "props": {
+        "chapterIndex": 1,
+        "chapterCount": 4,
+        "showGroups": true,
+        "sectionNo": "1.4",
+        "title": "论文结构",
+        "chapters": [
+          {
+            "no": "第1章",
+            "title": "选题背景",
+            "desc": "梳理国内外研究现状，说明选题的目的与**现实意义**。"
+          },
+          {
+            "no": "第2章",
+            "title": "研究方法",
+            "desc": "介绍作业成本、价值链、战略成本、营运管理等七种分析方法。"
+          },
+          {
+            "no": "第3章",
+            "title": "研究内容",
+            "desc": "归纳应用难点与重点，结合就业与报考数据看**行业趋势**。"
+          },
+          {
+            "no": "第4章",
+            "title": "归纳总结",
+            "desc": "提出结论与建议，总结创新点并展望后续研究方向。"
+          }
+        ],
+        "groups": [
+          {
+            "label": "提出问题",
+            "from": 1,
+            "to": 1
+          },
+          {
+            "label": "分析问题",
+            "from": 2,
+            "to": 3
+          },
+          {
+            "label": "解决问题",
+            "from": 4,
+            "to": 4
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_objective_contents",
+      "props": {
+        "chapterIndex": 2,
+        "contentCount": 6,
+        "showKeywords": true,
+        "sectionNo": "2.0",
+        "title": "研究方法总览",
+        "goalLabel": "总体思路",
+        "goal": "以**作业成本**为基础，从成本、价值、竞争、战略与营运多个视角分析企业管理",
+        "items": [
+          {
+            "no": "01",
+            "title": "作业成本法",
+            "desc": "以资源、作业、成本对象、成本动因四要素重构核算，并按九个环节实施。",
+            "keywords": "四要素 · 九环节"
+          },
+          {
+            "no": "02",
+            "title": "竞争对手分析",
+            "desc": "区分提供相似产品与可替代产品的两类对手，竞争集中在**价格与服务质量**。",
+            "keywords": "价格 · 服务水平"
+          },
+          {
+            "no": "03",
+            "title": "价值链管理",
+            "desc": "消除不增加价值的作业，对不可消除的作业尽可能提高工作效率。",
+            "keywords": "顾客价值"
+          },
+          {
+            "no": "04",
+            "title": "成本管理分析",
+            "desc": "从思想、方法、手段、组织四个方向改进成本管理，改变只重事后算账。",
+            "keywords": "四个改进方向"
+          },
+          {
+            "no": "05",
+            "title": "战略成本分析",
+            "desc": "从外部环境、内部条件、竞争态势三方面确定企业的**相对成本地位**。",
+            "keywords": "相对成本地位"
+          },
+          {
+            "no": "06",
+            "title": "营运管理分析",
+            "desc": "按区域、产品、部门、渠道、人员五个维度分析盈利能力与盈亏动因。",
+            "keywords": "多维盈利分析"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_flow_chain",
+      "props": {
+        "chapterIndex": 2,
+        "stepCount": 9,
+        "showEnd": true,
+        "showLead": true,
+        "showConclusion": true,
+        "sectionNo": "2.2",
+        "title": "作业实施模型",
+        "lead": "作业实施模型由作业实施理论和实施步骤两部分构成，共九个环节。",
+        "steps": [
+          {
+            "no": "01",
+            "title": "作业认定",
+            "desc": "确定企业内需要核算的各项作业。"
+          },
+          {
+            "no": "02",
+            "title": "作业调研",
+            "desc": "调查各项作业的内容与资源消耗。"
+          },
+          {
+            "no": "03",
+            "title": "作业识别",
+            "desc": "识别并界定各项作业的边界。"
+          },
+          {
+            "no": "04",
+            "title": "运行分析",
+            "desc": "分析作业的运行过程与效率。"
+          },
+          {
+            "no": "05",
+            "title": "成本归集",
+            "desc": "把资源费用归集到各项作业。"
+          },
+          {
+            "no": "06",
+            "title": "建成本库",
+            "desc": "按作业建立对应的成本库。"
+          },
+          {
+            "no": "07",
+            "title": "成本分配",
+            "desc": "按成本动因把作业成本分配到成本对象。"
+          },
+          {
+            "no": "08",
+            "title": "比例计算",
+            "desc": "计算各成本对象应承担的比例。"
+          },
+          {
+            "no": "09",
+            "title": "得出结果",
+            "desc": "汇总得到各成本对象的作业成本。"
+          }
+        ],
+        "endLabel": "产出",
+        "endTitle": "客观成本信息",
+        "endDesc": "科学分配制造费用，为决策提供准确信息",
+        "conclusionLabel": "模型意义",
+        "conclusion": "按作业归集与分配成本，帮助企业消除和精简不创造价值的作业。"
+      }
+    },
+    {
+      "layout": "campus_quadrant_matrix",
+      "props": {
+        "chapterIndex": 2,
+        "highlightIndex": 2,
+        "showExamples": true,
+        "showConclusion": true,
+        "sectionNo": "2.5",
+        "title": "成本管理分析：四个改进方向",
+        "xLabel": "改进抓手",
+        "xLow": "人与制度",
+        "xHigh": "方法与技术",
+        "yLabel": "作用层面",
+        "yLow": "落地执行",
+        "yHigh": "理念方法",
+        "exampleLabel": "代表做法",
+        "quadrants": [
+          {
+            "no": "Ⅰ",
+            "name": "方法科学化",
+            "tag": "方法革新",
+            "desc": "融合国内经验与国外方法，综合运用目标成本管理、责任成本管理、厂内经济核算和本量利分析。",
+            "example": "目标成本 · 本量利"
+          },
+          {
+            "no": "Ⅱ",
+            "name": "思想革新化",
+            "tag": "观念先行",
+            "desc": "树立竞争观念、效益观念、经营观念和法制观念，改变只重事后算账的做法。",
+            "example": "四种经营观念"
+          },
+          {
+            "no": "Ⅲ",
+            "name": "组织合理化",
+            "tag": "制度保障",
+            "desc": "统一领导、分级管理，建立成本管理责任制度，让成本管理有组织保障。",
+            "example": "成本管理责任制"
+          },
+          {
+            "no": "Ⅳ",
+            "name": "手段电子化",
+            "tag": "技术支撑",
+            "desc": "应用计算机加速信息处理，建立成本管理信息系统，推广检测手段和监控装置。",
+            "example": "成本管理信息系统"
+          }
+        ],
+        "conclusionLabel": "改进逻辑",
+        "conclusion": "观念先行、方法跟进，再靠信息手段与组织制度落地（坐标归类为示意）"
+      }
+    },
+    {
+      "layout": "campus_cause_countermeasure",
+      "props": {
+        "chapterIndex": 3,
+        "rowCount": 5,
+        "showTopics": true,
+        "showConclusion": true,
+        "sectionNo": "3.1",
+        "title": "管理会计应用难点、原因与对策",
+        "headProblem": "应用难点",
+        "headProblemNote": "企业现状",
+        "headCause": "成因分析",
+        "headCauseNote": "深层原因",
+        "headMeasure": "对策建议",
+        "headMeasureNote": "结合结论与展望",
+        "rows": [
+          {
+            "topic": "定位层面",
+            "problem": "公益性部门以社会效益为先，管理会计建设受到制约",
+            "cause": "管理会计以提高经济效益为最终目的，与部门定位不完全一致",
+            "measure": "从单位实际需求出发推动理论落地，建立管理会计案例库"
+          },
+          {
+            "topic": "数据层面",
+            "problem": "共享经济下数据分析价值未被重视，管理会计工具用不起来",
+            "cause": "管理者没有意识到数据分析的重要性，缺少工具应用能力",
+            "measure": "加强多种新型工具的协调应用，量化战略指标体系"
+          },
+          {
+            "topic": "规划层面",
+            "problem": "管理会计被划归为财务会计的内容，没有独立规划",
+            "cause": "把管理会计等同于核算工作，忽视其决策与控制职能",
+            "measure": "做好管理会计与业务、财务的体系融合，完善内部控制制度"
+          },
+          {
+            "topic": "认知层面",
+            "problem": "管理者认为管理会计与前方销售关系不大",
+            "cause": "管理者对管理会计的认识过于简单，未把它纳入经营全局",
+            "measure": "以战略目标为基础分解预算，把预算成果与员工绩效挂钩"
+          },
+          {
+            "topic": "人才层面",
+            "problem": "从业人员知识和专业能力不足，力不从心",
+            "cause": "传统核算型人员居多，复合型管理会计人才培养不足",
+            "measure": "加强预算管理知识学习，提高从业人员的专业技能"
+          }
+        ],
+        "conclusionLabel": "核心观点",
+        "conclusion": "难点根源在认识与人才，对策落在体系融合、工具整合与绩效挂钩。"
+      }
+    },
+    {
+      "layout": "campus_duo_ring",
+      "props": {
+        "chapterIndex": 3,
+        "itemCount": 3,
+        "emphasis": "lead",
+        "sectionNo": "3.3",
+        "title": "国内外会计人员结构对比",
+        "centerLabel": "管理会计",
+        "leftLabel": "A国",
+        "rightLabel": "我国",
+        "leftTitle": "管理会计 88%",
+        "rightTitle": "管理会计 15%",
+        "topNote": "以管理为主",
+        "bottomNote": "以核算为主",
+        "leftItems": [
+          {
+            "title": "占比最高",
+            "desc": "A 国会计人员中管理会计占 88%，另有传统会计与其他两类。"
+          },
+          {
+            "title": "职能主体",
+            "desc": "西方发达国家 85% 以上的财务工作者从事管理会计工作。"
+          },
+          {
+            "title": "人才受捧",
+            "desc": "高级财务管理人才受到世界 500 强企业的推崇。"
+          }
+        ],
+        "rightItems": [
+          {
+            "title": "占比偏低",
+            "desc": "我国会计人员中管理会计仅占 15%，传统会计占主体。"
+          },
+          {
+            "title": "核算饱和",
+            "desc": "财务会计人员规模庞大，传统核算岗位严重饱和。"
+          },
+          {
+            "title": "缺口较大",
+            "desc": "管理会计人才缺口较大，结构转型需求迫切。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_bar_chart_insight",
+      "props": {
+        "chapterIndex": 3,
+        "barCount": 4,
+        "seriesMode": "single",
+        "highlightIndex": 4,
+        "insightCount": 3,
+        "showConclusion": true,
+        "sectionNo": "3.5",
+        "title": "报考人数呈增长趋势",
+        "chartLabel": "管理会计相关报考人数",
+        "chartNote": "单位：万人",
+        "seriesA": "报考人数",
+        "seriesB": "",
+        "bars": [
+          {
+            "label": "80年代初",
+            "value": 4
+          },
+          {
+            "label": "90年代初",
+            "value": 8
+          },
+          {
+            "label": "00年代初",
+            "value": 11
+          },
+          {
+            "label": "如今",
+            "value": 20
+          }
+        ],
+        "insightsLabel": "阶段说明",
+        "insights": [
+          {
+            "no": "01",
+            "title": "起步阶段",
+            "desc": "80 年代初管理会计知识不普及，报考人数约 4 万人。"
+          },
+          {
+            "no": "02",
+            "title": "理论引入",
+            "desc": "90 年代初外国理论开始在国内产生影响，报考人数翻倍。"
+          },
+          {
+            "no": "03",
+            "title": "加速转型",
+            "desc": "企业日益重视，许多人转型到这一赛道，近 1 至 2 年超过 20 万人。"
+          }
+        ],
+        "conclusionLabel": "趋势判断",
+        "conclusion": "报考人数从约 4 万增至 20 万以上，近十年从业收入也提高约 2.5 倍。"
+      }
+    },
+    {
+      "layout": "campus_innovation_points",
+      "props": {
+        "chapterIndex": 4,
+        "pointCount": 4,
+        "showTags": true,
+        "showHero": true,
+        "sectionNo": "4.2",
+        "title": "创新和亮点",
+        "heroKicker": "INNOVATION",
+        "heroTitle": "创新点",
+        "heroNote": "从理论、框架、方法到行业，四个层面的新尝试",
+        "points": [
+          {
+            "no": "01",
+            "tag": "理论创新",
+            "keyword": "以成本管理为切入点",
+            "desc": "把常用于传统会计的理论，用于**新的人群和新问题**。"
+          },
+          {
+            "no": "02",
+            "tag": "框架创新",
+            "keyword": "新的框架模式",
+            "desc": "以往多用定性方法，本文采用新的框架模式，**突破质性研究的局限**。"
+          },
+          {
+            "no": "03",
+            "tag": "方法创新",
+            "keyword": "定性与定量相结合",
+            "desc": "以往多以定量研究为主，本文把定性分析与**定量分析结合**使用。"
+          },
+          {
+            "no": "04",
+            "tag": "行业创新",
+            "keyword": "理论跨领域应用",
+            "desc": "把传统会计行业的理论，应用于**新的会计领域**。"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_summary_outlook",
+      "props": {
+        "chapterIndex": 4,
+        "conclusionCount": 3,
+        "limitCount": 3,
+        "outlookCount": 3,
+        "sectionNo": "4.1",
+        "title": "结论、建议与展望",
+        "conclusionsLabel": "研究结论",
+        "conclusions": [
+          {
+            "no": "01",
+            "title": "主要领域成果显著",
+            "desc": "战略管理、供应链和价值链、标准成本法三个领域产出有效，成本信息化效果显著。"
+          },
+          {
+            "no": "02",
+            "title": "工具应用领域偏少",
+            "desc": "成果集中在战略、绩效、成本、营运四个管理领域，其他领域应用偏少。"
+          },
+          {
+            "no": "03",
+            "title": "关键在落地与整合",
+            "desc": "管理会计要从企业实际需求出发，推动理论落地与多种工具协调应用。"
+          }
+        ],
+        "limitsLabel": "改进建议",
+        "limits": [
+          {
+            "text": "加强薄弱领域研究，推动理论落地"
+          },
+          {
+            "text": "加强多种新型工具的协调应用研究"
+          },
+          {
+            "text": "建立管理会计案例库，完善内部控制制度"
+          }
+        ],
+        "outlookLabel": "未来展望",
+        "outlooks": [
+          {
+            "text": "优化企业资源配置，加强预算管理知识学习"
+          },
+          {
+            "text": "强化过程控制，把预算成果与员工绩效挂钩"
+          },
+          {
+            "text": "做好体系融合，政策支持与企业支持互相促进"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "campus_references_list",
+      "props": {
+        "chapterIndex": 4,
+        "refCount": 8,
+        "showLegend": true,
+        "showNote": true,
+        "sectionNo": "",
+        "title": "参考文献",
+        "legend": "[J] 期刊　[M] 专著　[D] 学位论文",
+        "note": "以上均为示例条目，请替换为论文实际参考文献",
+        "refs": [
+          "作者甲, 作者乙. 管理会计工具在企业中的应用研究（示例条目）[J]. 示例会计研究, 2021, 38(4): 45-52.",
+          "作者丙. 作业成本法原理与实务（示例条目）[M]. 示例市: 示例出版社, 2019.",
+          "作者丁. 价值链视角下的企业成本管理研究（示例条目）[D]. 示例市: 示例大学, 2020.",
+          "作者戊. 战略成本分析方法与应用（示例条目）[J]. 示例财会通讯, 2022(6): 88-93.",
+          "作者己, 作者庚. 管理会计人才培养路径探析（示例条目）[J]. 示例教育研究, 2021(15): 66-70.",
+          "作者辛. 多维度盈利能力分析模型构建（示例条目）[J]. 示例财务与会计, 2020(11): 30-34.",
+          "作者壬. 共享经济下的管理会计信息化（示例条目）[J]. 示例管理评论, 2023, 12(2): 41-47.",
+          "作者癸. 预算管理与企业战略目标分解（示例条目）[M]. 示例市: 示例出版社, 2018."
+        ]
+      }
+    },
+    {
+      "layout": "campus_acknowledgement",
+      "props": {
+        "chapterIndex": 4,
+        "mode": "columns",
+        "showPhoto": true,
+        "thanksCount": 3,
+        "showClosing": true,
+        "sectionNo": "",
+        "title": "致谢",
+        "heading": "致谢",
+        "photoCaption": "毕业合影 · 配图位",
+        "thanks": [
+          {
+            "title": "谢师恩",
+            "body": "感谢导师从选题、案例选择、资料搜集、开题报告，到论文结构、模型构建与定稿的**全程指导**。"
+          },
+          {
+            "title": "谢同窗",
+            "body": "感谢室友、同班同学与同门师兄师姐，在生活和学习中给予的**照顾和帮助**。"
+          },
+          {
+            "title": "谢自己",
+            "body": "感谢一直不曾放弃的自己，愿始终保持**乐观、积极向上**的心态。"
+          }
+        ],
+        "closing": "感恩求学路上的每一份陪伴与帮助"
+      }
+    },
+    {
+      "layout": "campus_temp_closing",
+      "props": {
+        "kicker": "THANK YOU",
+        "title": "谢谢聆听",
+        "subtitle": "恳请各位老师批评指正",
+        "contact": "答辩人 · 示例同学"
+      }
+    }
+  ]
+}

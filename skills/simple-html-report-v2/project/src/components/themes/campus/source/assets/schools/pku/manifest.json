@@ -1,0 +1,867 @@
+{
+ "school": "pku",
+ "name": "北京大学",
+ "en": "Peking University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 346,
+   "index": 39,
+   "preview": "预览/各页/39.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide39.xml",
+   "fields": [
+    "主标题",
+    "副标题",
+    "副标题·下",
+    "英文",
+    "底部信息"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「北京大学」",
+    "01 形状「匾形请柬」",
+    "02 形状「请柬内框」",
+    "03 图片「北京大学校徽校名」",
+    "04 文字「主标题」",
+    "05 形状「菱形饰」",
+    "06 文字「副标题」",
+    "07 文字「副标题·下」",
+    "08 文字「英文」",
+    "09 文字「底部信息」"
+   ],
+   "notes": [
+    "「匾形请柬」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「匾形请柬」、「请柬内框」、「北京大学校徽校名」、「菱形饰」"
+   ],
+   "warnings": [
+    "预设形状 plaque「匾形请柬」按外框矩形近似",
+    "预设形状 plaque「请柬内框」按外框矩形近似",
+    "预设形状 diamond「菱形饰」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 284,
+   "index": 40,
+   "preview": "预览/各页/40.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide40.xml",
+   "fields": [
+    "主标题",
+    "副标题",
+    "副标题·下",
+    "英文",
+    "底部信息"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「北京大学」",
+    "01 形状「匾形请柬」",
+    "02 形状「请柬内框」",
+    "03 图片「北京大学校徽校名」",
+    "04 文字「主标题」",
+    "05 形状「菱形饰」",
+    "06 文字「副标题」",
+    "07 文字「副标题·下」",
+    "08 文字「英文」",
+    "09 文字「底部信息」"
+   ],
+   "notes": [
+    "「匾形请柬」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「匾形请柬」、「请柬内框」、「北京大学校徽校名」、「菱形饰」"
+   ],
+   "warnings": [
+    "预设形状 plaque「匾形请柬」按外框矩形近似",
+    "预设形状 plaque「请柬内框」按外框矩形近似",
+    "预设形状 diamond「菱形饰」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "cover",
+   "variant": "keyword",
+   "slideId": 347,
+   "index": 41,
+   "preview": "预览/各页/41.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide41.xml",
+   "fields": [
+    "主标题",
+    "副标题",
+    "副标题·下",
+    "英文",
+    "底部信息",
+    "主标题·副行"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+   },
+   "stack": [
+    "00 视频「北京大学」",
+    "01 形状「匾形请柬」",
+    "02 形状「请柬内框」",
+    "03 图片「北京大学校徽校名」",
+    "04 文字「主标题」",
+    "05 形状「菱形饰」",
+    "06 文字「副标题」",
+    "07 文字「副标题·下」",
+    "08 文字「英文」",
+    "09 文字「底部信息」",
+    "10 文字「主标题·副行」"
+   ],
+   "notes": [
+    "「匾形请柬」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「匾形请柬」、「请柬内框」、「北京大学校徽校名」、「菱形饰」"
+   ],
+   "warnings": [
+    "预设形状 plaque「匾形请柬」按外框矩形近似",
+    "预设形状 plaque「请柬内框」按外框矩形近似",
+    "预设形状 diamond「菱形饰」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 316,
+   "index": 43,
+   "preview": "预览/各页/43.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide43.xml",
+   "fields": [
+    "目录标题",
+    "典礼名称",
+    "底部信息",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image51.png"
+   },
+   "stack": [
+    "00 图片「北京大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「典礼名称」",
+    "03 形状「议程时间线」",
+    "04 形状「时间线节点1」",
+    "05 形状「议程匾壹」",
+    "06 形状「议程匾内框壹」",
+    "07 文字「序号壹」",
+    "08 文字「条目壹」",
+    "09 文字「说明壹」",
+    "10 形状「议程匾贰」",
+    "11 形状「议程匾内框贰」",
+    "12 文字「序号贰」",
+    "13 文字「条目贰」",
+    "14 文字「说明贰」",
+    "15 文字「底部信息」"
+   ],
+   "notes": [],
+   "warnings": [
+    "预设形状 diamond「时间线节点1」按外框矩形近似",
+    "预设形状 plaque「议程匾壹」按外框矩形近似",
+    "预设形状 plaque「议程匾内框壹」按外框矩形近似",
+    "预设形状 plaque「议程匾贰」按外框矩形近似",
+    "预设形状 plaque「议程匾内框贰」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 317,
+   "index": 44,
+   "preview": "预览/各页/44.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide44.xml",
+   "fields": [
+    "目录标题",
+    "典礼名称",
+    "底部信息",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image51.png"
+   },
+   "stack": [
+    "00 图片「北京大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「典礼名称」",
+    "03 形状「议程时间线」",
+    "04 形状「时间线节点1」",
+    "05 形状「时间线节点2」",
+    "06 形状「议程匾壹」",
+    "07 形状「议程匾内框壹」",
+    "08 文字「序号壹」",
+    "09 文字「条目壹」",
+    "10 文字「说明壹」",
+    "11 形状「议程匾贰」",
+    "12 形状「议程匾内框贰」",
+    "13 文字「序号贰」",
+    "14 文字「条目贰」",
+    "15 文字「说明贰」",
+    "16 形状「议程匾叁」",
+    "17 形状「议程匾内框叁」",
+    "18 文字「序号叁」",
+    "19 文字「条目叁」",
+    "20 文字「说明叁」",
+    "21 文字「底部信息」"
+   ],
+   "notes": [],
+   "warnings": [
+    "预设形状 diamond「时间线节点1」按外框矩形近似",
+    "预设形状 diamond「时间线节点2」按外框矩形近似",
+    "预设形状 plaque「议程匾壹」按外框矩形近似",
+    "预设形状 plaque「议程匾内框壹」按外框矩形近似",
+    "预设形状 plaque「议程匾贰」按外框矩形近似",
+    "预设形状 plaque「议程匾内框贰」按外框矩形近似",
+    "预设形状 plaque「议程匾叁」按外框矩形近似",
+    "预设形状 plaque「议程匾内框叁」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 318,
+   "index": 45,
+   "preview": "预览/各页/45.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide45.xml",
+   "fields": [
+    "目录标题",
+    "典礼名称",
+    "底部信息",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image51.png"
+   },
+   "stack": [
+    "00 图片「北京大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「典礼名称」",
+    "03 形状「议程时间线」",
+    "04 形状「时间线节点1」",
+    "05 形状「时间线节点2」",
+    "06 形状「时间线节点3」",
+    "07 形状「议程匾壹」",
+    "08 形状「议程匾内框壹」",
+    "09 文字「序号壹」",
+    "10 文字「条目壹」",
+    "11 文字「说明壹」",
+    "12 形状「议程匾贰」",
+    "13 形状「议程匾内框贰」",
+    "14 文字「序号贰」",
+    "15 文字「条目贰」",
+    "16 文字「说明贰」",
+    "17 形状「议程匾叁」",
+    "18 形状「议程匾内框叁」",
+    "19 文字「序号叁」",
+    "20 文字「条目叁」",
+    "21 文字「说明叁」",
+    "22 形状「议程匾肆」",
+    "23 形状「议程匾内框肆」",
+    "24 文字「序号肆」",
+    "25 文字「条目肆」",
+    "26 文字「说明肆」",
+    "27 文字「底部信息」"
+   ],
+   "notes": [],
+   "warnings": [
+    "预设形状 diamond「时间线节点1」按外框矩形近似",
+    "预设形状 diamond「时间线节点2」按外框矩形近似",
+    "预设形状 diamond「时间线节点3」按外框矩形近似",
+    "预设形状 plaque「议程匾壹」按外框矩形近似",
+    "预设形状 plaque「议程匾内框壹」按外框矩形近似",
+    "预设形状 plaque「议程匾贰」按外框矩形近似",
+    "预设形状 plaque「议程匾内框贰」按外框矩形近似",
+    "预设形状 plaque「议程匾叁」按外框矩形近似",
+    "预设形状 plaque「议程匾内框叁」按外框矩形近似",
+    "预设形状 plaque「议程匾肆」按外框矩形近似",
+    "预设形状 plaque「议程匾内框肆」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 285,
+   "index": 42,
+   "preview": "预览/各页/42.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide42.xml",
+   "fields": [
+    "目录标题",
+    "典礼名称",
+    "底部信息",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image51.png"
+   },
+   "stack": [
+    "00 图片「北京大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「典礼名称」",
+    "03 形状「议程时间线」",
+    "04 形状「时间线节点1」",
+    "05 形状「时间线节点2」",
+    "06 形状「时间线节点3」",
+    "07 形状「时间线节点4」",
+    "08 形状「议程匾壹」",
+    "09 形状「议程匾内框壹」",
+    "10 文字「序号壹」",
+    "11 文字「条目壹」",
+    "12 文字「说明壹」",
+    "13 形状「议程匾贰」",
+    "14 形状「议程匾内框贰」",
+    "15 文字「序号贰」",
+    "16 文字「条目贰」",
+    "17 文字「说明贰」",
+    "18 形状「议程匾叁」",
+    "19 形状「议程匾内框叁」",
+    "20 文字「序号叁」",
+    "21 文字「条目叁」",
+    "22 文字「说明叁」",
+    "23 形状「议程匾肆」",
+    "24 形状「议程匾内框肆」",
+    "25 文字「序号肆」",
+    "26 文字「条目肆」",
+    "27 文字「说明肆」",
+    "28 形状「议程匾伍」",
+    "29 形状「议程匾内框伍」",
+    "30 文字「序号伍」",
+    "31 文字「条目伍」",
+    "32 文字「说明伍」",
+    "33 文字「底部信息」"
+   ],
+   "notes": [],
+   "warnings": [
+    "预设形状 diamond「时间线节点1」按外框矩形近似",
+    "预设形状 diamond「时间线节点2」按外框矩形近似",
+    "预设形状 diamond「时间线节点3」按外框矩形近似",
+    "预设形状 diamond「时间线节点4」按外框矩形近似",
+    "预设形状 plaque「议程匾壹」按外框矩形近似",
+    "预设形状 plaque「议程匾内框壹」按外框矩形近似",
+    "预设形状 plaque「议程匾贰」按外框矩形近似",
+    "预设形状 plaque「议程匾内框贰」按外框矩形近似",
+    "预设形状 plaque「议程匾叁」按外框矩形近似",
+    "预设形状 plaque「议程匾内框叁」按外框矩形近似",
+    "预设形状 plaque「议程匾肆」按外框矩形近似",
+    "预设形状 plaque「议程匾内框肆」按外框矩形近似",
+    "预设形状 plaque「议程匾伍」按外框矩形近似",
+    "预设形状 plaque「议程匾内框伍」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 319,
+   "index": 46,
+   "preview": "预览/各页/46.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide46.xml",
+   "fields": [
+    "目录标题",
+    "典礼名称",
+    "底部信息",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image51.png"
+   },
+   "stack": [
+    "00 图片「北京大学校徽校名」",
+    "01 文字「目录标题」",
+    "02 文字「典礼名称」",
+    "03 形状「议程时间线」",
+    "04 形状「时间线节点1」",
+    "05 形状「时间线节点2」",
+    "06 形状「时间线节点3」",
+    "07 形状「时间线节点4」",
+    "08 形状「议程匾壹」",
+    "09 形状「议程匾内框壹」",
+    "10 文字「序号壹」",
+    "11 文字「条目壹」",
+    "12 文字「说明壹」",
+    "13 形状「议程匾贰」",
+    "14 形状「议程匾内框贰」",
+    "15 文字「序号贰」",
+    "16 文字「条目贰」",
+    "17 文字「说明贰」",
+    "18 形状「议程匾叁」",
+    "19 形状「议程匾内框叁」",
+    "20 文字「序号叁」",
+    "21 文字「条目叁」",
+    "22 文字「说明叁」",
+    "23 形状「议程匾肆」",
+    "24 形状「议程匾内框肆」",
+    "25 文字「序号肆」",
+    "26 文字「条目肆」",
+    "27 文字「说明肆」",
+    "28 形状「议程匾陆」",
+    "29 形状「议程匾内框陆」",
+    "30 文字「序号陆」",
+    "31 文字「条目陆」",
+    "32 文字「说明陆」",
+    "33 文字「底部信息」",
+    "34 形状「议程匾伍」",
+    "35 形状「议程匾内框伍」",
+    "36 文字「序号伍」",
+    "37 文字「条目伍」",
+    "38 文字「说明伍」",
+    "39 形状「时间线节点5」"
+   ],
+   "notes": [],
+   "warnings": [
+    "预设形状 diamond「时间线节点1」按外框矩形近似",
+    "预设形状 diamond「时间线节点2」按外框矩形近似",
+    "预设形状 diamond「时间线节点3」按外框矩形近似",
+    "预设形状 diamond「时间线节点4」按外框矩形近似",
+    "预设形状 plaque「议程匾壹」按外框矩形近似",
+    "预设形状 plaque「议程匾内框壹」按外框矩形近似",
+    "预设形状 plaque「议程匾贰」按外框矩形近似",
+    "预设形状 plaque「议程匾内框贰」按外框矩形近似",
+    "预设形状 plaque「议程匾叁」按外框矩形近似",
+    "预设形状 plaque「议程匾内框叁」按外框矩形近似",
+    "预设形状 plaque「议程匾肆」按外框矩形近似",
+    "预设形状 plaque「议程匾内框肆」按外框矩形近似",
+    "预设形状 plaque「议程匾陆」按外框矩形近似",
+    "预设形状 plaque「议程匾内框陆」按外框矩形近似",
+    "预设形状 plaque「议程匾伍」按外框矩形近似",
+    "预设形状 plaque「议程匾内框伍」按外框矩形近似",
+    "预设形状 diamond「时间线节点5」按外框矩形近似"
+   ]
+  }
+ ],
+ "assets": [
+  {
+   "file": "logo-image50.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image50.png",
+   "model": null,
+   "originalSize": [
+    852,
+    239
+   ],
+   "outputSize": [
+    431,
+    121
+   ],
+   "displaySize": [
+    215.6,
+    60.5
+   ],
+   "bytes": 61200,
+   "uses": [
+    {
+     "slideId": 346,
+     "page": "cover",
+     "variant": "default",
+     "shape": "北京大学校徽校名",
+     "box": [
+      330.13,
+      161.28,
+      205.34,
+      57.6
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 284,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "北京大学校徽校名",
+     "box": [
+      330.13,
+      161.28,
+      205.34,
+      57.6
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 347,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "北京大学校徽校名",
+     "box": [
+      330.13,
+      161.28,
+      205.34,
+      57.6
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 316,
+     "page": "toc",
+     "variant": "2",
+     "shape": "北京大学校徽校名",
+     "box": [
+      852.2,
+      89.28,
+      215.6,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 317,
+     "page": "toc",
+     "variant": "3",
+     "shape": "北京大学校徽校名",
+     "box": [
+      852.2,
+      89.28,
+      215.6,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 318,
+     "page": "toc",
+     "variant": "4",
+     "shape": "北京大学校徽校名",
+     "box": [
+      852.2,
+      89.28,
+      215.6,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 285,
+     "page": "toc",
+     "variant": "5",
+     "shape": "北京大学校徽校名",
+     "box": [
+      852.2,
+      89.28,
+      215.6,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 319,
+     "page": "toc",
+     "variant": "6",
+     "shape": "北京大学校徽校名",
+     "box": [
+      852.2,
+      89.28,
+      215.6,
+      60.48
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "bg-image51.jpg",
+   "kind": "background",
+   "sourceMedia": "ppt/media/image51.png",
+   "model": null,
+   "originalSize": [
+    1600,
+    900
+   ],
+   "outputSize": [
+    1600,
+    900
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 32099,
+   "uses": [
+    {
+     "slideId": 316,
+     "page": "toc",
+     "variant": "2",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 317,
+     "page": "toc",
+     "variant": "3",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 318,
+     "page": "toc",
+     "variant": "4",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 285,
+     "page": "toc",
+     "variant": "5",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 319,
+     "page": "toc",
+     "variant": "6",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    }
+   ]
+  },
+  {
+   "file": "video-media3.mp4",
+   "poster": "video-media3-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media3.mp4",
+   "uses": [
+    {
+     "slideId": 346,
+     "page": "cover",
+     "variant": "default",
+     "shape": "北京大学",
+     "box": [
+      0.0,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 284,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "北京大学",
+     "box": [
+      0.0,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 347,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "北京大学",
+     "box": [
+      0.0,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 10.033,
+    "bitRate": 3145097
+   },
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 10.08,
+    "bitRate": 52232999
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 9254054
+    },
+    {
+     "crf": 24,
+     "bytes": 7014147
+    },
+    {
+     "crf": 26,
+     "bytes": 5280144
+    },
+    {
+     "crf": 28,
+     "bytes": 3944476
+    }
+   ],
+   "params": "libx264 preset=slow crf=28 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1723570,
+   "duration": 10.033,
+   "posterSource": "ppt/media/image49.png",
+   "posterBytes": 542852
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Cinzel": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title"
+  ],
+  "寒蝉锦书宋 Bold": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "寒蝉锦书宋 Heavy": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "寒蝉锦书宋 Medium": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 2359721
+}

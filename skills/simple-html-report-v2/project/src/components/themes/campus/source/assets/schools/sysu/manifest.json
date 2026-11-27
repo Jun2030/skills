@@ -1,0 +1,1215 @@
+{
+ "school": "sysu",
+ "name": "中山大学",
+ "en": "Sun Yat-sen University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 341,
+   "index": 14,
+   "preview": "预览/各页/14.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide14.xml",
+   "fields": [
+    "!!英文标识",
+    "封面-眉题",
+    "封面-主标题",
+    "封面-校训",
+    "封面-汇报人",
+    "!!拱门-题注"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 图片「!!校标」",
+    "06 文字「!!英文标识」",
+    "07 文字「封面-眉题」",
+    "08 文字「封面-主标题」",
+    "09 文字「封面-校训」",
+    "10 文字「封面-汇报人」",
+    "11 3D 模型「3D 模型 6」",
+    "12 文字「!!拱门-题注」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.05",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 273,
+   "index": 15,
+   "preview": "预览/各页/15.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide15.xml",
+   "fields": [
+    "!!英文标识",
+    "封面-眉题",
+    "封面-主标题",
+    "封面-校训",
+    "封面-汇报人",
+    "!!拱门-题注"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 图片「!!校标」",
+    "06 文字「!!英文标识」",
+    "07 文字「封面-眉题」",
+    "08 文字「封面-主标题」",
+    "09 文字「封面-校训」",
+    "10 文字「封面-汇报人」",
+    "11 3D 模型「3D 模型 6」",
+    "12 文字「!!拱门-题注」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.05",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "cover",
+   "variant": "keyword",
+   "slideId": 342,
+   "index": 16,
+   "preview": "预览/各页/16.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide16.xml",
+   "fields": [
+    "!!英文标识",
+    "封面-眉题",
+    "封面-主标题",
+    "封面-校训",
+    "封面-汇报人",
+    "!!拱门-题注",
+    "封面-副标题（长）"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 图片「!!校标」",
+    "06 文字「!!英文标识」",
+    "07 文字「封面-眉题」",
+    "08 文字「封面-主标题」",
+    "09 文字「封面-校训」",
+    "10 文字「封面-汇报人」",
+    "11 3D 模型「3D 模型 6」",
+    "12 文字「!!拱门-题注」",
+    "13 文字「封面-副标题（长）」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.05",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 304,
+   "index": 18,
+   "preview": "预览/各页/18.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide18.xml",
+   "fields": [
+    "!!英文标识",
+    "目录-标题",
+    "目录-英文",
+    "!!拱门-题注",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 文字「!!英文标识」",
+    "06 文字「目录-标题」",
+    "07 文字「目录-英文」",
+    "08 文字「目录-01-序号」",
+    "09 文字「目录-01-标题」",
+    "10 文字「目录-01-英文」",
+    "11 文字「目录-01-说明」",
+    "12 线「目录-01-分隔线」",
+    "13 文字「目录-02-序号」",
+    "14 文字「目录-02-标题」",
+    "15 文字「目录-02-英文」",
+    "16 文字「目录-02-说明」",
+    "17 线「目录-02-分隔线」",
+    "18 文字「!!拱门-题注」",
+    "19 3D 模型「3D 模型 7」",
+    "20 图片「!!校标」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.04",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「!!校标」"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 305,
+   "index": 19,
+   "preview": "预览/各页/19.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide19.xml",
+   "fields": [
+    "!!英文标识",
+    "目录-标题",
+    "目录-英文",
+    "!!拱门-题注",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 文字「!!英文标识」",
+    "06 文字「目录-标题」",
+    "07 文字「目录-英文」",
+    "08 文字「目录-01-序号」",
+    "09 文字「目录-01-标题」",
+    "10 文字「目录-01-英文」",
+    "11 文字「目录-01-说明」",
+    "12 线「目录-01-分隔线」",
+    "13 文字「目录-02-序号」",
+    "14 文字「目录-02-标题」",
+    "15 文字「目录-02-英文」",
+    "16 文字「目录-02-说明」",
+    "17 线「目录-02-分隔线」",
+    "18 文字「目录-03-序号」",
+    "19 文字「目录-03-标题」",
+    "20 文字「目录-03-英文」",
+    "21 文字「目录-03-说明」",
+    "22 线「目录-03-分隔线」",
+    "23 文字「!!拱门-题注」",
+    "24 3D 模型「3D 模型 7」",
+    "25 图片「!!校标」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.04",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「!!校标」"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 274,
+   "index": 17,
+   "preview": "预览/各页/17.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide17.xml",
+   "fields": [
+    "!!英文标识",
+    "目录-标题",
+    "目录-英文",
+    "!!拱门-题注",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 文字「!!英文标识」",
+    "06 文字「目录-标题」",
+    "07 文字「目录-英文」",
+    "08 文字「目录-01-序号」",
+    "09 文字「目录-01-标题」",
+    "10 文字「目录-01-英文」",
+    "11 文字「目录-01-说明」",
+    "12 线「目录-01-分隔线」",
+    "13 文字「目录-02-序号」",
+    "14 文字「目录-02-标题」",
+    "15 文字「目录-02-英文」",
+    "16 文字「目录-02-说明」",
+    "17 线「目录-02-分隔线」",
+    "18 文字「目录-03-序号」",
+    "19 文字「目录-03-标题」",
+    "20 文字「目录-03-英文」",
+    "21 文字「目录-03-说明」",
+    "22 线「目录-03-分隔线」",
+    "23 文字「目录-04-序号」",
+    "24 文字「目录-04-标题」",
+    "25 文字「目录-04-英文」",
+    "26 文字「目录-04-说明」",
+    "27 线「目录-04-分隔线」",
+    "28 文字「!!拱门-题注」",
+    "29 3D 模型「3D 模型 7」",
+    "30 图片「!!校标」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.04",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「!!校标」"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 306,
+   "index": 20,
+   "preview": "预览/各页/20.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide20.xml",
+   "fields": [
+    "!!英文标识",
+    "目录-标题",
+    "目录-英文",
+    "!!拱门-题注",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.4.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 文字「!!英文标识」",
+    "06 文字「目录-标题」",
+    "07 文字「目录-英文」",
+    "08 文字「目录-01-序号」",
+    "09 文字「目录-01-标题」",
+    "10 文字「目录-01-英文」",
+    "11 文字「目录-01-说明」",
+    "12 线「目录-01-分隔线」",
+    "13 文字「目录-02-序号」",
+    "14 文字「目录-02-标题」",
+    "15 文字「目录-02-英文」",
+    "16 文字「目录-02-说明」",
+    "17 线「目录-02-分隔线」",
+    "18 文字「目录-03-序号」",
+    "19 文字「目录-03-标题」",
+    "20 文字「目录-03-英文」",
+    "21 文字「目录-03-说明」",
+    "22 线「目录-03-分隔线」",
+    "23 文字「目录-05-序号」",
+    "24 文字「目录-05-标题」",
+    "25 文字「目录-05-英文」",
+    "26 文字「目录-05-说明」",
+    "27 线「目录-05-分隔线」",
+    "28 文字「!!拱门-题注」",
+    "29 3D 模型「3D 模型 7」",
+    "30 图片「!!校标」",
+    "31 文字「目录-04-序号」",
+    "32 文字「目录-04-标题」",
+    "33 文字「目录-04-英文」",
+    "34 文字「目录-04-说明」",
+    "35 线「目录-04-分隔线」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.04",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「!!校标」、「目录-04-分隔线」"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 307,
+   "index": 21,
+   "preview": "预览/各页/21.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide21.xml",
+   "fields": [
+    "!!英文标识",
+    "目录-标题",
+    "目录-英文",
+    "!!拱门-题注",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.4.en",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.desc",
+    "toc.5.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 1800,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "gradient",
+    "stops": [
+     {
+      "pos": 0.0,
+      "color": "#FFFFFF"
+     },
+     {
+      "pos": 0.6,
+      "color": "#F6F9F6"
+     },
+     {
+      "pos": 1.0,
+      "color": "#E9F1EB"
+     }
+    ],
+    "kind": "linear",
+    "angle": 45.0,
+    "scaled": true
+   },
+   "stack": [
+    "00 图片「!!水印校徽」",
+    "01 形状「!!拱门-外框线」",
+    "02 形状「!!拱门」",
+    "03 形状「!!拱门-金线」",
+    "04 形状「!!拱门-光晕」",
+    "05 文字「!!英文标识」",
+    "06 文字「目录-标题」",
+    "07 文字「目录-英文」",
+    "08 文字「目录-01-序号」",
+    "09 文字「目录-01-标题」",
+    "10 文字「目录-01-英文」",
+    "11 文字「目录-01-说明」",
+    "12 线「目录-01-分隔线」",
+    "13 文字「目录-02-序号」",
+    "14 文字「目录-02-标题」",
+    "15 文字「目录-02-英文」",
+    "16 文字「目录-02-说明」",
+    "17 线「目录-02-分隔线」",
+    "18 文字「目录-03-序号」",
+    "19 文字「目录-03-标题」",
+    "20 文字「目录-03-英文」",
+    "21 文字「目录-03-说明」",
+    "22 线「目录-03-分隔线」",
+    "23 文字「目录-06-序号」",
+    "24 文字「目录-06-标题」",
+    "25 文字「目录-06-英文」",
+    "26 文字「目录-06-说明」",
+    "27 线「目录-06-分隔线」",
+    "28 文字「!!拱门-题注」",
+    "29 3D 模型「3D 模型 7」",
+    "30 图片「!!校标」",
+    "31 文字「目录-04-序号」",
+    "32 文字「目录-04-标题」",
+    "33 文字「目录-04-英文」",
+    "34 文字「目录-04-说明」",
+    "35 线「目录-04-分隔线」",
+    "36 文字「目录-05-序号」",
+    "37 文字「目录-05-标题」",
+    "38 文字「目录-05-英文」",
+    "39 文字「目录-05-说明」",
+    "40 线「目录-05-分隔线」"
+   ],
+   "notes": [
+    "「!!水印校徽」图片透明度 0.04",
+    "「!!拱门」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「!!校标」、「目录-04-分隔线」、「目录-05-分隔线」"
+   ],
+   "warnings": [
+    "预设形状 round2SameRect「!!拱门-外框线」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门」按外框矩形近似",
+    "预设形状 round2SameRect「!!拱门-金线」按外框矩形近似"
+   ]
+  }
+ ],
+ "assets": [
+  {
+   "file": "logo-image11.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image11.png",
+   "model": null,
+   "originalSize": [
+    1600,
+    1600
+   ],
+   "outputSize": [
+    1412,
+    1412
+   ],
+   "displaySize": [
+    705.6,
+    705.6
+   ],
+   "bytes": 481006,
+   "uses": [
+    {
+     "slideId": 341,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!水印校徽",
+     "box": [
+      -252.0,
+      698.4,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 273,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!水印校徽",
+     "box": [
+      -252.0,
+      698.4,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 342,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!水印校徽",
+     "box": [
+      -252.0,
+      698.4,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 304,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!水印校徽",
+     "box": [
+      1504.8,
+      655.2,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.045,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 305,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!水印校徽",
+     "box": [
+      1504.8,
+      655.2,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.045,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 274,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!水印校徽",
+     "box": [
+      1504.8,
+      655.2,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.045,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 306,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!水印校徽",
+     "box": [
+      1504.8,
+      655.2,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.045,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 307,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!水印校徽",
+     "box": [
+      1504.8,
+      655.2,
+      705.6,
+      705.6
+     ],
+     "crop": null,
+     "alpha": 0.045,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "logo-image12.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image12.png",
+   "model": null,
+   "originalSize": [
+    500,
+    144
+   ],
+   "outputSize": [
+    500,
+    144
+   ],
+   "displaySize": [
+    280.0,
+    80.6
+   ],
+   "bytes": 23693,
+   "uses": [
+    {
+     "slideId": 341,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 273,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 342,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 304,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 305,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 274,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 306,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 307,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!校标",
+     "box": [
+      108.0,
+      72.0,
+      280.0,
+      80.64
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "model-image13.png",
+   "kind": "model3d",
+   "sourceMedia": "ppt/media/image13.png",
+   "model": "ppt/media/model3d3.glb",
+   "originalSize": [
+    1296,
+    920
+   ],
+   "outputSize": [
+    1296,
+    920
+   ],
+   "displaySize": [
+    1296.6,
+    920.9
+   ],
+   "bytes": 1335579,
+   "uses": [
+    {
+     "slideId": 341,
+     "page": "cover",
+     "variant": "default",
+     "shape": "3D 模型 6",
+     "box": [
+      741.55,
+      320.36,
+      1296.61,
+      920.89
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 273,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "3D 模型 6",
+     "box": [
+      741.55,
+      320.36,
+      1296.61,
+      920.89
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 342,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "3D 模型 6",
+     "box": [
+      741.55,
+      320.36,
+      1296.61,
+      920.89
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "model-image14.png",
+   "kind": "model3d",
+   "sourceMedia": "ppt/media/image14.png",
+   "model": "ppt/media/model3d3.glb",
+   "originalSize": [
+    1168,
+    817
+   ],
+   "outputSize": [
+    1168,
+    817
+   ],
+   "displaySize": [
+    1168.1,
+    817.5
+   ],
+   "bytes": 1242792,
+   "uses": [
+    {
+     "slideId": 304,
+     "page": "toc",
+     "variant": "2",
+     "shape": "3D 模型 7",
+     "box": [
+      -33.35,
+      321.52,
+      1168.12,
+      817.52
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 305,
+     "page": "toc",
+     "variant": "3",
+     "shape": "3D 模型 7",
+     "box": [
+      -33.35,
+      321.52,
+      1168.12,
+      817.52
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 274,
+     "page": "toc",
+     "variant": "4",
+     "shape": "3D 模型 7",
+     "box": [
+      -33.35,
+      321.52,
+      1168.12,
+      817.52
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 306,
+     "page": "toc",
+     "variant": "5",
+     "shape": "3D 模型 7",
+     "box": [
+      -33.35,
+      321.52,
+      1168.12,
+      817.52
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 307,
+     "page": "toc",
+     "variant": "6",
+     "shape": "3D 模型 7",
+     "box": [
+      -33.35,
+      321.52,
+      1168.12,
+      817.52
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Arial": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title"
+  ],
+  "Cinzel": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Bold": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Heavy": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Medium": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN SemiBold": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title"
+  ],
+  "思源宋体": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 3083070
+}

@@ -6,6 +6,7 @@
 |---|---|---|
 | [`cumora-sandbox-verifier`](skills/cumora-sandbox-verifier/) | 发现本地 agent CLI，诊断、修复并验收 Windows Cumora 沙盒与主机能力 | Platform-Specific Skill |
 | [`simple-html-report`](skills/simple-html-report/) | 生成 story-estimator 同款主题风格的 PC 静态 HTML 汇报 | Portable Skill |
+| [`simple-html-report-v2`](skills/simple-html-report-v2/) | 生成南昌城市科技主题的项目、业务、方案与管理汇报 HTML/PPT | Portable Skill |
 | [`task-closeout`](skills/task-closeout/) | 复查刚完成的工作，修正遗漏并验证收尾状态 | Portable Skill |
 | [`trellis-commit-zh`](skills/trellis-commit-zh/) | 提交标准化中文 Conventional Commit，并维护 Trellis 仓库增强 | Platform-Specific Skill |
 
@@ -67,6 +68,22 @@ npx skills add Jun2030/skills@simple-html-report -g
 
 ```text
 $simple-html-report
+```
+
+## `simple-html-report-v2`
+
+从 `dashi-ppt-campus` 克隆改造而来的通用汇报 Skill。默认使用深色赣江蓝、霓虹青、赤金与城市网格视觉，适合项目进度、业务复盘、方案评审、区域分析和管理层简报；保留 HTML 预览、离线资源、可编辑 PPTX/PDF 导出与校验流程。
+
+安装：
+
+```powershell
+npx skills add Jun2030/skills@simple-html-report-v2 -g
+```
+
+调用：
+
+```text
+$simple-html-report-v2
 ```
 
 ## `task-closeout`

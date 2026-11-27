@@ -1,0 +1,1052 @@
+{
+ "school": "xmu",
+ "name": "厦门大学",
+ "en": "Xiamen University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 351,
+   "index": 62,
+   "preview": "预览/各页/62.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide62.xml",
+   "fields": [
+    "主标题",
+    "副标题",
+    "讲堂信息",
+    "封面-页脚"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image59.jpeg"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 图片「左侧深色渐变遮罩」",
+    "02 文字「主标题」",
+    "03 文字「副标题」",
+    "04 文字「讲堂信息」",
+    "05 图片「厦门大学校徽校名」",
+    "06 线「直接连接符 19」",
+    "07 形状「封面-底幕」",
+    "08 形状「封面-飘带」",
+    "09 形状「封面-细线」",
+    "10 文字「封面-页脚」"
+   ],
+   "notes": [
+    "遮罩层「左侧深色渐变遮罩」(z=1),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "「主标题」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「左侧深色渐变遮罩」、「厦门大学校徽校名」、「直接连接符 19」、「封面-底幕」、「封面-飘带」、「封面-细线」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "long_title",
+   "slideId": 294,
+   "index": 63,
+   "preview": "预览/各页/63.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide63.xml",
+   "fields": [
+    "主标题",
+    "副标题",
+    "讲堂信息",
+    "封面-页脚"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image59.jpeg"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 图片「左侧深色渐变遮罩」",
+    "02 文字「主标题」",
+    "03 文字「副标题」",
+    "04 文字「讲堂信息」",
+    "05 图片「厦门大学校徽校名」",
+    "06 线「直接连接符 19」",
+    "07 形状「封面-底幕」",
+    "08 形状「封面-飘带」",
+    "09 形状「封面-细线」",
+    "10 文字「封面-页脚」"
+   ],
+   "notes": [
+    "遮罩层「左侧深色渐变遮罩」(z=1),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "「主标题」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「左侧深色渐变遮罩」、「厦门大学校徽校名」、「直接连接符 19」、「封面-底幕」、「封面-飘带」、「封面-细线」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "cover",
+   "variant": "keyword",
+   "slideId": 352,
+   "index": 64,
+   "preview": "预览/各页/64.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide64.xml",
+   "fields": [
+    "主标题",
+    "副标题",
+    "讲堂信息",
+    "封面-页脚"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image59.jpeg"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 图片「左侧深色渐变遮罩」",
+    "02 文字「主标题」",
+    "03 文字「副标题」",
+    "04 文字「讲堂信息」",
+    "05 图片「厦门大学校徽校名」",
+    "06 线「直接连接符 19」",
+    "07 形状「封面-底幕」",
+    "08 形状「封面-飘带」",
+    "09 形状「封面-细线」",
+    "10 文字「封面-页脚」"
+   ],
+   "notes": [
+    "遮罩层「左侧深色渐变遮罩」(z=1),压在它下面的视频 / 图片要保持同样的叠放顺序",
+    "「主标题」带效果 outerShdw(SVG 层只还原外投影;柔化边缘 / 发光需要页面用 CSS 近似)",
+    "压在视频 / 3D 模型之上的装饰:「左侧深色渐变遮罩」、「厦门大学校徽校名」、「直接连接符 19」、「封面-底幕」、「封面-飘带」、「封面-细线」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 328,
+   "index": 66,
+   "preview": "预览/各页/66.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide66.xml",
+   "fields": [
+    "目录-标题",
+    "目录-英文",
+    "封面-页脚",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#0D2F6E"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 形状「!!弧带」",
+    "02 形状「!!右幕」",
+    "03 图片「图片 84」",
+    "04 形状「!!金线」",
+    "05 图片「厦门大学校徽校名」",
+    "06 文字「目录-01-序号」",
+    "07 文字「条目01」",
+    "08 文字「说明01」",
+    "09 文字「目录-02-序号」",
+    "10 文字「条目02」",
+    "11 文字「说明02」",
+    "12 文字「目录-标题」",
+    "13 文字「目录-英文」",
+    "14 文字「封面-页脚」"
+   ],
+   "notes": [
+    "「厦门大学」有裁切 {'l': 0.43877, 'r': 0.03909}(网页用 object-position / 外框裁切还原)",
+    "「图片 84」图片透明度 0.09",
+    "压在视频 / 3D 模型之上的装饰:「!!弧带」、「!!右幕」、「图片 84」、「!!金线」、「厦门大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 329,
+   "index": 67,
+   "preview": "预览/各页/67.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide67.xml",
+   "fields": [
+    "目录-标题",
+    "目录-英文",
+    "封面-页脚",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#0D2F6E"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 形状「!!弧带」",
+    "02 形状「!!右幕」",
+    "03 图片「图片 84」",
+    "04 形状「!!金线」",
+    "05 图片「厦门大学校徽校名」",
+    "06 文字「目录-01-序号」",
+    "07 文字「条目01」",
+    "08 文字「说明01」",
+    "09 文字「目录-02-序号」",
+    "10 文字「条目02」",
+    "11 文字「说明02」",
+    "12 文字「目录-03-序号」",
+    "13 文字「条目03」",
+    "14 文字「说明03」",
+    "15 文字「目录-标题」",
+    "16 文字「目录-英文」",
+    "17 文字「封面-页脚」"
+   ],
+   "notes": [
+    "「厦门大学」有裁切 {'l': 0.43877, 'r': 0.03909}(网页用 object-position / 外框裁切还原)",
+    "「图片 84」图片透明度 0.09",
+    "压在视频 / 3D 模型之上的装饰:「!!弧带」、「!!右幕」、「图片 84」、「!!金线」、「厦门大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 291,
+   "index": 65,
+   "preview": "预览/各页/65.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide65.xml",
+   "fields": [
+    "目录-标题",
+    "目录-英文",
+    "封面-页脚",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#0D2F6E"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 形状「!!弧带」",
+    "02 形状「!!右幕」",
+    "03 图片「图片 84」",
+    "04 形状「!!金线」",
+    "05 图片「厦门大学校徽校名」",
+    "06 文字「目录-01-序号」",
+    "07 文字「条目01」",
+    "08 文字「说明01」",
+    "09 文字「目录-01-序号」",
+    "10 文字「条目01」",
+    "11 文字「说明01」",
+    "12 文字「目录-01-序号」",
+    "13 文字「条目01」",
+    "14 文字「说明01」",
+    "15 文字「目录-01-序号」",
+    "16 文字「条目01」",
+    "17 文字「说明01」",
+    "18 文字「目录-标题」",
+    "19 文字「目录-英文」",
+    "20 文字「封面-页脚」"
+   ],
+   "notes": [
+    "「厦门大学」有裁切 {'l': 0.43877, 'r': 0.03909}(网页用 object-position / 外框裁切还原)",
+    "「图片 84」图片透明度 0.09",
+    "压在视频 / 3D 模型之上的装饰:「!!弧带」、「!!右幕」、「图片 84」、「!!金线」、「厦门大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 330,
+   "index": 68,
+   "preview": "预览/各页/68.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide68.xml",
+   "fields": [
+    "目录-标题",
+    "目录-英文",
+    "封面-页脚",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#0D2F6E"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 形状「!!弧带」",
+    "02 形状「!!右幕」",
+    "03 图片「图片 84」",
+    "04 形状「!!金线」",
+    "05 图片「厦门大学校徽校名」",
+    "06 文字「目录-01-序号」",
+    "07 文字「条目01」",
+    "08 文字「说明01」",
+    "09 文字「目录-02-序号」",
+    "10 文字「条目02」",
+    "11 文字「说明02」",
+    "12 文字「目录-03-序号」",
+    "13 文字「条目03」",
+    "14 文字「说明03」",
+    "15 文字「目录-05-序号」",
+    "16 文字「条目05」",
+    "17 文字「说明05」",
+    "18 文字「目录-标题」",
+    "19 文字「目录-英文」",
+    "20 文字「封面-页脚」",
+    "21 文字「目录-04-序号」",
+    "22 文字「条目04」",
+    "23 文字「说明04」"
+   ],
+   "notes": [
+    "「厦门大学」有裁切 {'l': 0.43877, 'r': 0.03909}(网页用 object-position / 外框裁切还原)",
+    "「图片 84」图片透明度 0.09",
+    "压在视频 / 3D 模型之上的装饰:「!!弧带」、「!!右幕」、「图片 84」、「!!金线」、「厦门大学校徽校名」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 331,
+   "index": 69,
+   "preview": "预览/各页/69.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide69.xml",
+   "fields": [
+    "目录-标题",
+    "目录-英文",
+    "封面-页脚",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.desc"
+   ],
+   "transitionIn": null,
+   "background": {
+    "type": "solid",
+    "color": "#0D2F6E"
+   },
+   "stack": [
+    "00 视频「厦门大学」",
+    "01 形状「!!弧带」",
+    "02 形状「!!右幕」",
+    "03 图片「图片 84」",
+    "04 形状「!!金线」",
+    "05 图片「厦门大学校徽校名」",
+    "06 文字「目录-01-序号」",
+    "07 文字「条目01」",
+    "08 文字「说明01」",
+    "09 文字「目录-02-序号」",
+    "10 文字「条目02」",
+    "11 文字「说明02」",
+    "12 文字「目录-03-序号」",
+    "13 文字「条目03」",
+    "14 文字「说明03」",
+    "15 文字「目录-06-序号」",
+    "16 文字「条目06」",
+    "17 文字「说明06」",
+    "18 文字「目录-标题」",
+    "19 文字「目录-英文」",
+    "20 文字「封面-页脚」",
+    "21 文字「目录-04-序号」",
+    "22 文字「条目04」",
+    "23 文字「说明04」",
+    "24 文字「目录-05-序号」",
+    "25 文字「条目05」",
+    "26 文字「说明05」"
+   ],
+   "notes": [
+    "「厦门大学」有裁切 {'l': 0.43877, 'r': 0.03909}(网页用 object-position / 外框裁切还原)",
+    "「图片 84」图片透明度 0.09",
+    "压在视频 / 3D 模型之上的装饰:「!!弧带」、「!!右幕」、「图片 84」、「!!金线」、「厦门大学校徽校名」"
+   ],
+   "warnings": []
+  }
+ ],
+ "assets": [
+  {
+   "file": "bg-image59.jpg",
+   "kind": "background",
+   "sourceMedia": "ppt/media/image59.jpeg",
+   "model": null,
+   "originalSize": [
+    1672,
+    941
+   ],
+   "outputSize": [
+    1672,
+    941
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 398052,
+   "uses": [
+    {
+     "slideId": 351,
+     "page": "cover",
+     "variant": "default",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 294,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 352,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    }
+   ]
+  },
+  {
+   "file": "img-image61.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image61.png",
+   "model": null,
+   "originalSize": [
+    1920,
+    1080
+   ],
+   "outputSize": [
+    1920,
+    1080
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 13229,
+   "uses": [
+    {
+     "slideId": 351,
+     "page": "cover",
+     "variant": "default",
+     "shape": "左侧深色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 294,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "左侧深色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 352,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "左侧深色渐变遮罩",
+     "box": [
+      0.0,
+      0.0,
+      1919.95,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image62.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image62.png",
+   "model": null,
+   "originalSize": [
+    286,
+    81
+   ],
+   "outputSize": [
+    286,
+    81
+   ],
+   "displaySize": [
+    264.4,
+    74.9
+   ],
+   "bytes": 12584,
+   "uses": [
+    {
+     "slideId": 351,
+     "page": "cover",
+     "variant": "default",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 294,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 352,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 328,
+     "page": "toc",
+     "variant": "2",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 329,
+     "page": "toc",
+     "variant": "3",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 291,
+     "page": "toc",
+     "variant": "4",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 330,
+     "page": "toc",
+     "variant": "5",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    },
+    {
+     "slideId": 331,
+     "page": "toc",
+     "variant": "6",
+     "shape": "厦门大学校徽校名",
+     "box": [
+      108.0,
+      75.41,
+      264.39,
+      74.88
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "img-image63.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image63.png",
+   "model": null,
+   "originalSize": [
+    3840,
+    3840
+   ],
+   "outputSize": [
+    2160,
+    2160
+   ],
+   "displaySize": [
+    1080.0,
+    1080.0
+   ],
+   "bytes": 298086,
+   "uses": [
+    {
+     "slideId": 328,
+     "page": "toc",
+     "variant": "2",
+     "shape": "图片 84",
+     "box": [
+      1314.81,
+      0.0,
+      1080.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 0.09,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 329,
+     "page": "toc",
+     "variant": "3",
+     "shape": "图片 84",
+     "box": [
+      1314.81,
+      0.0,
+      1080.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 0.09,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 291,
+     "page": "toc",
+     "variant": "4",
+     "shape": "图片 84",
+     "box": [
+      1314.81,
+      0.0,
+      1080.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 0.09,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 330,
+     "page": "toc",
+     "variant": "5",
+     "shape": "图片 84",
+     "box": [
+      1314.81,
+      0.0,
+      1080.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 0.09,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 331,
+     "page": "toc",
+     "variant": "6",
+     "shape": "图片 84",
+     "box": [
+      1314.81,
+      0.0,
+      1080.0,
+      1080.0
+     ],
+     "crop": null,
+     "alpha": 0.09,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "video-media7.mp4",
+   "poster": "video-media7-poster.jpg",
+   "kind": "video",
+   "sourceMedia": "ppt/media/media7.mp4",
+   "uses": [
+    {
+     "slideId": 351,
+     "page": "cover",
+     "variant": "default",
+     "shape": "厦门大学",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 294,
+     "page": "cover",
+     "variant": "long_title",
+     "shape": "厦门大学",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 352,
+     "page": "cover",
+     "variant": "keyword",
+     "shape": "厦门大学",
+     "box": [
+      0.5,
+      0.0,
+      1919.0,
+      1080.0
+     ],
+     "crop": null,
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 328,
+     "page": "toc",
+     "variant": "2",
+     "shape": "厦门大学",
+     "box": [
+      -0.0,
+      0.0,
+      1002.0,
+      1080.0
+     ],
+     "crop": {
+      "l": 0.43877,
+      "r": 0.03909
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 329,
+     "page": "toc",
+     "variant": "3",
+     "shape": "厦门大学",
+     "box": [
+      -0.0,
+      0.0,
+      1002.0,
+      1080.0
+     ],
+     "crop": {
+      "l": 0.43877,
+      "r": 0.03909
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 291,
+     "page": "toc",
+     "variant": "4",
+     "shape": "厦门大学",
+     "box": [
+      -0.0,
+      0.0,
+      1002.0,
+      1080.0
+     ],
+     "crop": {
+      "l": 0.43877,
+      "r": 0.03909
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 330,
+     "page": "toc",
+     "variant": "5",
+     "shape": "厦门大学",
+     "box": [
+      -0.0,
+      0.0,
+      1002.0,
+      1080.0
+     ],
+     "crop": {
+      "l": 0.43877,
+      "r": 0.03909
+     },
+     "loop": false,
+     "trim": null
+    },
+    {
+     "slideId": 331,
+     "page": "toc",
+     "variant": "6",
+     "shape": "厦门大学",
+     "box": [
+      -0.0,
+      0.0,
+      1002.0,
+      1080.0
+     ],
+     "crop": {
+      "l": 0.43877,
+      "r": 0.03909
+     },
+     "loop": false,
+     "trim": null
+    }
+   ],
+   "source": {
+    "width": 3184,
+    "height": 1792,
+    "fps": 60.0,
+    "duration": 5.088,
+    "bitRate": 56715125
+   },
+   "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 5.033,
+    "bitRate": 6254541
+   },
+   "width": 1920,
+   "fps": 30,
+   "attempts": [
+    {
+     "crf": 22,
+     "bytes": 5298209
+    },
+    {
+     "crf": 24,
+     "bytes": 3935149
+    }
+   ],
+   "params": "libx264 preset=slow crf=24 maxrate=9M yuv420p +faststart, -an, scale=1920:-2, fps=30",
+   "bytes": 1517564,
+   "duration": 5.033,
+   "posterSource": "ppt/media/image60.png",
+   "posterBytes": 414102
+  }
+ ],
+ "layers": [
+  {
+   "file": "cover-band.svg",
+   "slideId": 351,
+   "box": [
+    -4,
+    826,
+    1928,
+    278
+   ],
+   "shapes": [
+    "封面-底幕",
+    "封面-飘带",
+    "封面-细线"
+   ],
+   "missing": [],
+   "bytes": 6924
+  },
+  {
+   "file": "toc-curtain.svg",
+   "slideId": 291,
+   "box": [
+    788,
+    -34,
+    1156,
+    1145
+   ],
+   "shapes": [
+    "!!弧带",
+    "!!右幕"
+   ],
+   "missing": [],
+   "bytes": 5796
+  },
+  {
+   "file": "toc-goldline.svg",
+   "slideId": 291,
+   "box": [
+    808,
+    -23,
+    226,
+    1127
+   ],
+   "shapes": [
+    "!!金线"
+   ],
+   "missing": [],
+   "bytes": 3719
+  }
+ ],
+ "fonts": {
+  "Playfair Display Black": [
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Heavy": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN SemiBold": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "思源黑体 CN Regular": [
+   "cover/default",
+   "cover/keyword",
+   "cover/long_title",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ]
+ },
+ "totalBytes": 2670056
+}

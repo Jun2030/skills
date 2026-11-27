@@ -1,0 +1,11 @@
+{
+  "_说明": "提取脚本按这里列出的形状合成矢量装饰层 SVG(assets/schools/ynu/<name>.svg,位置写进 manifest.json 的 layers[].box)。目录卡片右侧的白色线性图标,按条目数取用(见 index.jsx 的 TOC_ICONS)。",
+  "layers": [
+    { "name": "icon-overview", "slide": 257, "shapes": ["目录图标-年度综述"] },
+    { "name": "icon-education", "slide": 257, "shapes": ["目录图标-人才培养"] },
+    { "name": "icon-research", "slide": 257, "shapes": ["目录图标-科学研究"] },
+    { "name": "icon-campus", "slide": 257, "shapes": ["目录图标-校区建设"] },
+    { "name": "icon-global", "slide": 335, "shapes": ["@目录图标-国际交流"] },
+    { "name": "icon-outlook", "slide": 257, "shapes": ["目录图标-工作展望"] }
+  ]
+}

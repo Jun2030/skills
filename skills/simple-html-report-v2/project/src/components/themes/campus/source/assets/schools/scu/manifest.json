@@ -1,0 +1,903 @@
+{
+ "school": "scu",
+ "name": "四川大学",
+ "en": "Sichuan University",
+ "generatedBy": "scripts/campus-schools/extract-assets.py",
+ "coordinateSpace": "1920×1080 舞台 px(1pt = 2px)",
+ "pages": [
+  {
+   "page": "cover",
+   "variant": "default",
+   "slideId": 269,
+   "index": 8,
+   "preview": "预览/各页/08.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide8.xml",
+   "fields": [
+    "!!顶栏左",
+    "!!顶栏右",
+    "!!通栏标题",
+    "!!通栏副标题",
+    "!!通栏英文",
+    "!!汇报人",
+    "!!日期"
+   ],
+   "transitionIn": {
+    "kind": "fade",
+    "speed": "slow"
+   },
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image5.jpg"
+   },
+   "stack": [
+    "00 形状「!!光晕-校门」",
+    "01 文字「!!顶栏左」",
+    "02 文字「!!顶栏右」",
+    "03 3D 模型「3D 模型 28」",
+    "04 形状「!!红幕」",
+    "05 图片「!!地影-校门」",
+    "06 图片「!!通栏校徽」",
+    "07 线「!!通栏分隔」",
+    "08 文字「!!通栏标题」",
+    "09 文字「!!通栏副标题」",
+    "10 文字「!!通栏英文」",
+    "11 形状「!!汇报人框」",
+    "12 文字「!!汇报人」",
+    "13 文字「!!日期」"
+   ],
+   "notes": [
+    "压在视频 / 3D 模型之上的装饰:「!!红幕」、「!!地影-校门」、「!!通栏校徽」、「!!通栏分隔」、「!!汇报人框」"
+   ],
+   "warnings": []
+  },
+  {
+   "page": "toc",
+   "variant": "2",
+   "slideId": 300,
+   "index": 10,
+   "preview": "预览/各页/10.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide10.xml",
+   "fields": [
+    "!!目录标题",
+    "!!目录英文",
+    "!!目录引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image5.jpg"
+   },
+   "stack": [
+    "00 形状「!!光晕-校门」",
+    "01 形状「!!红幕」",
+    "02 图片「!!目录水印」",
+    "03 文字「!!目录标题」",
+    "04 文字「!!目录英文」",
+    "05 文字「!!目录引言」",
+    "06 形状「!!目录序号框1」",
+    "07 文字「!!目录序号1」",
+    "08 文字「!!目录项1」",
+    "09 形状「!!目录点1」",
+    "10 文字「!!目录副项1」",
+    "11 文字「!!目录英文1」",
+    "12 形状「!!目录序号框2」",
+    "13 文字「!!目录序号2」",
+    "14 文字「!!目录项2」",
+    "15 形状「!!目录点2」",
+    "16 文字「!!目录副项2」",
+    "17 文字「!!目录英文2」",
+    "18 线「!!目录分隔1」",
+    "19 3D 模型「3D 模型 40」"
+   ],
+   "notes": [
+    "「!!目录水印」图片透明度 0.05"
+   ],
+   "warnings": [
+    "预设形状 diamond「!!目录点1」按外框矩形近似",
+    "预设形状 diamond「!!目录点2」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "3",
+   "slideId": 301,
+   "index": 11,
+   "preview": "预览/各页/11.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide11.xml",
+   "fields": [
+    "!!目录标题",
+    "!!目录英文",
+    "!!目录引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image5.jpg"
+   },
+   "stack": [
+    "00 形状「!!光晕-校门」",
+    "01 形状「!!红幕」",
+    "02 图片「!!目录水印」",
+    "03 文字「!!目录标题」",
+    "04 文字「!!目录英文」",
+    "05 文字「!!目录引言」",
+    "06 形状「!!目录序号框1」",
+    "07 文字「!!目录序号1」",
+    "08 文字「!!目录项1」",
+    "09 形状「!!目录点1」",
+    "10 文字「!!目录副项1」",
+    "11 文字「!!目录英文1」",
+    "12 形状「!!目录序号框2」",
+    "13 文字「!!目录序号2」",
+    "14 文字「!!目录项2」",
+    "15 形状「!!目录点2」",
+    "16 文字「!!目录副项2」",
+    "17 文字「!!目录英文2」",
+    "18 形状「!!目录序号框3」",
+    "19 文字「!!目录序号3」",
+    "20 文字「!!目录项3」",
+    "21 形状「!!目录点3」",
+    "22 文字「!!目录副项3」",
+    "23 文字「!!目录英文3」",
+    "24 线「!!目录分隔1」",
+    "25 线「!!目录分隔2」",
+    "26 3D 模型「3D 模型 40」"
+   ],
+   "notes": [
+    "「!!目录水印」图片透明度 0.05"
+   ],
+   "warnings": [
+    "预设形状 diamond「!!目录点1」按外框矩形近似",
+    "预设形状 diamond「!!目录点2」按外框矩形近似",
+    "预设形状 diamond「!!目录点3」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "4",
+   "slideId": 270,
+   "index": 9,
+   "preview": "预览/各页/09.jpg",
+   "hiddenInTemplate": false,
+   "part": "ppt/slides/slide9.xml",
+   "fields": [
+    "!!目录标题",
+    "!!目录英文",
+    "!!目录引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image5.jpg"
+   },
+   "stack": [
+    "00 形状「!!光晕-校门」",
+    "01 形状「!!红幕」",
+    "02 图片「!!目录水印」",
+    "03 文字「!!目录标题」",
+    "04 文字「!!目录英文」",
+    "05 文字「!!目录引言」",
+    "06 形状「!!目录序号框1」",
+    "07 文字「!!目录序号1」",
+    "08 文字「!!目录项1」",
+    "09 形状「!!目录点1」",
+    "10 文字「!!目录副项1」",
+    "11 文字「!!目录英文1」",
+    "12 形状「!!目录序号框2」",
+    "13 文字「!!目录序号2」",
+    "14 文字「!!目录项2」",
+    "15 形状「!!目录点2」",
+    "16 文字「!!目录副项2」",
+    "17 文字「!!目录英文2」",
+    "18 形状「!!目录序号框3」",
+    "19 文字「!!目录序号3」",
+    "20 文字「!!目录项3」",
+    "21 形状「!!目录点3」",
+    "22 文字「!!目录副项3」",
+    "23 文字「!!目录英文3」",
+    "24 形状「!!目录序号框4」",
+    "25 文字「!!目录序号4」",
+    "26 文字「!!目录项4」",
+    "27 形状「!!目录点4」",
+    "28 文字「!!目录副项4」",
+    "29 文字「!!目录英文4」",
+    "30 线「!!目录分隔1」",
+    "31 线「!!目录分隔2」",
+    "32 线「!!目录分隔3」",
+    "33 3D 模型「3D 模型 40」"
+   ],
+   "notes": [
+    "「!!目录水印」图片透明度 0.05"
+   ],
+   "warnings": [
+    "预设形状 diamond「!!目录点1」按外框矩形近似",
+    "预设形状 diamond「!!目录点2」按外框矩形近似",
+    "预设形状 diamond「!!目录点3」按外框矩形近似",
+    "预设形状 diamond「!!目录点4」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "5",
+   "slideId": 302,
+   "index": 12,
+   "preview": "预览/各页/12.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide12.xml",
+   "fields": [
+    "!!目录标题",
+    "!!目录英文",
+    "!!目录引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.4.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image5.jpg"
+   },
+   "stack": [
+    "00 形状「!!光晕-校门」",
+    "01 形状「!!红幕」",
+    "02 图片「!!目录水印」",
+    "03 文字「!!目录标题」",
+    "04 文字「!!目录英文」",
+    "05 文字「!!目录引言」",
+    "06 形状「!!目录序号框1」",
+    "07 文字「!!目录序号1」",
+    "08 文字「!!目录项1」",
+    "09 形状「!!目录点1」",
+    "10 文字「!!目录副项1」",
+    "11 文字「!!目录英文1」",
+    "12 形状「!!目录序号框2」",
+    "13 文字「!!目录序号2」",
+    "14 文字「!!目录项2」",
+    "15 形状「!!目录点2」",
+    "16 文字「!!目录副项2」",
+    "17 文字「!!目录英文2」",
+    "18 形状「!!目录序号框3」",
+    "19 文字「!!目录序号3」",
+    "20 文字「!!目录项3」",
+    "21 形状「!!目录点3」",
+    "22 文字「!!目录副项3」",
+    "23 文字「!!目录英文3」",
+    "24 形状「!!目录序号框5」",
+    "25 文字「!!目录序号5」",
+    "26 文字「!!目录项5」",
+    "27 形状「!!目录点5」",
+    "28 文字「!!目录副项5」",
+    "29 文字「!!目录英文5」",
+    "30 线「!!目录分隔1」",
+    "31 线「!!目录分隔2」",
+    "32 线「!!目录分隔3」",
+    "33 3D 模型「3D 模型 40」",
+    "34 形状「!!目录序号框4」",
+    "35 文字「!!目录序号4」",
+    "36 文字「!!目录项4」",
+    "37 形状「!!目录点4」",
+    "38 文字「!!目录副项4」",
+    "39 文字「!!目录英文4」",
+    "40 线「!!目录分隔4」"
+   ],
+   "notes": [
+    "「!!目录水印」图片透明度 0.05",
+    "压在视频 / 3D 模型之上的装饰:「!!目录序号框4」、「!!目录点4」、「!!目录分隔4」"
+   ],
+   "warnings": [
+    "预设形状 diamond「!!目录点1」按外框矩形近似",
+    "预设形状 diamond「!!目录点2」按外框矩形近似",
+    "预设形状 diamond「!!目录点3」按外框矩形近似",
+    "预设形状 diamond「!!目录点5」按外框矩形近似",
+    "预设形状 diamond「!!目录点4」按外框矩形近似"
+   ]
+  },
+  {
+   "page": "toc",
+   "variant": "6",
+   "slideId": 303,
+   "index": 13,
+   "preview": "预览/各页/13.jpg",
+   "hiddenInTemplate": true,
+   "part": "ppt/slides/slide13.xml",
+   "fields": [
+    "!!目录标题",
+    "!!目录英文",
+    "!!目录引言",
+    "toc.0.num",
+    "toc.0.title",
+    "toc.0.desc",
+    "toc.0.en",
+    "toc.1.num",
+    "toc.1.title",
+    "toc.1.desc",
+    "toc.1.en",
+    "toc.2.num",
+    "toc.2.title",
+    "toc.2.desc",
+    "toc.2.en",
+    "toc.3.num",
+    "toc.3.title",
+    "toc.3.desc",
+    "toc.3.en",
+    "toc.4.num",
+    "toc.4.title",
+    "toc.4.desc",
+    "toc.4.en",
+    "toc.5.num",
+    "toc.5.title",
+    "toc.5.desc",
+    "toc.5.en"
+   ],
+   "transitionIn": {
+    "kind": "morph",
+    "durationMs": 2000,
+    "speed": "slow"
+   },
+   "background": {
+    "type": "image",
+    "media": "ppt/media/image5.jpg"
+   },
+   "stack": [
+    "00 形状「!!光晕-校门」",
+    "01 形状「!!红幕」",
+    "02 图片「!!目录水印」",
+    "03 文字「!!目录标题」",
+    "04 文字「!!目录英文」",
+    "05 文字「!!目录引言」",
+    "06 形状「!!目录序号框1」",
+    "07 文字「!!目录序号1」",
+    "08 文字「!!目录项1」",
+    "09 形状「!!目录点1」",
+    "10 文字「!!目录副项1」",
+    "11 文字「!!目录英文1」",
+    "12 形状「!!目录序号框2」",
+    "13 文字「!!目录序号2」",
+    "14 文字「!!目录项2」",
+    "15 形状「!!目录点2」",
+    "16 文字「!!目录副项2」",
+    "17 文字「!!目录英文2」",
+    "18 形状「!!目录序号框3」",
+    "19 文字「!!目录序号3」",
+    "20 文字「!!目录项3」",
+    "21 形状「!!目录点3」",
+    "22 文字「!!目录副项3」",
+    "23 文字「!!目录英文3」",
+    "24 形状「!!目录序号框6」",
+    "25 文字「!!目录序号6」",
+    "26 文字「!!目录项6」",
+    "27 形状「!!目录点6」",
+    "28 文字「!!目录副项6」",
+    "29 文字「!!目录英文6」",
+    "30 线「!!目录分隔1」",
+    "31 线「!!目录分隔2」",
+    "32 线「!!目录分隔3」",
+    "33 3D 模型「3D 模型 40」",
+    "34 形状「!!目录序号框4」",
+    "35 文字「!!目录序号4」",
+    "36 文字「!!目录项4」",
+    "37 形状「!!目录点4」",
+    "38 文字「!!目录副项4」",
+    "39 文字「!!目录英文4」",
+    "40 形状「!!目录序号框5」",
+    "41 文字「!!目录序号5」",
+    "42 文字「!!目录项5」",
+    "43 形状「!!目录点5」",
+    "44 文字「!!目录副项5」",
+    "45 文字「!!目录英文5」",
+    "46 线「!!目录分隔4」",
+    "47 线「!!目录分隔5」"
+   ],
+   "notes": [
+    "「!!目录水印」图片透明度 0.05",
+    "压在视频 / 3D 模型之上的装饰:「!!目录序号框4」、「!!目录点4」、「!!目录序号框5」、「!!目录点5」、「!!目录分隔4」、「!!目录分隔5」"
+   ],
+   "warnings": [
+    "预设形状 diamond「!!目录点1」按外框矩形近似",
+    "预设形状 diamond「!!目录点2」按外框矩形近似",
+    "预设形状 diamond「!!目录点3」按外框矩形近似",
+    "预设形状 diamond「!!目录点6」按外框矩形近似",
+    "预设形状 diamond「!!目录点4」按外框矩形近似",
+    "预设形状 diamond「!!目录点5」按外框矩形近似"
+   ]
+  }
+ ],
+ "assets": [
+  {
+   "file": "model-image10.png",
+   "kind": "model3d",
+   "sourceMedia": "ppt/media/image10.png",
+   "model": "ppt/media/model3d2.glb",
+   "originalSize": [
+    1378,
+    1012
+   ],
+   "outputSize": [
+    1378,
+    1012
+   ],
+   "displaySize": [
+    1378.1,
+    1012.2
+   ],
+   "bytes": 1002145,
+   "uses": [
+    {
+     "slideId": 300,
+     "page": "toc",
+     "variant": "2",
+     "shape": "3D 模型 40",
+     "box": [
+      -79.26,
+      156.27,
+      1378.06,
+      1012.18
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 301,
+     "page": "toc",
+     "variant": "3",
+     "shape": "3D 模型 40",
+     "box": [
+      -79.26,
+      156.27,
+      1378.06,
+      1012.18
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 270,
+     "page": "toc",
+     "variant": "4",
+     "shape": "3D 模型 40",
+     "box": [
+      -79.26,
+      156.27,
+      1378.06,
+      1012.18
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 302,
+     "page": "toc",
+     "variant": "5",
+     "shape": "3D 模型 40",
+     "box": [
+      -79.26,
+      156.27,
+      1378.06,
+      1012.18
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 303,
+     "page": "toc",
+     "variant": "6",
+     "shape": "3D 模型 40",
+     "box": [
+      -79.26,
+      156.27,
+      1378.06,
+      1012.18
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "bg-image5.jpg",
+   "kind": "background",
+   "sourceMedia": "ppt/media/image5.jpg",
+   "model": null,
+   "originalSize": [
+    2400,
+    1350
+   ],
+   "outputSize": [
+    2400,
+    1350
+   ],
+   "displaySize": [
+    1920.0,
+    1080.0
+   ],
+   "bytes": 243042,
+   "uses": [
+    {
+     "slideId": 269,
+     "page": "cover",
+     "variant": "default",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 300,
+     "page": "toc",
+     "variant": "2",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 301,
+     "page": "toc",
+     "variant": "3",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 270,
+     "page": "toc",
+     "variant": "4",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 302,
+     "page": "toc",
+     "variant": "5",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    },
+    {
+     "slideId": 303,
+     "page": "toc",
+     "variant": "6",
+     "shape": "(幻灯片背景)",
+     "box": [
+      0,
+      0,
+      1920,
+      1080
+     ]
+    }
+   ]
+  },
+  {
+   "file": "model-image6.png",
+   "kind": "model3d",
+   "sourceMedia": "ppt/media/image6.png",
+   "model": "ppt/media/model3d2.glb",
+   "originalSize": [
+    1136,
+    710
+   ],
+   "outputSize": [
+    1136,
+    710
+   ],
+   "displaySize": [
+    1136.4,
+    710.6
+   ],
+   "bytes": 644570,
+   "uses": [
+    {
+     "slideId": 269,
+     "page": "cover",
+     "variant": "default",
+     "shape": "3D 模型 28",
+     "box": [
+      391.78,
+      58.12,
+      1136.44,
+      710.65
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "img-image7.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image7.png",
+   "model": null,
+   "originalSize": [
+    1200,
+    180
+   ],
+   "outputSize": [
+    1200,
+    180
+   ],
+   "displaySize": [
+    1177.3,
+    105.1
+   ],
+   "bytes": 13027,
+   "uses": [
+    {
+     "slideId": 269,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!地影-校门",
+     "box": [
+      371.38,
+      714.96,
+      1177.34,
+      105.12
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": false
+    }
+   ]
+  },
+  {
+   "file": "logo-image8.png",
+   "kind": "logo",
+   "sourceMedia": "ppt/media/image8.png",
+   "model": null,
+   "originalSize": [
+    880,
+    290
+   ],
+   "outputSize": [
+    880,
+    290
+   ],
+   "displaySize": [
+    502.5,
+    165.6
+   ],
+   "bytes": 73799,
+   "uses": [
+    {
+     "slideId": 269,
+     "page": "cover",
+     "variant": "default",
+     "shape": "!!通栏校徽",
+     "box": [
+      108.0,
+      835.2,
+      502.51,
+      165.6
+     ],
+     "crop": null,
+     "alpha": null,
+     "likelyLogo": true
+    }
+   ]
+  },
+  {
+   "file": "img-image9.png",
+   "kind": "image",
+   "sourceMedia": "ppt/media/image9.png",
+   "model": null,
+   "originalSize": [
+    290,
+    290
+   ],
+   "outputSize": [
+    290,
+    290
+   ],
+   "displaySize": [
+    665.2,
+    665.2
+   ],
+   "bytes": 37287,
+   "uses": [
+    {
+     "slideId": 300,
+     "page": "toc",
+     "variant": "2",
+     "shape": "!!目录水印",
+     "box": [
+      1427.08,
+      611.2,
+      665.2,
+      665.2
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 301,
+     "page": "toc",
+     "variant": "3",
+     "shape": "!!目录水印",
+     "box": [
+      1427.08,
+      611.2,
+      665.2,
+      665.2
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 270,
+     "page": "toc",
+     "variant": "4",
+     "shape": "!!目录水印",
+     "box": [
+      1427.08,
+      611.2,
+      665.2,
+      665.2
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 302,
+     "page": "toc",
+     "variant": "5",
+     "shape": "!!目录水印",
+     "box": [
+      1427.08,
+      611.2,
+      665.2,
+      665.2
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": false
+    },
+    {
+     "slideId": 303,
+     "page": "toc",
+     "variant": "6",
+     "shape": "!!目录水印",
+     "box": [
+      1427.08,
+      611.2,
+      665.2,
+      665.2
+     ],
+     "crop": null,
+     "alpha": 0.05,
+     "likelyLogo": false
+    }
+   ]
+  }
+ ],
+ "layers": [],
+ "fonts": {
+  "Cinzel": [
+   "cover/default",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN": [
+   "cover/default",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN Heavy": [
+   "cover/default",
+   "toc/2",
+   "toc/3",
+   "toc/4",
+   "toc/5",
+   "toc/6"
+  ],
+  "Source Han Serif CN SemiBold": [
+   "cover/default"
+  ]
+ },
+ "totalBytes": 2013870
+}
